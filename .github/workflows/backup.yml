@@ -13,66 +13,70 @@ env:
   BACKUP_ENABLED: true
 
 jobs:
-  run_db_backup:
+  backup_and_reset:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     env:
-      SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
-      SUPABASE_BD_URL_DEV: ${{ secrets.SUPABASE_BD_URL_DEV }}
-      BACKUP_ENABLED: ${{ vars.BACKUP_ENABLED }} # Repository variable (true or false)
+      SUPABASE_DB_URL: ${{ secrets.SUPABASE_BD_URL }}
+      SUPABASE_DB_URL_DEV: ${{ secrets.SUPABASE_BD_URL_DEV }}
+      BACKUP_ENABLED: ${{ vars.BACKUP_ENABLED }}
+
     steps:
+
+      # --- VALIDACIÓN ---
       - name: Check if backups are enabled
         run: |
           if [ "$BACKUP_ENABLED" != "true" ]; then
-            echo "Backups are disabled. Exiting workflow."
+            echo "🔕 Backups are disabled. Exiting workflow."
             exit 0
           fi
 
+      # --- SETUP ---
       - name: Checkout repository
-        if: env.BACKUP_ENABLED == 'true'
         uses: actions/checkout@v3
 
       - name: Setup Supabase CLI
-        if: env.BACKUP_ENABLED == 'true'
         uses: supabase/setup-cli@v1
         with:
           version: latest
 
-      - name: Create timestamp folder
-        if: env.BACKUP_ENABLED == 'true'
+      - name: Prepare backup folder
         run: mkdir -p prisma/backups/prod
 
-      - name: Backup roles
-        if: env.BACKUP_ENABLED == 'true'
-        run: supabase db dump --db-url "$SUPABASE_DB_URL" -f prisma/backups/prod/roles.sql --role-only
+      # --- BACKUP ---
+      - name: Backup Roles
+        run: supabase db dump --db-url "$SUPABASE_DB_URL" \
+              -f prisma/backups/prod/roles.sql --role-only
 
-      - name: Backup schema
-        if: env.BACKUP_ENABLED == 'true'
-        run: supabase db dump --db-url "$SUPABASE_DB_URL" -f prisma/backups/prod/schema.sql
+      - name: Backup Schema
+        run: supabase db dump --db-url "$SUPABASE_DB_URL" \
+              -f prisma/backups/prod/schema.sql
 
-      - name: Backup data
-        if: env.BACKUP_ENABLED == 'true'
-        run: supabase db dump --db-url "$SUPABASE_DB_URL" -f prisma/backups/prod/data.sql --data-only --use-copy
+      - name: Backup Data
+        run: supabase db dump --db-url "$SUPABASE_DB_URL" \
+              -f prisma/backups/prod/data.sql --data-only --use-copy
 
-      - name: Commit backups
-        if: env.BACKUP_ENABLED == 'true'
+      # --- COMMIT ---
+      - name: Commit backups to repo
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Supabase backup
+          commit_message: "Supabase backup"
+
+      # --- RESET DEV ---
+      - name: Debug DEV URL
+        run: echo "Resetting DEV database at: $SUPABASE_DB_URL_DEV"
 
       - name: Reset DEV database
-        if: env.BACKUP_ENABLED == 'true'
-        run: supabase --yes db reset --db-url "$SUPABASE_BD_URL_DEV"
-      
-      - name: Copy in DEV roles
-        if: env.BACKUP_ENABLED == 'true'
-        run: psql "$SUPABASE_BD_URL_DEV" -f prisma/backups/prod/roles.sql
+        run: supabase -y db reset --db-url "$SUPABASE_DB_URL_DEV"
 
-      - name: Copy in DEV schema
-        if: env.BACKUP_ENABLED == 'true'
-        run: psql "$SUPABASE_BD_URL_DEV" -f prisma/backups/prod/schema.sql
+      # --- RESTORE DEV ---
+      - name: Restore DEV roles
+        run: psql "$SUPABASE_DB_URL_DEV" -f prisma/backups/prod/roles.sql
 
-      - name: Copy in DEV data
-        if: env.BACKUP_ENABLED == 'true'
-        run: psql "$SUPABASE_BD_URL_DEV" -f prisma/backups/prod/data.sql
+      - name: Restore DEV schema
+        run: psql "$SUPABASE_DB_URL_DEV" -f prisma/backups/prod/schema.sql
+
+      - name: Restore DEV data
+        run: psql "$SUPABASE_DB_URL_DEV" -f prisma/backups/prod/data.sql
