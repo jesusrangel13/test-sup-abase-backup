@@ -62,7 +62,7 @@ jobs:
 
       - name: Reset DEV database
         if: env.BACKUP_ENABLED == 'true'
-        run: supabase db reset --db-url "$SUPABASE_BD_URL_DEV" --force
+        run: supabase db reset --db-url "$SUPABASE_BD_URL_DEV" --yes
       
       - name: Copy in DEV roles
         if: env.BACKUP_ENABLED == 'true'
