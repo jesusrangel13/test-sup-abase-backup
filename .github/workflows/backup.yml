@@ -47,16 +47,13 @@ jobs:
 
       # --- BACKUP ---
       - name: Backup Roles
-        run: supabase db dump --db-url "$SUPABASE_DB_URL" \
-              -f prisma/backups/prod/roles.sql --role-only
+        run: supabase db dump --db-url "$SUPABASE_DB_URL" -f prisma/backups/prod/roles.sql --role-only
 
       - name: Backup Schema
-        run: supabase db dump --db-url "$SUPABASE_DB_URL" \
-              -f prisma/backups/prod/schema.sql
+        run: supabase db dump --db-url "$SUPABASE_DB_URL" -f prisma/backups/prod/schema.sql
 
       - name: Backup Data
-        run: supabase db dump --db-url "$SUPABASE_DB_URL" \
-              -f prisma/backups/prod/data.sql --data-only --use-copy
+        run: supabase db dump --db-url "$SUPABASE_DB_URL" -f prisma/backups/prod/data.sql --data-only --use-copy
 
       # --- COMMIT ---
       - name: Commit backups to repo
