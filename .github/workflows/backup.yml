@@ -66,7 +66,7 @@ jobs:
 
       # --- RESET DEV ---
       - name: Debug DEV URL
-        run: echo "Resetting DEV database at: $SUPABASE_DB_URL_DEV"
+        run: echo "Resetting DEV database at:" '$SUPABASE_DB_URL_DEV'"
 
       - name: Reset DEV database
         run: supabase -y db reset --db-url "$SUPABASE_DB_URL_DEV"
