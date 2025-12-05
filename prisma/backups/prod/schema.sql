@@ -162,7 +162,9 @@ CREATE TABLE IF NOT EXISTS "public"."accounts" (
     "created_at" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     "updated_at" timestamp(3) without time zone NOT NULL,
     "is_archived" boolean DEFAULT false NOT NULL,
-    "include_in_total_balance" boolean DEFAULT true NOT NULL
+    "include_in_total_balance" boolean DEFAULT true NOT NULL,
+    "account_number" "text",
+    "color" "text"
 );
 
 
@@ -615,6 +617,10 @@ CREATE INDEX "expense_participants_user_id_idx" ON "public"."expense_participant
 
 
 
+CREATE INDEX "expense_participants_user_id_is_paid_idx" ON "public"."expense_participants" USING "btree" ("user_id", "is_paid");
+
+
+
 CREATE INDEX "group_member_split_defaults_group_id_idx" ON "public"."group_member_split_defaults" USING "btree" ("group_id");
 
 
@@ -679,6 +685,10 @@ CREATE INDEX "loans_borrower_user_id_idx" ON "public"."loans" USING "btree" ("bo
 
 
 
+CREATE INDEX "loans_user_id_loan_date_idx" ON "public"."loans" USING "btree" ("user_id", "loan_date");
+
+
+
 CREATE INDEX "loans_user_id_status_idx" ON "public"."loans" USING "btree" ("user_id", "status");
 
 
@@ -691,11 +701,19 @@ CREATE INDEX "notifications_user_id_is_read_idx" ON "public"."notifications" USI
 
 
 
+CREATE INDEX "payments_from_user_id_date_idx" ON "public"."payments" USING "btree" ("from_user_id", "date");
+
+
+
 CREATE INDEX "payments_from_user_id_idx" ON "public"."payments" USING "btree" ("from_user_id");
 
 
 
 CREATE INDEX "payments_group_id_idx" ON "public"."payments" USING "btree" ("group_id");
+
+
+
+CREATE INDEX "payments_to_user_id_date_idx" ON "public"."payments" USING "btree" ("to_user_id", "date");
 
 
 
@@ -707,7 +725,15 @@ CREATE INDEX "shared_expenses_category_id_idx" ON "public"."shared_expenses" USI
 
 
 
+CREATE INDEX "shared_expenses_group_id_date_idx" ON "public"."shared_expenses" USING "btree" ("group_id", "date");
+
+
+
 CREATE INDEX "shared_expenses_group_id_idx" ON "public"."shared_expenses" USING "btree" ("group_id");
+
+
+
+CREATE INDEX "shared_expenses_paid_by_user_id_date_idx" ON "public"."shared_expenses" USING "btree" ("paid_by_user_id", "date");
 
 
 
@@ -732,6 +758,10 @@ CREATE INDEX "transaction_tags_transaction_id_idx" ON "public"."transaction_tags
 
 
 CREATE UNIQUE INDEX "transaction_tags_transaction_id_tag_id_key" ON "public"."transaction_tags" USING "btree" ("transaction_id", "tag_id");
+
+
+
+CREATE INDEX "transactions_account_id_date_idx" ON "public"."transactions" USING "btree" ("account_id", "date");
 
 
 
@@ -767,7 +797,19 @@ CREATE INDEX "transactions_type_idx" ON "public"."transactions" USING "btree" ("
 
 
 
+CREATE INDEX "transactions_user_id_date_idx" ON "public"."transactions" USING "btree" ("user_id", "date");
+
+
+
 CREATE INDEX "transactions_user_id_idx" ON "public"."transactions" USING "btree" ("user_id");
+
+
+
+CREATE INDEX "transactions_user_id_payee_idx" ON "public"."transactions" USING "btree" ("user_id", "payee");
+
+
+
+CREATE INDEX "transactions_user_id_type_date_idx" ON "public"."transactions" USING "btree" ("user_id", "type", "date");
 
 
 
