@@ -465,7 +465,8 @@ CREATE TABLE IF NOT EXISTS "public"."users" (
     "is_verified" boolean DEFAULT false NOT NULL,
     "created_at" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     "updated_at" timestamp(3) without time zone NOT NULL,
-    "default_shared_expense_account_id" "text"
+    "default_shared_expense_account_id" "text",
+    "language" "text" DEFAULT 'es'::"text" NOT NULL
 );
 
 

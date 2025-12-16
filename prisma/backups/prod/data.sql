@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict qjl3sdEKY8cfqCiXdtzmzKW5zegpyG9aTckbKJvu4VcuH9AWgmzuTWEYME9KsLC
+-- \restrict eD8nhtwruWY6nwXI9oWjUOt3qkYlsZskJ8kz5mzbG85CRNscKweosBf2YP2px18
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -195,15 +195,15 @@ e1a50e36-a1b3-480d-a632-bdc4761e33cb	6885a550098e92e9d389263966ab6f0e792348ed9f8
 COPY "public"."accounts" ("id", "user_id", "name", "type", "balance", "currency", "is_default", "credit_limit", "billing_day", "created_at", "updated_at", "is_archived", "include_in_total_balance", "account_number", "color") FROM stdin;
 530b9e4b-d53a-440b-a713-51021e71436b	b88abd1d-92fe-4818-ba01-95681f09b96d	Cuenta de prueba	CASH	811760.00	CLP	t	\N	\N	2025-11-21 13:28:32.434	2025-11-25 13:01:45.91	f	t	\N	\N
 34d0aa36-bc91-4383-95fb-578fbbc09e04	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Corriente Santander	DEBIT	36000.00	CLP	f	\N	\N	2025-11-25 19:18:47.604	2025-12-09 14:02:57.269	f	t	\N	#ec0000
+0c046099-f7ff-4463-bf04-cdc01ecd9c09	346b32d1-b21f-4ce9-ac27-a69e67abb103	Lider BCI	CREDIT	806086.00	CLP	f	1000000.00	31	2025-11-18 16:40:18.575	2025-12-15 16:56:00.573	f	f	\N	#0053e2
 2db62b9a-1133-4a34-96bc-429d267a2a2a	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Rut	DEBIT	794.00	CLP	f	\N	\N	2025-11-25 19:21:05.154	2025-12-01 13:46:56.244	f	t	\N	#ff7900
 6bae5c5c-fa7d-429b-a27d-e5f13fe5025a	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Corriente Scotiabank	DEBIT	56043.00	CLP	f	\N	\N	2025-11-25 19:19:19.533	2025-12-04 18:44:11.56	f	t	\N	#EC111A
 2c6743e1-4096-45b1-9ebb-8b998cedda57	346b32d1-b21f-4ce9-ac27-a69e67abb103	Santander Cuotas	CREDIT	3000000.00	CLP	f	3000000.00	31	2025-11-25 18:33:19.275	2025-12-01 17:11:24.687	f	f	\N	\N
-0c046099-f7ff-4463-bf04-cdc01ecd9c09	346b32d1-b21f-4ce9-ac27-a69e67abb103	Lider BCI	CREDIT	818515.00	CLP	f	1000000.00	31	2025-11-18 16:40:18.575	2025-12-09 14:22:43.688	f	f	\N	#0053e2
 8388127f-3f9c-49d4-8b83-4cf9dcc9fbe0	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	Prueba	CASH	7211780.00	CLP	f	\N	\N	2025-11-21 13:27:41.406	2025-12-10 16:09:44.353	f	t	\N	\N
-646caf37-7684-45ac-87f3-cec83efb633d	346b32d1-b21f-4ce9-ac27-a69e67abb103	Santander VISA	CREDIT	7848812.00	CLP	f	8000000.00	31	2025-11-18 16:41:05.327	2025-12-12 14:05:11.757	f	f	000069640842	#7a7a7a
-2e64b401-5a2f-4492-87c9-a618e7ba6f33	346b32d1-b21f-4ce9-ac27-a69e67abb103	Santander AMEX	CREDIT	6847302.00	CLP	f	8000000.00	31	2025-11-18 16:40:45.67	2025-12-12 17:16:11.069	f	f	\N	\N
 d99144b6-5974-40e2-9f17-b36942774c9e	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta MercadoPago	DEBIT	9323947.00	CLP	f	\N	\N	2025-11-18 16:40:00.279	2025-12-14 18:12:38.645	f	t	\N	#ffe600
+646caf37-7684-45ac-87f3-cec83efb633d	346b32d1-b21f-4ce9-ac27-a69e67abb103	Santander VISA	CREDIT	7822672.00	CLP	f	8000000.00	31	2025-11-18 16:41:05.327	2025-12-15 16:42:21.127	f	f	000069640842	#7a7a7a
 3835a682-e360-443c-8946-98e86c744943	d8c5e32f-c64d-4437-b302-3a64d8f3f116	Cuenta de Prueba 	DEBIT	9917790.00	CLP	t	\N	\N	2025-11-13 16:44:14.609	2025-12-02 17:19:02.823	f	t	\N	\N
+2e64b401-5a2f-4492-87c9-a618e7ba6f33	346b32d1-b21f-4ce9-ac27-a69e67abb103	Santander AMEX	CREDIT	6819822.00	CLP	f	8000000.00	31	2025-11-18 16:40:45.67	2025-12-15 16:45:44.456	f	f	\N	\N
 af297afb-aa32-48f5-bee2-844713748199	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Itau	DEBIT	2265.00	CLP	f	\N	\N	2025-11-25 19:19:59.48	2025-11-25 19:19:59.48	f	t	\N	#FF6200
 \.
 
@@ -212,11 +212,11 @@ af297afb-aa32-48f5-bee2-844713748199	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta
 -- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY "public"."users" ("id", "email", "password_hash", "name", "avatar_url", "currency", "country", "is_verified", "created_at", "updated_at", "default_shared_expense_account_id") FROM stdin;
-346b32d1-b21f-4ce9-ac27-a69e67abb103	jesusrangel.255@gmail.com	$2b$10$5XD4EXU3I6EoKNYnr40uyOIuvgceKIZR2JbxeNsYdW.KyzWv.L4fK	Jesus Leon Rangel	\N	CLP	Chile	f	2025-11-13 15:47:41.58	2025-11-26 17:41:16.809	d99144b6-5974-40e2-9f17-b36942774c9e
-d8c5e32f-c64d-4437-b302-3a64d8f3f116	olguita.m8@gmail.com	$2b$10$m4eZRHBf8RzdCpuCIJVWa.7tsI7twVBtfXpDMDosQ/Fjbe0Jy0Am2	Olga Manyoma	\N	CLP	\N	f	2025-11-13 16:41:41.221	2025-12-01 13:51:25.831	3835a682-e360-443c-8946-98e86c744943
-f06079b2-c6a7-421a-8c5c-287dbb21e3ca	pedroperez@gmail.com	$2b$10$KcpPa9V/Gn/6EjBPGSIyUOUE6LjzbBMH5q/o.lj1mvGcOhvr6hmNS	Pedro Perez	\N	CLP	\N	f	2025-11-21 13:26:44.885	2025-12-10 16:10:19.934	8388127f-3f9c-49d4-8b83-4cf9dcc9fbe0
-b88abd1d-92fe-4818-ba01-95681f09b96d	juanperez@gmail.com	$2b$10$ENEWWpfqdTygexUfCX2FQ.XK5yZrYh1HoA.OZePnLRqGyZlouU8ee	Juan Perez	\N	CLP	Chile	f	2025-11-21 13:28:03.574	2025-12-10 16:13:11.425	530b9e4b-d53a-440b-a713-51021e71436b
+COPY "public"."users" ("id", "email", "password_hash", "name", "avatar_url", "currency", "country", "is_verified", "created_at", "updated_at", "default_shared_expense_account_id", "language") FROM stdin;
+346b32d1-b21f-4ce9-ac27-a69e67abb103	jesusrangel.255@gmail.com	$2b$10$5XD4EXU3I6EoKNYnr40uyOIuvgceKIZR2JbxeNsYdW.KyzWv.L4fK	Jesus Leon Rangel	\N	CLP	Chile	f	2025-11-13 15:47:41.58	2025-11-26 17:41:16.809	d99144b6-5974-40e2-9f17-b36942774c9e	es
+d8c5e32f-c64d-4437-b302-3a64d8f3f116	olguita.m8@gmail.com	$2b$10$m4eZRHBf8RzdCpuCIJVWa.7tsI7twVBtfXpDMDosQ/Fjbe0Jy0Am2	Olga Manyoma	\N	CLP	\N	f	2025-11-13 16:41:41.221	2025-12-01 13:51:25.831	3835a682-e360-443c-8946-98e86c744943	es
+f06079b2-c6a7-421a-8c5c-287dbb21e3ca	pedroperez@gmail.com	$2b$10$KcpPa9V/Gn/6EjBPGSIyUOUE6LjzbBMH5q/o.lj1mvGcOhvr6hmNS	Pedro Perez	\N	CLP	\N	f	2025-11-21 13:26:44.885	2025-12-10 16:10:19.934	8388127f-3f9c-49d4-8b83-4cf9dcc9fbe0	es
+b88abd1d-92fe-4818-ba01-95681f09b96d	juanperez@gmail.com	$2b$10$ENEWWpfqdTygexUfCX2FQ.XK5yZrYh1HoA.OZePnLRqGyZlouU8ee	Juan Perez	\N	CLP	Chile	f	2025-11-21 13:28:03.574	2025-12-10 16:13:11.425	530b9e4b-d53a-440b-a713-51021e71436b	es
 \.
 
 
@@ -441,6 +441,10 @@ dba127f1-4545-4f50-88e6-e65f262e1f58	529a7b84-0680-4735-8fcd-e76fdb185245	346b32
 f793c041-cb25-40b4-87bb-97b5c403bbf0	af91d65e-bed3-4edd-b6c5-cc8caf2c0736	b88abd1d-92fe-4818-ba01-95681f09b96d	100000.00	prueba	\N	2025-12-10 16:09:36.228	\N	EQUAL	2025-12-10 16:09:36.228	2025-12-10 16:09:36.228
 15658593-c707-4e38-a84b-a222b5509899	529a7b84-0680-4735-8fcd-e76fdb185245	346b32d1-b21f-4ce9-ac27-a69e67abb103	51990.00	Comida Dustin	\N	2025-12-12 17:13:46.299	\N	PERCENTAGE	2025-12-12 17:13:46.299	2025-12-12 17:13:46.299
 9b452557-46f2-4054-85c8-93a08371fbcf	529a7b84-0680-4735-8fcd-e76fdb185245	346b32d1-b21f-4ce9-ac27-a69e67abb103	21000.00	Baño a cleopatra	\N	2025-12-12 17:16:01.771	\N	PERCENTAGE	2025-12-12 17:16:01.771	2025-12-12 17:16:01.771
+95abca17-88fd-491d-993b-3cd08c6c5904	529a7b84-0680-4735-8fcd-e76fdb185245	346b32d1-b21f-4ce9-ac27-a69e67abb103	11600.00	Chucherias	\N	2025-12-15 16:44:07.471	\N	PERCENTAGE	2025-12-15 16:44:07.471	2025-12-15 16:44:07.471
+a7401b4b-f38d-475c-9260-94437dedb8a4	529a7b84-0680-4735-8fcd-e76fdb185245	346b32d1-b21f-4ce9-ac27-a69e67abb103	15880.00	Suscripción de Netflix	\N	2025-12-15 16:45:35.358	\N	PERCENTAGE	2025-12-15 16:45:35.358	2025-12-15 16:45:35.358
+760743c0-bdc5-4424-b0bc-7f7a2cf1d353	529a7b84-0680-4735-8fcd-e76fdb185245	346b32d1-b21f-4ce9-ac27-a69e67abb103	8239.00	1 kg pechuga deshuesada	\N	2025-12-15 16:51:19.413	\N	PERCENTAGE	2025-12-15 16:51:19.413	2025-12-15 16:51:19.413
+a3eba116-8c33-4228-b0be-7053a24cb357	529a7b84-0680-4735-8fcd-e76fdb185245	346b32d1-b21f-4ce9-ac27-a69e67abb103	4190.00	Compras varias en el lider	\N	2025-12-15 16:55:50.609	\N	PERCENTAGE	2025-12-15 16:55:50.609	2025-12-15 16:55:50.609
 \.
 
 
@@ -658,6 +662,14 @@ fef42058-505d-48b3-a623-288f724528fd	15658593-c707-4e38-a84b-a222b5509899	346b32
 c513e9e0-ee2f-4854-bee5-d78f0ff5c005	15658593-c707-4e38-a84b-a222b5509899	d8c5e32f-c64d-4437-b302-3a64d8f3f116	15597.00	\N	\N	f	\N	\N
 96ad303e-fbed-432c-89bd-244ac1147c82	9b452557-46f2-4054-85c8-93a08371fbcf	346b32d1-b21f-4ce9-ac27-a69e67abb103	14700.00	\N	\N	t	2025-12-12 17:16:01.77	14700.00
 a1d83bfe-77fd-4617-8eb5-7b8d22ec236e	9b452557-46f2-4054-85c8-93a08371fbcf	d8c5e32f-c64d-4437-b302-3a64d8f3f116	6300.00	\N	\N	f	\N	\N
+7d381c55-8f77-4fbc-a63d-b23f6309eae3	95abca17-88fd-491d-993b-3cd08c6c5904	346b32d1-b21f-4ce9-ac27-a69e67abb103	8120.00	\N	\N	t	2025-12-15 16:44:07.469	8120.00
+fec4ab63-5a34-49ea-8a49-26ed6c7c3666	95abca17-88fd-491d-993b-3cd08c6c5904	d8c5e32f-c64d-4437-b302-3a64d8f3f116	3480.00	\N	\N	f	\N	\N
+c60f5163-3baa-4038-9bc1-15f8b6fa05a4	a7401b4b-f38d-475c-9260-94437dedb8a4	346b32d1-b21f-4ce9-ac27-a69e67abb103	11116.00	\N	\N	t	2025-12-15 16:45:35.357	11116.00
+8d31b073-1b41-42a5-ad10-d0834352481a	a7401b4b-f38d-475c-9260-94437dedb8a4	d8c5e32f-c64d-4437-b302-3a64d8f3f116	4764.00	\N	\N	f	\N	\N
+7a71d7b3-21e2-4e19-b987-94376e48df3b	760743c0-bdc5-4424-b0bc-7f7a2cf1d353	346b32d1-b21f-4ce9-ac27-a69e67abb103	5767.30	\N	\N	t	2025-12-15 16:51:19.411	5767.30
+df9233ac-ef69-4744-bfa9-a390e5528101	760743c0-bdc5-4424-b0bc-7f7a2cf1d353	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2471.70	\N	\N	f	\N	\N
+e4798969-86b6-414c-9f66-4e5bec4df0e8	a3eba116-8c33-4228-b0be-7053a24cb357	346b32d1-b21f-4ce9-ac27-a69e67abb103	2933.00	\N	\N	t	2025-12-15 16:55:50.608	2933.00
+79eec360-b3a7-42dc-abb0-4cff146a3c20	a3eba116-8c33-4228-b0be-7053a24cb357	d8c5e32f-c64d-4437-b302-3a64d8f3f116	1257.00	\N	\N	f	\N	\N
 \.
 
 
@@ -884,6 +896,13 @@ bbc78d48-fd36-4722-ba4a-07e82ed35a07	346b32d1-b21f-4ce9-ac27-a69e67abb103	646caf
 c7c5e281-4193-44eb-a2a6-a9001e98cfa1	346b32d1-b21f-4ce9-ac27-a69e67abb103	2e64b401-5a2f-4492-87c9-a618e7ba6f33	EXPENSE	51990.00	737a303d-9b2e-43ad-bcb6-d3fb91fdc69f	Comida Dustin	2025-12-12 14:13:00	\N	Mascotas Vip	Jesus Leon Rangel	\N	15658593-c707-4e38-a84b-a222b5509899	2025-12-12 17:13:53.001	2025-12-12 17:13:53.001	\N
 9e3d8d5b-fe4e-47ed-9601-c014b7a2cd5c	346b32d1-b21f-4ce9-ac27-a69e67abb103	2e64b401-5a2f-4492-87c9-a618e7ba6f33	EXPENSE	21000.00	45fcff46-9ba3-4d70-8ecb-7b489e686089	Baño a cleopatra	2025-12-12 14:15:00	\N	Autolavado Donde Camilo	Jesus Leon Rangel	\N	9b452557-46f2-4054-85c8-93a08371fbcf	2025-12-12 17:16:08.62	2025-12-12 17:16:08.62	\N
 388bf7d8-1689-4672-a174-bce4ee4f7423	346b32d1-b21f-4ce9-ac27-a69e67abb103	d99144b6-5974-40e2-9f17-b36942774c9e	EXPENSE	800000.00	15839aaf-2716-48da-82ca-5e5d6ce8c20a	Préstamo a Katty Rangel	2025-12-14 00:00:00	\N	Katty Rangel	Jesus Leon Rangel	\N	\N	2025-12-14 18:12:37.557	2025-12-14 18:12:37.557	ba498be2-b8a8-419f-bf7b-8c8a71978dcc
+ed15c486-0a73-4100-96cc-4c6341a82b34	346b32d1-b21f-4ce9-ac27-a69e67abb103	646caf37-7684-45ac-87f3-cec83efb633d	EXPENSE	8150.00	0a665b38-c7d3-410e-83ee-16220d67afdb	Compras para la ida a la piscina	2025-12-15 13:37:00	\N	Oxxo	Jesus Leon Rangel	\N	\N	2025-12-15 16:37:29.747	2025-12-15 16:37:29.747	\N
+f6c19c2c-ae2d-45e3-b027-ea1130a11a92	346b32d1-b21f-4ce9-ac27-a69e67abb103	646caf37-7684-45ac-87f3-cec83efb633d	EXPENSE	3600.00	0a665b38-c7d3-410e-83ee-16220d67afdb	Compras necesarias para la piscina sal y otra cosa	2025-12-15 13:38:00	\N	Tienda de barrio	Jesus Leon Rangel	\N	\N	2025-12-15 16:39:02.988	2025-12-15 16:39:02.988	\N
+8953ac43-3e7b-47ee-aff8-3fc7169bfb66	346b32d1-b21f-4ce9-ac27-a69e67abb103	646caf37-7684-45ac-87f3-cec83efb633d	EXPENSE	14390.00	a9f9b431-7a73-4992-99f1-3db31d4422be	100% golfeados	2025-12-15 13:42:00	\N	Justo	Jesus Leon Rangel	\N	\N	2025-12-15 16:42:18.678	2025-12-15 16:42:18.678	\N
+708e2de2-8b5f-4aa9-8ffc-9437f77d4a25	346b32d1-b21f-4ce9-ac27-a69e67abb103	2e64b401-5a2f-4492-87c9-a618e7ba6f33	EXPENSE	11600.00	0a665b38-c7d3-410e-83ee-16220d67afdb	Chucherias	2025-12-12 13:43:00	\N	Belinda Market	Jesus Leon Rangel	\N	95abca17-88fd-491d-993b-3cd08c6c5904	2025-12-15 16:44:14.05	2025-12-15 16:44:14.05	\N
+d5d95bc9-6969-4853-9454-89118c2d59e9	346b32d1-b21f-4ce9-ac27-a69e67abb103	2e64b401-5a2f-4492-87c9-a618e7ba6f33	EXPENSE	15880.00	9db1fe37-0ec7-4467-9819-511256db4fe6	Suscripción de Netflix	2025-12-14 13:45:00	\N	Netflix	Jesus Leon Rangel	\N	a7401b4b-f38d-475c-9260-94437dedb8a4	2025-12-15 16:45:41.982	2025-12-15 16:45:41.982	\N
+fe9204a9-c0ce-4fe7-a7ae-a90d84e15d26	346b32d1-b21f-4ce9-ac27-a69e67abb103	0c046099-f7ff-4463-bf04-cdc01ecd9c09	EXPENSE	8239.00	9434cf28-3890-49dc-a731-c8fd873f932c	1 kg pechuga deshuesada	2025-12-12 13:50:00	\N	Carnes Alejandro	Jesus Leon Rangel	\N	760743c0-bdc5-4424-b0bc-7f7a2cf1d353	2025-12-15 16:51:25.709	2025-12-15 16:51:25.709	\N
+7c164e24-bd80-4633-ba09-5d1eb252b600	346b32d1-b21f-4ce9-ac27-a69e67abb103	0c046099-f7ff-4463-bf04-cdc01ecd9c09	EXPENSE	4190.00	a5f1f780-c452-464f-89c4-3246d4ccc87f	Compras varias en el lider	2025-12-12 13:55:00	\N	Lider Express	Jesus Leon Rangel	\N	a3eba116-8c33-4228-b0be-7053a24cb357	2025-12-15 16:55:58.06	2025-12-15 16:55:58.06	\N
 \.
 
 
@@ -1068,6 +1087,10 @@ a59f1135-817c-45d0-83cd-b1c11b4f0317	d8c5e32f-c64d-4437-b302-3a64d8f3f116	SHARED
 fc85982b-25d4-42f9-bda2-ca1fccd83580	b88abd1d-92fe-4818-ba01-95681f09b96d	SHARED_EXPENSE_CREATED	Nuevo gasto compartido	Juan Perez agregó un gasto de $100000 en Office	{"amount": 100000, "groupId": "af91d65e-bed3-4edd-b6c5-cc8caf2c0736", "expenseId": "f793c041-cb25-40b4-87bb-97b5c403bbf0", "description": "prueba"}	f	2025-12-10 16:09:38.869
 91ce7e67-28d8-44e2-b3e0-42b150ac2ed1	d8c5e32f-c64d-4437-b302-3a64d8f3f116	SHARED_EXPENSE_CREATED	Nuevo gasto compartido	Jesus Leon Rangel agregó un gasto de $51990 en Familia	{"amount": 51990, "groupId": "529a7b84-0680-4735-8fcd-e76fdb185245", "expenseId": "15658593-c707-4e38-a84b-a222b5509899", "description": "Comida Dustin"}	f	2025-12-12 17:13:48.911
 430e67f3-14d8-4882-8f72-ff85b4f33203	d8c5e32f-c64d-4437-b302-3a64d8f3f116	SHARED_EXPENSE_CREATED	Nuevo gasto compartido	Jesus Leon Rangel agregó un gasto de $21000 en Familia	{"amount": 21000, "groupId": "529a7b84-0680-4735-8fcd-e76fdb185245", "expenseId": "9b452557-46f2-4054-85c8-93a08371fbcf", "description": "Baño a cleopatra"}	f	2025-12-12 17:16:04.338
+f26862dc-6e4b-435b-bf49-86fe90b82bdc	d8c5e32f-c64d-4437-b302-3a64d8f3f116	SHARED_EXPENSE_CREATED	Nuevo gasto compartido	Jesus Leon Rangel agregó un gasto de $11600 en Familia	{"amount": 11600, "groupId": "529a7b84-0680-4735-8fcd-e76fdb185245", "expenseId": "95abca17-88fd-491d-993b-3cd08c6c5904", "description": "Chucherias"}	f	2025-12-15 16:44:10.12
+577d7150-f52c-4719-9852-4dd84a80a5ca	d8c5e32f-c64d-4437-b302-3a64d8f3f116	SHARED_EXPENSE_CREATED	Nuevo gasto compartido	Jesus Leon Rangel agregó un gasto de $15880 en Familia	{"amount": 15880, "groupId": "529a7b84-0680-4735-8fcd-e76fdb185245", "expenseId": "a7401b4b-f38d-475c-9260-94437dedb8a4", "description": "Suscripción de Netflix"}	f	2025-12-15 16:45:37.968
+49876368-4c78-417d-82a3-22353f3dfc54	d8c5e32f-c64d-4437-b302-3a64d8f3f116	SHARED_EXPENSE_CREATED	Nuevo gasto compartido	Jesus Leon Rangel agregó un gasto de $8239 en Familia	{"amount": 8239, "groupId": "529a7b84-0680-4735-8fcd-e76fdb185245", "expenseId": "760743c0-bdc5-4424-b0bc-7f7a2cf1d353", "description": "1 kg pechuga deshuesada"}	f	2025-12-15 16:51:22.105
+beded2c2-c095-4762-8972-5a0512eacdce	d8c5e32f-c64d-4437-b302-3a64d8f3f116	SHARED_EXPENSE_CREATED	Nuevo gasto compartido	Jesus Leon Rangel agregó un gasto de $4190 en Familia	{"amount": 4190, "groupId": "529a7b84-0680-4735-8fcd-e76fdb185245", "expenseId": "a3eba116-8c33-4228-b0be-7053a24cb357", "description": "Compras varias en el lider"}	f	2025-12-15 16:55:53.31
 \.
 
 
@@ -1282,6 +1305,13 @@ e713193e-3d36-48eb-a420-275ea20251c5	feb87db3-59ef-4cf3-b822-0600486efe07	e3e060
 86404bc7-83a2-4121-9761-ae6ca2155e28	bbc78d48-fd36-4722-ba4a-07e82ed35a07	679e1bf5-ab82-473d-aab4-bee383773cf9
 be48f96f-64c7-4d69-8c17-9dc029bb5aa2	c7c5e281-4193-44eb-a2a6-a9001e98cfa1	44b07ceb-7cd3-4e21-b787-2e088f329cca
 53aad941-ab72-4007-9fd6-4c068fa20954	9e3d8d5b-fe4e-47ed-9601-c014b7a2cd5c	c225574e-ce9a-4e23-96f9-860fd6c86051
+95c9a0e5-87a9-4c29-8d73-fd7344e22f32	ed15c486-0a73-4100-96cc-4c6341a82b34	2a10dfa4-fd61-49c3-98e1-81975560b222
+2948b52a-f413-4ead-b30d-84c43d6a1e9f	f6c19c2c-ae2d-45e3-b027-ea1130a11a92	2a10dfa4-fd61-49c3-98e1-81975560b222
+c9ff1366-f84b-43f1-8560-1769146a2b5e	8953ac43-3e7b-47ee-aff8-3fc7169bfb66	f800c628-19ef-4a37-8109-dc2fa17127c5
+cf0338f4-d957-4102-9f71-b500f27b74e2	708e2de2-8b5f-4aa9-8ffc-9437f77d4a25	311121a8-540b-4ff1-bb60-ed3be3d1ce17
+25e8b9c1-7b88-4c9a-a5aa-8e0df9202069	d5d95bc9-6969-4853-9454-89118c2d59e9	4687b1c3-fc46-4104-a4ba-167e28374d4c
+44815390-9fab-4062-8c1f-f1af505733c5	fe9204a9-c0ce-4fe7-a7ae-a90d84e15d26	051cdf66-73a4-4625-93f3-f311b608fd7f
+4b478276-1368-4ecc-b382-e5347afbfd43	7c164e24-bd80-4633-ba09-5d1eb252b600	d2e3b60e-b406-48b3-aa3d-2a09156765f4
 \.
 
 
@@ -1310,6 +1340,7 @@ a432fac5-4158-46f6-9ba1-cb2067174a2c	346b32d1-b21f-4ce9-ac27-a69e67abb103	\N	Com
 74dbaf4c-1b84-4c6b-9383-de2b59a86cca	346b32d1-b21f-4ce9-ac27-a69e67abb103	\N	Suscripciónes	🔔	#8338EC	t	t	2025-11-18 16:51:25.834	2025-12-09 14:27:38.644	EXPENSE	629fe010-c524-4a31-a7b0-efd7b64d9bbc
 5a45805d-2461-4e86-a227-7df30c4fd9ae	346b32d1-b21f-4ce9-ac27-a69e67abb103	\N	Suplementos	🏋	#F8B739	t	t	2025-12-02 16:24:12.56	2025-12-09 14:28:15.617	EXPENSE	dce2c10a-5549-4310-b672-0801111fa10e
 43ce1783-37f8-4f27-92a8-04c27a3f070a	346b32d1-b21f-4ce9-ac27-a69e67abb103	\N	TAG	🚧	#45B7D1	t	t	2025-11-18 18:24:31.669	2025-12-09 14:28:52.618	EXPENSE	88a43547-8d29-426d-b9eb-bf2bb38fe3e1
+9434cf28-3890-49dc-a731-c8fd873f932c	346b32d1-b21f-4ce9-ac27-a69e67abb103	\N	Carnes	🥩	#0EA5E9	t	t	2025-12-15 16:49:37.097	2025-12-15 16:49:37.097	EXPENSE	c0731c85-71c3-4cf6-bfc2-0a61cc363f2c
 \.
 
 
@@ -1321,7 +1352,7 @@ COPY "public"."user_dashboard_preferences" ("id", "user_id", "widgets", "layout"
 88647620-e715-453b-bef7-dd8995692515	d8c5e32f-c64d-4437-b302-3a64d8f3f116	[{"id": "widget-1", "type": "total-balance"}, {"id": "widget-2", "type": "monthly-income"}, {"id": "widget-3", "type": "monthly-expenses"}, {"id": "widget-4", "type": "groups"}, {"id": "widget-5", "type": "quick-actions"}, {"id": "widget-6", "type": "balances"}, {"id": "widget-7", "type": "cash-flow"}, {"id": "widget-8", "type": "expenses-by-category"}, {"id": "widget-9", "type": "balance-trend"}, {"id": "widget-10", "type": "group-balances"}, {"id": "widget-11", "type": "account-balances"}, {"id": "widget-12", "type": "recent-transactions"}]	[{"h": 1, "i": "widget-1", "w": 1, "x": 0, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-2", "w": 1, "x": 1, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-3", "w": 1, "x": 2, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-4", "w": 1, "x": 3, "y": 0, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-5", "w": 4, "x": 0, "y": 1, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-6", "w": 4, "x": 0, "y": 3, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-7", "w": 2, "x": 0, "y": 5, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-8", "w": 2, "x": 2, "y": 5, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-9", "w": 2, "x": 0, "y": 7, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-10", "w": 2, "x": 2, "y": 7, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-12", "w": 4, "x": 0, "y": 9, "minH": 1, "minW": 2}]	2025-11-13 16:41:43.26	2025-12-04 00:00:16.936
 625672c1-2a65-4f6d-9fb6-99f5ba4893ca	b88abd1d-92fe-4818-ba01-95681f09b96d	[{"id": "widget-1", "type": "total-balance"}, {"id": "widget-2", "type": "monthly-income"}, {"id": "widget-3", "type": "monthly-expenses"}, {"id": "widget-4", "type": "groups"}, {"id": "widget-5", "type": "quick-actions"}, {"id": "widget-6", "type": "balances"}, {"id": "widget-7", "type": "cash-flow"}, {"id": "widget-8", "type": "expenses-by-category"}, {"id": "widget-9", "type": "balance-trend"}, {"id": "widget-10", "type": "group-balances"}, {"id": "widget-11", "type": "account-balances"}, {"id": "widget-12", "type": "recent-transactions"}]	[{"h": 2, "i": "widget-1", "w": 1, "x": 0, "y": 0, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-2", "w": 1, "x": 1, "y": 0, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-3", "w": 1, "x": 2, "y": 0, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-4", "w": 1, "x": 3, "y": 0, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-5", "w": 4, "x": 0, "y": 2, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-6", "w": 4, "x": 0, "y": 4, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-7", "w": 2, "x": 0, "y": 6, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-8", "w": 2, "x": 2, "y": 6, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-9", "w": 2, "x": 0, "y": 8, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-10", "w": 2, "x": 2, "y": 8, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-12", "w": 4, "x": 0, "y": 10, "minH": 1, "minW": 2}]	2025-11-21 13:28:08.663	2025-12-10 16:12:59.378
 0182cccb-9a10-4e0f-acef-3f1b084c1f16	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	[{"id": "widget-1", "type": "total-balance"}, {"id": "widget-2", "type": "monthly-income"}, {"id": "widget-3", "type": "monthly-expenses"}, {"id": "widget-4", "type": "groups"}, {"id": "widget-5", "type": "quick-actions"}, {"id": "widget-6", "type": "balances"}, {"id": "widget-7", "type": "cash-flow"}, {"id": "widget-8", "type": "expenses-by-category"}, {"id": "widget-9", "type": "balance-trend"}, {"id": "widget-10", "type": "group-balances"}, {"id": "widget-11", "type": "account-balances"}, {"id": "widget-12", "type": "recent-transactions"}]	[{"h": 1, "i": "widget-1", "w": 1, "x": 0, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-2", "w": 1, "x": 1, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-3", "w": 1, "x": 2, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-4", "w": 1, "x": 3, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-5", "w": 4, "x": 0, "y": 1, "minH": 1, "minW": 2}, {"h": 3, "i": "widget-6", "w": 4, "x": 0, "y": 2, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-7", "w": 2, "x": 0, "y": 5, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-8", "w": 2, "x": 2, "y": 5, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-9", "w": 2, "x": 0, "y": 7, "minH": 1, "minW": 2}, {"h": 1, "i": "widget-10", "w": 2, "x": 2, "y": 7, "minH": 1, "minW": 2}, {"h": 3, "i": "widget-12", "w": 2, "x": 0, "y": 9, "minH": 1, "minW": 2}]	2025-11-21 13:26:50.465	2025-12-10 16:13:33.895
-305eb0c9-02bf-467a-a36f-d3a331ad9607	346b32d1-b21f-4ce9-ac27-a69e67abb103	[{"id": "widget-1", "type": "total-balance"}, {"id": "widget-2", "type": "monthly-income"}, {"id": "widget-3", "type": "monthly-expenses"}, {"id": "widget-7", "type": "cash-flow"}, {"id": "widget-9", "type": "balance-trend"}, {"id": "widget-11", "type": "account-balances"}, {"id": "widget-12", "type": "recent-transactions"}, {"id": "widget-1763575423316-yxrqyg2uk", "type": "expenses-by-parent-category", "settings": {}}, {"id": "widget-1763575444506-tamh8hgq8", "type": "expense-details-pie", "settings": {}}, {"id": "widget-1763659024518-btdbfj5b4", "type": "personal-expenses", "settings": {}}, {"id": "widget-1763659046596-nfgbroz3w", "type": "shared-expenses", "settings": {}}, {"id": "widget-1763659066607-lsil57dug", "type": "savings", "settings": {}}, {"id": "widget-1763665253130-8wd45uwmx", "type": "balances", "settings": {}}]	[{"h": 1, "i": "widget-1", "w": 1, "x": 0, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-2", "w": 1, "x": 1, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-3", "w": 1, "x": 2, "y": 0, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-7", "w": 2, "x": 0, "y": 2, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-9", "w": 2, "x": 0, "y": 4, "minH": 1, "minW": 2}, {"h": 3, "i": "widget-12", "w": 2, "x": 0, "y": 6, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-1763575423316-yxrqyg2uk", "w": 2, "x": 2, "y": 4, "minH": 1, "minW": 1}, {"h": 3, "i": "widget-1763575444506-tamh8hgq8", "w": 2, "x": 2, "y": 6, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-1763659024518-btdbfj5b4", "w": 1, "x": 1, "y": 1, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-1763659046596-nfgbroz3w", "w": 1, "x": 0, "y": 1, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-1763659066607-lsil57dug", "w": 1, "x": 3, "y": 0, "minH": 1, "minW": 1}, {"h": 3, "i": "widget-1763665253130-8wd45uwmx", "w": 2, "x": 2, "y": 1, "minH": 1, "minW": 1}]	2025-11-13 15:47:47.064	2025-12-14 18:12:50.013
+305eb0c9-02bf-467a-a36f-d3a331ad9607	346b32d1-b21f-4ce9-ac27-a69e67abb103	[{"id": "widget-1", "type": "total-balance"}, {"id": "widget-2", "type": "monthly-income"}, {"id": "widget-3", "type": "monthly-expenses"}, {"id": "widget-7", "type": "cash-flow"}, {"id": "widget-9", "type": "balance-trend"}, {"id": "widget-11", "type": "account-balances"}, {"id": "widget-12", "type": "recent-transactions"}, {"id": "widget-1763575423316-yxrqyg2uk", "type": "expenses-by-parent-category", "settings": {}}, {"id": "widget-1763575444506-tamh8hgq8", "type": "expense-details-pie", "settings": {}}, {"id": "widget-1763659024518-btdbfj5b4", "type": "personal-expenses", "settings": {}}, {"id": "widget-1763659046596-nfgbroz3w", "type": "shared-expenses", "settings": {}}, {"id": "widget-1763659066607-lsil57dug", "type": "savings", "settings": {}}, {"id": "widget-1763665253130-8wd45uwmx", "type": "balances", "settings": {}}]	[{"h": 1, "i": "widget-1", "w": 1, "x": 0, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-2", "w": 1, "x": 1, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-3", "w": 1, "x": 2, "y": 0, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-7", "w": 2, "x": 0, "y": 2, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-9", "w": 2, "x": 0, "y": 4, "minH": 1, "minW": 2}, {"h": 3, "i": "widget-12", "w": 2, "x": 0, "y": 6, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-1763575423316-yxrqyg2uk", "w": 2, "x": 0, "y": 9, "minH": 1, "minW": 1}, {"h": 3, "i": "widget-1763575444506-tamh8hgq8", "w": 2, "x": 2, "y": 4, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-1763659024518-btdbfj5b4", "w": 1, "x": 1, "y": 1, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-1763659046596-nfgbroz3w", "w": 1, "x": 0, "y": 1, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-1763659066607-lsil57dug", "w": 1, "x": 3, "y": 0, "minH": 1, "minW": 1}, {"h": 3, "i": "widget-1763665253130-8wd45uwmx", "w": 2, "x": 2, "y": 1, "minH": 1, "minW": 1}]	2025-11-13 15:47:47.064	2025-12-15 16:56:23.586
 \.
 
 
@@ -1401,6 +1432,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict qjl3sdEKY8cfqCiXdtzmzKW5zegpyG9aTckbKJvu4VcuH9AWgmzuTWEYME9KsLC
+-- \unrestrict eD8nhtwruWY6nwXI9oWjUOt3qkYlsZskJ8kz5mzbG85CRNscKweosBf2YP2px18
 
 RESET ALL;
