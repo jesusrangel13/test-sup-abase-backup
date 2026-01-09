@@ -330,6 +330,25 @@ CREATE TABLE IF NOT EXISTS "public"."loans" (
 ALTER TABLE "public"."loans" OWNER TO "postgres";
 
 
+CREATE TABLE IF NOT EXISTS "public"."monthly_summaries" (
+    "id" "text" NOT NULL,
+    "user_id" "text" NOT NULL,
+    "month" integer NOT NULL,
+    "year" integer NOT NULL,
+    "message" "text",
+    "income" numeric(15,2) DEFAULT 0 NOT NULL,
+    "expense" numeric(15,2) DEFAULT 0 NOT NULL,
+    "personal_expense" numeric(15,2) DEFAULT 0 NOT NULL,
+    "shared_expense" numeric(15,2) DEFAULT 0 NOT NULL,
+    "savings" numeric(15,2) DEFAULT 0 NOT NULL,
+    "created_at" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updated_at" timestamp(3) without time zone NOT NULL
+);
+
+
+ALTER TABLE "public"."monthly_summaries" OWNER TO "postgres";
+
+
 CREATE TABLE IF NOT EXISTS "public"."notifications" (
     "id" "text" NOT NULL,
     "user_id" "text" NOT NULL,
@@ -454,6 +473,22 @@ CREATE TABLE IF NOT EXISTS "public"."user_dashboard_preferences" (
 ALTER TABLE "public"."user_dashboard_preferences" OWNER TO "postgres";
 
 
+CREATE TABLE IF NOT EXISTS "public"."user_transaction_patterns" (
+    "id" "text" NOT NULL,
+    "user_id" "text" NOT NULL,
+    "pattern" "text" NOT NULL,
+    "resolved_category_id" "text",
+    "resolved_merchant" "text",
+    "confidence" double precision DEFAULT 1.0 NOT NULL,
+    "use_count" integer DEFAULT 1 NOT NULL,
+    "created_at" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updated_at" timestamp(3) without time zone NOT NULL
+);
+
+
+ALTER TABLE "public"."user_transaction_patterns" OWNER TO "postgres";
+
+
 CREATE TABLE IF NOT EXISTS "public"."users" (
     "id" "text" NOT NULL,
     "email" "text" NOT NULL,
@@ -533,6 +568,11 @@ ALTER TABLE ONLY "public"."loans"
 
 
 
+ALTER TABLE ONLY "public"."monthly_summaries"
+    ADD CONSTRAINT "monthly_summaries_pkey" PRIMARY KEY ("id");
+
+
+
 ALTER TABLE ONLY "public"."notifications"
     ADD CONSTRAINT "notifications_pkey" PRIMARY KEY ("id");
 
@@ -570,6 +610,11 @@ ALTER TABLE ONLY "public"."user_category_overrides"
 
 ALTER TABLE ONLY "public"."user_dashboard_preferences"
     ADD CONSTRAINT "user_dashboard_preferences_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."user_transaction_patterns"
+    ADD CONSTRAINT "user_transaction_patterns_pkey" PRIMARY KEY ("id");
 
 
 
@@ -691,6 +736,14 @@ CREATE INDEX "loans_user_id_loan_date_idx" ON "public"."loans" USING "btree" ("u
 
 
 CREATE INDEX "loans_user_id_status_idx" ON "public"."loans" USING "btree" ("user_id", "status");
+
+
+
+CREATE INDEX "monthly_summaries_user_id_idx" ON "public"."monthly_summaries" USING "btree" ("user_id");
+
+
+
+CREATE UNIQUE INDEX "monthly_summaries_user_id_month_year_key" ON "public"."monthly_summaries" USING "btree" ("user_id", "month", "year");
 
 
 
@@ -846,6 +899,14 @@ CREATE UNIQUE INDEX "user_dashboard_preferences_user_id_key" ON "public"."user_d
 
 
 
+CREATE INDEX "user_transaction_patterns_user_id_idx" ON "public"."user_transaction_patterns" USING "btree" ("user_id");
+
+
+
+CREATE UNIQUE INDEX "user_transaction_patterns_user_id_pattern_key" ON "public"."user_transaction_patterns" USING "btree" ("user_id", "pattern");
+
+
+
 CREATE UNIQUE INDEX "users_email_key" ON "public"."users" USING "btree" ("email");
 
 
@@ -940,6 +1001,11 @@ ALTER TABLE ONLY "public"."loans"
 
 
 
+ALTER TABLE ONLY "public"."monthly_summaries"
+    ADD CONSTRAINT "monthly_summaries_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."users"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
 ALTER TABLE ONLY "public"."notifications"
     ADD CONSTRAINT "notifications_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."users"("id") ON UPDATE CASCADE ON DELETE CASCADE;
 
@@ -1027,6 +1093,11 @@ ALTER TABLE ONLY "public"."user_category_overrides"
 
 ALTER TABLE ONLY "public"."user_dashboard_preferences"
     ADD CONSTRAINT "user_dashboard_preferences_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."users"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."user_transaction_patterns"
+    ADD CONSTRAINT "user_transaction_patterns_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."users"("id") ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 
@@ -1284,6 +1355,12 @@ GRANT ALL ON TABLE "public"."loans" TO "service_role";
 
 
 
+GRANT ALL ON TABLE "public"."monthly_summaries" TO "anon";
+GRANT ALL ON TABLE "public"."monthly_summaries" TO "authenticated";
+GRANT ALL ON TABLE "public"."monthly_summaries" TO "service_role";
+
+
+
 GRANT ALL ON TABLE "public"."notifications" TO "anon";
 GRANT ALL ON TABLE "public"."notifications" TO "authenticated";
 GRANT ALL ON TABLE "public"."notifications" TO "service_role";
@@ -1329,6 +1406,12 @@ GRANT ALL ON TABLE "public"."user_category_overrides" TO "service_role";
 GRANT ALL ON TABLE "public"."user_dashboard_preferences" TO "anon";
 GRANT ALL ON TABLE "public"."user_dashboard_preferences" TO "authenticated";
 GRANT ALL ON TABLE "public"."user_dashboard_preferences" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."user_transaction_patterns" TO "anon";
+GRANT ALL ON TABLE "public"."user_transaction_patterns" TO "authenticated";
+GRANT ALL ON TABLE "public"."user_transaction_patterns" TO "service_role";
 
 
 
