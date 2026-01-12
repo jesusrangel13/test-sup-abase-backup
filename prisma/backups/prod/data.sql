@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict VoWn7kCCtXhzBSLKPVGYtX0E5vYTaiZcows0NLRMpaCkSXTKRM5d4a8htWcQY3v
+-- \restrict 2XkfOwN9sNRGvJMcBwL82THlx4ck6LE1FSnHLmyNGkAvUrod0cMT04bpvKgODId
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -1139,7 +1139,7 @@ a7b0b00c-8839-404d-a9a3-91d7f5bc3ee8	346b32d1-b21f-4ce9-ac27-a69e67abb103	d99144
 baf00ed1-1773-4c2b-a20a-36764c6519ba	346b32d1-b21f-4ce9-ac27-a69e67abb103	646caf37-7684-45ac-87f3-cec83efb633d	EXPENSE	2690.00	74dbaf4c-1b84-4c6b-9383-de2b59a86cca	Suscripcion antigravity	2026-01-07 15:39:00	\N	Google	Jesus Leon Rangel	\N	\N	2026-01-08 18:41:23.341	2026-01-08 18:41:23.341	\N
 27c4310c-36f7-4e3e-a949-1fed5afe6065	d8c5e32f-c64d-4437-b302-3a64d8f3f116	3835a682-e360-443c-8946-98e86c744943	EXPENSE	30594.00	dea5305f-e7c8-42c6-aaeb-063da516d4b5	Agua de tomar de la casa	2026-01-02 15:45:00	\N	Maihue	Olga Manyoma	\N	18480e40-9d7a-4b0e-9cd0-871afa6d8dbe	2026-01-08 18:45:59.364	2026-01-08 18:45:59.364	\N
 02c70b65-deb5-45cf-9b8d-4bdb2869fca0	346b32d1-b21f-4ce9-ac27-a69e67abb103	d99144b6-5974-40e2-9f17-b36942774c9e	EXPENSE	26897.00	9edabfb2-51b8-41c8-aada-2ae5716f4ee9	Otros	2026-01-05 15:48:00	\N	Otros	Jesus Leon Rangel	\N	\N	2026-01-08 18:49:16.091	2026-01-08 18:49:16.091	\N
-d14ce83f-be73-4f44-b7cb-d28b1ca7d6d7	346b32d1-b21f-4ce9-ac27-a69e67abb103	646caf37-7684-45ac-87f3-cec83efb633d	EXPENSE	22037.00	a9f9b431-7a73-4992-99f1-3db31d4422be	Arroz chino	2026-01-09 00:00:00	\N	Chen Santiago	Jesus Leon Rangel	\N	\N	2026-01-09 19:00:02.844	2026-01-09 19:00:02.844	\N
+d14ce83f-be73-4f44-b7cb-d28b1ca7d6d7	346b32d1-b21f-4ce9-ac27-a69e67abb103	646caf37-7684-45ac-87f3-cec83efb633d	EXPENSE	22037.00	36aa155c-8121-41e7-b2b1-a399d6e6cb94	Arroz chino	2026-01-09 00:00:00	\N	Chen Santiago	Jesus Leon Rangel	\N	\N	2026-01-09 19:00:02.844	2026-01-09 19:00:02.844	\N
 \.
 
 
@@ -1891,6 +1891,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict VoWn7kCCtXhzBSLKPVGYtX0E5vYTaiZcows0NLRMpaCkSXTKRM5d4a8htWcQY3v
+-- \unrestrict 2XkfOwN9sNRGvJMcBwL82THlx4ck6LE1FSnHLmyNGkAvUrod0cMT04bpvKgODId
 
 RESET ALL;
