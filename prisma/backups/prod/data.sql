@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict dO78LfeBHB28WnGRcMoDenF0k1OyrJMjzCyKldJzhX6EroMI0X1dIzymrsy2QJg
+-- \restrict sVa6VibzO8o3Y9E1ksvGicIRThsifOfRoLUgmBnvPNW9LZ1fu9dPlG3qs0VRi3q
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -194,10 +194,11 @@ e1a50e36-a1b3-480d-a632-bdc4761e33cb	6885a550098e92e9d389263966ab6f0e792348ed9f8
 
 COPY "public"."accounts" ("id", "user_id", "name", "type", "balance", "currency", "is_default", "credit_limit", "billing_day", "created_at", "updated_at", "is_archived", "include_in_total_balance", "account_number", "color") FROM stdin;
 530b9e4b-d53a-440b-a713-51021e71436b	b88abd1d-92fe-4818-ba01-95681f09b96d	Cuenta de prueba	CASH	811760.00	CLP	t	\N	\N	2025-11-21 13:28:32.434	2025-11-25 13:01:45.91	f	t	\N	\N
-d99144b6-5974-40e2-9f17-b36942774c9e	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta MercadoPago	DEBIT	8142735.60	CLP	f	\N	\N	2025-11-18 16:40:00.279	2026-02-02 14:09:40.44	f	t	\N	#ffe600
 3835a682-e360-443c-8946-98e86c744943	d8c5e32f-c64d-4437-b302-3a64d8f3f116	Cuenta de Prueba 	DEBIT	8438337.40	CLP	t	\N	\N	2025-11-13 16:44:14.609	2026-02-02 14:09:40.451	f	t	\N	\N
-6bae5c5c-fa7d-429b-a27d-e5f13fe5025a	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Corriente Scotiabank	DEBIT	3534053.00	CLP	f	\N	\N	2025-11-25 19:19:19.533	2026-02-02 14:54:57.259	f	t	\N	#EC111A
 2e64b401-5a2f-4492-87c9-a618e7ba6f33	346b32d1-b21f-4ce9-ac27-a69e67abb103	Santander AMEX	CREDIT	7168781.00	CLP	f	8000000.00	31	2025-11-18 16:40:45.67	2026-02-02 14:56:20.272	f	f	\N	\N
+2e81ac2a-73dd-4f0f-8239-8b48e64581a2	346b32d1-b21f-4ce9-ac27-a69e67abb103	Efectivo	CASH	10000.00	CLP	t	\N	\N	2026-02-03 20:21:40.218	2026-02-03 20:21:40.218	f	t	\N	#3b82f6
+6bae5c5c-fa7d-429b-a27d-e5f13fe5025a	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Corriente Scotiabank	DEBIT	28224.00	CLP	f	\N	\N	2025-11-25 19:19:19.533	2026-02-03 21:33:05.92	f	t	\N	#EC111A
+d99144b6-5974-40e2-9f17-b36942774c9e	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta MercadoPago	DEBIT	11142735.60	CLP	f	\N	\N	2025-11-18 16:40:00.279	2026-02-03 21:33:06.283	f	t	\N	#ffe600
 34d0aa36-bc91-4383-95fb-578fbbc09e04	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Corriente Santander	DEBIT	29125.00	CLP	f	\N	\N	2025-11-25 19:18:47.604	2026-02-02 12:59:18.461	f	t	\N	#ec0000
 0c046099-f7ff-4463-bf04-cdc01ecd9c09	346b32d1-b21f-4ce9-ac27-a69e67abb103	Lider BCI	CREDIT	1000000.00	CLP	f	1000000.00	31	2025-11-18 16:40:18.575	2026-02-02 13:44:57.615	f	f	\N	#0053e2
 8388127f-3f9c-49d4-8b83-4cf9dcc9fbe0	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	Prueba	CASH	7211780.00	CLP	f	\N	\N	2025-11-21 13:27:41.406	2025-12-10 16:09:44.353	f	t	\N	\N
@@ -216,7 +217,7 @@ COPY "public"."users" ("id", "email", "password_hash", "name", "avatar_url", "cu
 d8c5e32f-c64d-4437-b302-3a64d8f3f116	olguita.m8@gmail.com	$2b$10$m4eZRHBf8RzdCpuCIJVWa.7tsI7twVBtfXpDMDosQ/Fjbe0Jy0Am2	Olga Manyoma	\N	CLP	\N	f	2025-11-13 16:41:41.221	2025-12-01 13:51:25.831	3835a682-e360-443c-8946-98e86c744943	es
 f06079b2-c6a7-421a-8c5c-287dbb21e3ca	pedroperez@gmail.com	$2b$10$KcpPa9V/Gn/6EjBPGSIyUOUE6LjzbBMH5q/o.lj1mvGcOhvr6hmNS	Pedro Perez	\N	CLP	\N	f	2025-11-21 13:26:44.885	2025-12-10 16:10:19.934	8388127f-3f9c-49d4-8b83-4cf9dcc9fbe0	es
 b88abd1d-92fe-4818-ba01-95681f09b96d	juanperez@gmail.com	$2b$10$ENEWWpfqdTygexUfCX2FQ.XK5yZrYh1HoA.OZePnLRqGyZlouU8ee	Juan Perez	\N	CLP	Chile	f	2025-11-21 13:28:03.574	2025-12-10 16:13:11.425	530b9e4b-d53a-440b-a713-51021e71436b	es
-346b32d1-b21f-4ce9-ac27-a69e67abb103	jesusrangel.255@gmail.com	$2b$10$5XD4EXU3I6EoKNYnr40uyOIuvgceKIZR2JbxeNsYdW.KyzWv.L4fK	Jesus Leon Rangel	\N	CLP	Chile	f	2025-11-13 15:47:41.58	2025-12-19 13:22:52.814	d99144b6-5974-40e2-9f17-b36942774c9e	es
+346b32d1-b21f-4ce9-ac27-a69e67abb103	jesusrangel.255@gmail.com	$2b$10$5XD4EXU3I6EoKNYnr40uyOIuvgceKIZR2JbxeNsYdW.KyzWv.L4fK	Jesus Leon Rangel	\N	CLP	Chile	f	2025-11-13 15:47:41.58	2026-02-03 20:21:47.132	d99144b6-5974-40e2-9f17-b36942774c9e	es
 \.
 
 
@@ -1134,6 +1135,7 @@ abf952a1-3ca3-4b47-b4f5-b1d9d1df7cdd	346b32d1-b21f-4ce9-ac27-a69e67abb103	646caf
 14eeb316-84d5-4fe7-9b93-a43aa01d6032	346b32d1-b21f-4ce9-ac27-a69e67abb103	6bae5c5c-fa7d-429b-a27d-e5f13fe5025a	EXPENSE	150000.00	5ec041fc-8c57-4f46-a1e9-80ffc95bf107	DCA Crypto	2025-12-01 12:48:00		OrionX	Jesus Leon Rangel	\N	\N	2025-12-01 15:48:55.028	2026-01-15 14:49:38.219	\N
 79d8f1b0-2ebb-4110-aad1-0bbf8806f976	346b32d1-b21f-4ce9-ac27-a69e67abb103	6bae5c5c-fa7d-429b-a27d-e5f13fe5025a	EXPENSE	153179.00	90936b66-3ec7-4ebd-bf87-c5f030e12fce	DCA Sp500 Diciembre	2025-12-01 12:45:00		Hapi Broker	Jesus Leon Rangel	\N	\N	2025-12-01 15:45:43.027	2026-01-15 15:00:18.68	\N
 e9833056-ee2d-4e53-a074-5905c82c2d40	346b32d1-b21f-4ce9-ac27-a69e67abb103	d99144b6-5974-40e2-9f17-b36942774c9e	INCOME	45000.00	f0e55f8d-fd9a-4745-9f26-54c75614fc3c	Pago de Entradas Hablando Huevadas y Uber	2025-12-01 16:55:00		Jose Alberto	Jesus Leon Rangel	\N	\N	2025-12-01 19:55:33.338	2026-01-15 15:06:20.198	\N
+c1de47b4-7247-4b41-b403-ef23a2d54448	346b32d1-b21f-4ce9-ac27-a69e67abb103	6bae5c5c-fa7d-429b-a27d-e5f13fe5025a	EXPENSE	151645.00	90936b66-3ec7-4ebd-bf87-c5f030e12fce	170 USD SP500	2026-02-03 15:28:00	\N	Hapi	Jesus Leon Rangel	\N	\N	2026-02-03 18:28:45.116	2026-02-03 18:28:45.116	\N
 dbfd7f45-a12e-4ff3-83dd-def16525d4c2	346b32d1-b21f-4ce9-ac27-a69e67abb103	34d0aa36-bc91-4383-95fb-578fbbc09e04	EXPENSE	2208.00	a432fac5-4158-46f6-9ba1-cb2067174a2c	Seguro de Fraude PAC	2025-12-09 10:43:00	\N	Banco Santander	Jesus Leon Rangel	\N	\N	2025-12-09 13:44:18.471	2025-12-09 13:44:18.471	\N
 bcc54d0c-6958-49b6-a1f9-df8a6ae8261f	346b32d1-b21f-4ce9-ac27-a69e67abb103	34d0aa36-bc91-4383-95fb-578fbbc09e04	EXPENSE	5000.00	27fccd39-52ef-4715-821b-ab85fa57f46f	Pimentones y achiote en la vega	2025-12-07 10:44:00	\N	La Vega	Jesus Leon Rangel	\N	f09eee37-2f7a-49a8-a13f-02011e30886e	2025-12-09 13:45:35.65	2025-12-09 13:45:35.65	\N
 cbeeb003-6e2b-4358-92c4-a7351cb1862e	346b32d1-b21f-4ce9-ac27-a69e67abb103	0c046099-f7ff-4463-bf04-cdc01ecd9c09	EXPENSE	3200.00	383b06d7-97c5-46fa-92e1-c0ba555cd879	Estacionamiento en la vega	2025-12-07 11:12:00	\N	Estacionamiento La Vega	Jesus Leon Rangel	\N	b1aaab99-34e0-4093-92f2-3a3e0371cf7e	2025-12-09 14:12:52.619	2026-01-14 12:32:34.411	\N
@@ -1290,6 +1292,7 @@ b99cef78-0c0b-4090-8681-e8f473c462b2	346b32d1-b21f-4ce9-ac27-a69e67abb103	d99144
 a63d23c2-f707-4ac9-acd2-8ffdac92f6fb	346b32d1-b21f-4ce9-ac27-a69e67abb103	d99144b6-5974-40e2-9f17-b36942774c9e	TRANSFER	1805146.00	2a12ab4d-7fa0-4152-a026-58472dd91dcb	Pago tarjeta Amex	2026-02-02 10:49:00	\N	\N	Jesus Leon Rangel	2e64b401-5a2f-4492-87c9-a618e7ba6f33	\N	2026-02-02 13:49:51.345	2026-02-02 13:49:51.345	\N
 deafa2e0-eafc-4e6e-b40d-631f31c55adc	d8c5e32f-c64d-4437-b302-3a64d8f3f116	3835a682-e360-443c-8946-98e86c744943	EXPENSE	635640.30	875e0568-af0e-4014-9ef0-49f509961b3a	Pago de balance compartido a Jesus Leon Rangel.	2026-02-02 14:09:37.402	\N	\N	Olga Manyoma	\N	61679660-f958-4fef-947a-14f3296364cd	2026-02-02 14:09:39.003	2026-02-02 14:09:39.003	\N
 e67fca46-2b1e-47aa-b03c-5674cbb7c309	346b32d1-b21f-4ce9-ac27-a69e67abb103	2e64b401-5a2f-4492-87c9-a618e7ba6f33	EXPENSE	831219.00	d1f5a24f-e46e-4a39-8ddb-8815439adbc4	Cuota 73/360	2026-02-02 11:14:00	\N	Banco Scotiabank	Jesus Leon Rangel	\N	04d252c2-5e40-4c7f-8ce2-8d51eb4d3ee4	2026-02-02 14:14:52.173	2026-02-02 14:56:25.536	\N
+7e55a807-ca77-4bf5-9b89-8c75c84c4d4d	346b32d1-b21f-4ce9-ac27-a69e67abb103	6bae5c5c-fa7d-429b-a27d-e5f13fe5025a	EXPENSE	204184.00	90936b66-3ec7-4ebd-bf87-c5f030e12fce	230 USD, SCHD 	2026-02-03 15:29:00	\N	Hapi	Jesus Leon Rangel	\N	\N	2026-02-03 18:29:42.259	2026-02-03 18:29:42.259	\N
 b0d0692e-ea37-4b93-bc3d-dc50d711b62a	346b32d1-b21f-4ce9-ac27-a69e67abb103	d99144b6-5974-40e2-9f17-b36942774c9e	EXPENSE	13672.00	74dbaf4c-1b84-4c6b-9383-de2b59a86cca	SetApp suscripción	2025-12-27 11:36:00	\N	SetApp	Jesus Leon Rangel	\N	\N	2026-01-05 14:36:31.663	2026-01-05 14:36:31.663	\N
 c0d77d1a-28bd-464e-83c4-e120391300a4	346b32d1-b21f-4ce9-ac27-a69e67abb103	0c046099-f7ff-4463-bf04-cdc01ecd9c09	EXPENSE	6170.00	93c6b1a6-c7d6-45fe-87f7-9144b34355f8	Compras varias	2026-01-11 11:04:00	\N	Lider Express	Jesus Leon Rangel	\N	f36bbf02-2953-4b09-b7e5-020314750413	2026-01-14 14:05:01.334	2026-01-14 14:05:01.334	\N
 b4c9bea8-9233-40cc-ad18-56ab85a42fe0	346b32d1-b21f-4ce9-ac27-a69e67abb103	2e64b401-5a2f-4492-87c9-a618e7ba6f33	EXPENSE	500.00	383b06d7-97c5-46fa-92e1-c0ba555cd879	Estacionamiento 	2026-01-13 11:29:00	\N	Mall Portal Ñuñoa	Jesus Leon Rangel	\N	\N	2026-01-14 14:29:17.578	2026-01-14 14:29:17.578	\N
@@ -1370,6 +1373,8 @@ c2c0cbe9-76ee-4a2e-a472-bf6e78ce0f6d	346b32d1-b21f-4ce9-ac27-a69e67abb103	2e64b4
 729c3058-ba20-4d55-b231-74934d53ccfe	346b32d1-b21f-4ce9-ac27-a69e67abb103	2e64b401-5a2f-4492-87c9-a618e7ba6f33	EXPENSE	306586.00	bb80c962-8810-4dd6-8aa7-6277041dae78	Cuota Cleopatra 	2026-01-15 13:09:00	\N	Banco Internacional	Jesus Leon Rangel	\N	a4547bad-ecfb-4934-a0e6-aaeed2dd99c1	2026-01-15 16:10:21.809	2026-01-15 16:10:21.809	\N
 88c4305a-d0d3-43e6-bcf8-9e7dac7563f0	346b32d1-b21f-4ce9-ac27-a69e67abb103	0c046099-f7ff-4463-bf04-cdc01ecd9c09	EXPENSE	8000.00	27fccd39-52ef-4715-821b-ab85fa57f46f	Camarones	2026-01-18 11:11:00	\N	La Vega	Jesus Leon Rangel	\N	a68ae203-8cd0-478d-828c-629ca1dee735	2026-01-19 14:12:07.125	2026-01-19 14:12:07.125	\N
 5ef87c4b-6356-4a5d-b537-2b5e01a76641	346b32d1-b21f-4ce9-ac27-a69e67abb103	0c046099-f7ff-4463-bf04-cdc01ecd9c09	EXPENSE	9826.00	27fccd39-52ef-4715-821b-ab85fa57f46f	La vega	2026-01-18 11:12:00	\N	La Vega	Jesus Leon Rangel	\N	e3f642a6-d072-46e9-904d-252cc71ab462	2026-01-19 14:13:21.367	2026-01-19 14:13:21.367	\N
+b987fe79-d376-43d3-9b5e-369974e4ca70	346b32d1-b21f-4ce9-ac27-a69e67abb103	6bae5c5c-fa7d-429b-a27d-e5f13fe5025a	EXPENSE	150000.00	5ec041fc-8c57-4f46-a1e9-80ffc95bf107	169 USD, 56USD SOL, 56USD BNB, 56USD ETH	2026-02-03 16:30:00	\N	OrionX	Jesus Leon Rangel	\N	\N	2026-02-03 19:31:17.711	2026-02-03 19:31:17.711	\N
+f480faab-b77e-4d9b-96c4-c09b820e657d	346b32d1-b21f-4ce9-ac27-a69e67abb103	6bae5c5c-fa7d-429b-a27d-e5f13fe5025a	TRANSFER	3000000.00	2a12ab4d-7fa0-4152-a026-58472dd91dcb	Traspaso	2026-02-03 18:32:00	\N	\N	Jesus Leon Rangel	d99144b6-5974-40e2-9f17-b36942774c9e	\N	2026-02-03 21:33:04.118	2026-02-03 21:33:04.118	\N
 \.
 
 
@@ -1442,8 +1447,6 @@ c8c7b4de-830f-4a24-b3fd-a542f896e04c	d8c5e32f-c64d-4437-b302-3a64d8f3f116	7	2025
 dd002848-59f4-473c-8389-b2d48de2231f	d8c5e32f-c64d-4437-b302-3a64d8f3f116	8	2025	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:56:21.175	2026-01-08 15:56:21.175
 7569c038-fbf0-4906-967f-1d90f2255cfe	d8c5e32f-c64d-4437-b302-3a64d8f3f116	9	2025	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:56:23.27	2026-01-08 15:56:23.27
 bf7eb584-b19a-4b42-baa0-6fcdee2e3f99	d8c5e32f-c64d-4437-b302-3a64d8f3f116	10	2025	\N	0.00	4050.00	0.00	4050.00	-4050.00	2026-01-08 15:56:25.292	2026-01-08 15:56:25.292
-a69b341e-ede9-4a47-badb-39476b4c5bd9	d8c5e32f-c64d-4437-b302-3a64d8f3f116	11	2025	\N	0.00	666054.80	0.00	666054.80	-666054.80	2026-01-08 15:56:27.321	2026-01-08 15:56:27.321
-93856105-fd23-4300-8b8c-e01b0b47098f	d8c5e32f-c64d-4437-b302-3a64d8f3f116	12	2025	\N	0.00	843744.30	0.00	843744.30	-843744.30	2026-01-08 15:56:29.553	2026-01-08 15:56:29.553
 93bdf410-32a9-497e-aa52-0fa7bbdfe92f	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	1	2025	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:56:33.692	2026-01-08 15:56:33.692
 f050fd0f-832d-4b5d-84b1-30f2655cc9e2	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2	2025	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:56:35.8	2026-01-08 15:56:35.8
 d53fa2a7-8a6c-47bf-9bc0-b59e0a55789e	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	3	2025	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:56:37.914	2026-01-08 15:56:37.914
@@ -1454,9 +1457,6 @@ bb76d8d8-d94f-4bfe-b412-50145aea4b1e	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	6	2025
 063ea0cb-bb93-4d49-9275-602487d56788	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	8	2025	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:56:48.626	2026-01-08 15:56:48.626
 59016ad0-0360-4c1a-8458-d2216a51169d	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	9	2025	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:56:50.651	2026-01-08 15:56:50.651
 b785a5dd-f5db-4f3d-84d1-85d57836444a	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	10	2025	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:56:53.165	2026-01-08 15:56:53.165
-f623422e-5f35-4aa5-8ef5-54a9f594e792	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	11	2025	\N	0.00	137000.00	0.00	137000.00	-137000.00	2026-01-08 15:56:55.459	2026-01-08 15:56:55.459
-d447268e-e2fe-40ee-8007-040c6fe4817b	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	12	2025	\N	0.00	50000.00	0.00	50000.00	-50000.00	2026-01-08 15:56:57.505	2026-01-08 15:56:57.505
-622cd9b5-eec2-40a1-b6b5-8a056c2c5125	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	1	2026	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:56:59.551	2026-01-08 15:56:59.551
 8e32123d-9526-40ab-b7e5-fe7c7447167a	b88abd1d-92fe-4818-ba01-95681f09b96d	1	2025	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:57:01.596	2026-01-08 15:57:01.596
 7ed4ea28-1ee9-4110-832d-7c680f63a447	b88abd1d-92fe-4818-ba01-95681f09b96d	2	2025	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:57:03.69	2026-01-08 15:57:03.69
 d56b677d-d4bb-4631-8df6-c98f186d2ecf	b88abd1d-92fe-4818-ba01-95681f09b96d	3	2025	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:57:05.709	2026-01-08 15:57:05.709
@@ -1467,9 +1467,6 @@ d56b677d-d4bb-4631-8df6-c98f186d2ecf	b88abd1d-92fe-4818-ba01-95681f09b96d	3	2025
 038e7d7f-d860-4073-8f78-abdeddddb921	b88abd1d-92fe-4818-ba01-95681f09b96d	8	2025	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:57:16.482	2026-01-08 15:57:16.482
 976e67a9-4a7b-44f4-ae49-ee2543419961	b88abd1d-92fe-4818-ba01-95681f09b96d	9	2025	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:57:18.638	2026-01-08 15:57:18.638
 0de71fcf-1cb2-4fa4-a5f4-6ea290de6ebd	b88abd1d-92fe-4818-ba01-95681f09b96d	10	2025	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:57:20.678	2026-01-08 15:57:20.678
-74f00b5a-513d-45d8-9eaf-165d5c843fee	b88abd1d-92fe-4818-ba01-95681f09b96d	11	2025	\N	0.00	146000.00	53000.00	93000.00	-146000.00	2026-01-08 15:57:22.83	2026-01-08 15:57:22.83
-1a2d4acf-4741-439b-8d3c-b354c02ccd05	b88abd1d-92fe-4818-ba01-95681f09b96d	12	2025	\N	0.00	50000.00	0.00	50000.00	-50000.00	2026-01-08 15:57:24.897	2026-01-08 15:57:24.897
-80c3831f-718f-41dd-a4b8-797dc7526a5a	b88abd1d-92fe-4818-ba01-95681f09b96d	1	2026	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:57:26.965	2026-01-08 15:57:26.965
 deeb482a-23f5-44a1-97af-252b8a326dba	346b32d1-b21f-4ce9-ac27-a69e67abb103	1	2025	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:57:29.045	2026-01-08 15:57:29.045
 c1a5c405-34d9-44e2-844b-a436c0e276dc	346b32d1-b21f-4ce9-ac27-a69e67abb103	2	2025	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:57:31.122	2026-01-08 15:57:31.122
 fe4e3190-a1d0-4b7f-ba44-08544b3766ea	346b32d1-b21f-4ce9-ac27-a69e67abb103	3	2025	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:57:33.199	2026-01-08 15:57:33.199
@@ -1480,12 +1477,22 @@ fe4e3190-a1d0-4b7f-ba44-08544b3766ea	346b32d1-b21f-4ce9-ac27-a69e67abb103	3	2025
 ac0dc297-9db3-4311-a901-c0255da15e83	346b32d1-b21f-4ce9-ac27-a69e67abb103	8	2025	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:57:43.44	2026-01-08 15:57:43.44
 5cd1428c-f110-44d5-863c-034e7e2ee0b6	346b32d1-b21f-4ce9-ac27-a69e67abb103	9	2025	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:57:45.466	2026-01-08 15:57:45.466
 169e6cce-8887-40a7-8ee3-ae07eaede34d	346b32d1-b21f-4ce9-ac27-a69e67abb103	10	2025	\N	0.00	9450.00	0.00	9450.00	-9450.00	2026-01-08 15:57:47.577	2026-01-08 15:57:47.577
-d8b43721-4277-41f4-ac71-ddb039660cf7	346b32d1-b21f-4ce9-ac27-a69e67abb103	11	2025	\N	1389568.00	2422207.20	818818.00	1603389.20	-1032639.20	2026-01-08 15:57:49.616	2026-01-15 15:08:58.106
-a3bcddbe-ebfb-49e6-99f2-87a35544b525	346b32d1-b21f-4ce9-ac27-a69e67abb103	12	2025	\N	3584676.00	3034614.70	1060117.00	1974497.70	550061.30	2026-01-08 15:57:51.602	2026-01-15 15:06:27.964
-08aa9029-eb7d-48eb-b0f0-18af4e1265dd	346b32d1-b21f-4ce9-ac27-a69e67abb103	1	2026	\N	3531495.00	2905113.80	1194663.00	1710450.80	626381.20	2026-01-08 15:57:53.732	2026-02-02 14:03:11.707
-b4af0d30-dc8e-423d-870e-290859ea0dbb	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2	2026	\N	0.00	249365.70	0.00	249365.70	-249365.70	2026-02-02 14:09:45.637	2026-02-02 14:56:15.101
-28d4dcba-f0dc-47c9-8b34-98f0847a3014	346b32d1-b21f-4ce9-ac27-a69e67abb103	2	2026	\N	3517749.00	581853.30	0.00	581853.30	2935895.70	2026-02-02 12:28:49.137	2026-02-02 14:56:33.558
-6e94c2cb-cc93-4147-88de-6871080719bd	d8c5e32f-c64d-4437-b302-3a64d8f3f116	1	2026	\N	0.00	1509540.50	738993.30	770547.20	-1509540.50	2026-01-08 15:56:31.6	2026-02-02 12:56:00.45
+a69b341e-ede9-4a47-badb-39476b4c5bd9	d8c5e32f-c64d-4437-b302-3a64d8f3f116	11	2025	\N	0.00	682774.40	0.00	682774.40	-682774.40	2026-01-08 15:56:27.321	2026-02-03 12:40:37.215
+93856105-fd23-4300-8b8c-e01b0b47098f	d8c5e32f-c64d-4437-b302-3a64d8f3f116	12	2025	\N	0.00	843744.30	0.00	843744.30	-843744.30	2026-01-08 15:56:29.553	2026-02-03 12:40:39.243
+f623422e-5f35-4aa5-8ef5-54a9f594e792	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	11	2025	\N	183000.00	137000.00	0.00	137000.00	46000.00	2026-01-08 15:56:55.459	2026-02-03 12:40:45.807
+d447268e-e2fe-40ee-8007-040c6fe4817b	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	12	2025	\N	0.00	50000.00	0.00	50000.00	-50000.00	2026-01-08 15:56:57.505	2026-02-03 12:40:47.86
+622cd9b5-eec2-40a1-b6b5-8a056c2c5125	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	1	2026	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:56:59.551	2026-02-03 12:40:49.884
+74f00b5a-513d-45d8-9eaf-165d5c843fee	b88abd1d-92fe-4818-ba01-95681f09b96d	11	2025	\N	0.00	146000.00	53000.00	93000.00	-146000.00	2026-01-08 15:57:22.83	2026-02-03 12:40:54.311
+1a2d4acf-4741-439b-8d3c-b354c02ccd05	b88abd1d-92fe-4818-ba01-95681f09b96d	12	2025	\N	0.00	50000.00	0.00	50000.00	-50000.00	2026-01-08 15:57:24.897	2026-02-03 12:40:56.496
+80c3831f-718f-41dd-a4b8-797dc7526a5a	b88abd1d-92fe-4818-ba01-95681f09b96d	1	2026	\N	0.00	0.00	0.00	0.00	0.00	2026-01-08 15:57:26.965	2026-02-03 12:40:58.553
+d8b43721-4277-41f4-ac71-ddb039660cf7	346b32d1-b21f-4ce9-ac27-a69e67abb103	11	2025	\N	1389568.00	2439100.60	856577.00	1582523.60	-1049532.60	2026-01-08 15:57:49.616	2026-02-03 12:41:03.09
+6e94c2cb-cc93-4147-88de-6871080719bd	d8c5e32f-c64d-4437-b302-3a64d8f3f116	1	2026	\N	0.00	1521227.60	738993.30	782234.30	-1521227.60	2026-01-08 15:56:31.6	2026-02-03 12:40:41.367
+b4af0d30-dc8e-423d-870e-290859ea0dbb	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2	2026	\N	0.00	249365.70	0.00	249365.70	-249365.70	2026-02-02 14:09:45.637	2026-02-03 12:40:43.44
+13357a65-4831-45e6-8202-d56bfd1986e1	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2	2026	\N	0.00	0.00	0.00	0.00	0.00	2026-02-03 12:40:51.907	2026-02-03 12:40:51.907
+7fe7f0b8-3bc0-4d32-80bc-a5837d3f88c8	b88abd1d-92fe-4818-ba01-95681f09b96d	2	2026	\N	0.00	0.00	0.00	0.00	0.00	2026-02-03 12:41:00.642	2026-02-03 12:41:00.642
+a3bcddbe-ebfb-49e6-99f2-87a35544b525	346b32d1-b21f-4ce9-ac27-a69e67abb103	12	2025	\N	3584676.00	3057594.70	1083097.00	1974497.70	527081.30	2026-01-08 15:57:51.602	2026-02-03 12:41:05.096
+08aa9029-eb7d-48eb-b0f0-18af4e1265dd	346b32d1-b21f-4ce9-ac27-a69e67abb103	1	2026	\N	3540585.00	2932383.70	1194663.00	1737720.70	608201.30	2026-01-08 15:57:53.732	2026-02-03 12:41:07.106
+28d4dcba-f0dc-47c9-8b34-98f0847a3014	346b32d1-b21f-4ce9-ac27-a69e67abb103	2	2026	\N	3517749.00	1087682.30	505829.00	581853.30	2430066.70	2026-02-02 12:28:49.137	2026-02-03 21:33:11.329
 \.
 
 
@@ -1969,6 +1976,8 @@ d9b1b471-1121-4f3a-9810-0a485a438984	585816bf-4928-4a19-946b-b70f05c35aa4	2a10df
 b5244c34-8290-470d-ae09-0ca6fd6842cb	66017ac3-6df2-4eeb-b691-0f4888adfb3d	679e1bf5-ab82-473d-aab4-bee383773cf9
 89254a54-fd1a-44b3-ae36-e8c918bc5145	b0e37b47-3be0-4a74-8265-fbb1562eefd8	8fa8a244-3180-4247-a46e-da39bc2b663a
 593efb5e-e592-4cb1-8bae-f43cad87fa72	b99cef78-0c0b-4090-8681-e8f473c462b2	44b07ceb-7cd3-4e21-b787-2e088f329cca
+b345cf63-14fb-4585-8a4c-246c9e843edf	c1de47b4-7247-4b41-b403-ef23a2d54448	0c6f2d96-be7d-4734-afb4-89e15b301f8b
+5b103db3-4aff-4781-a486-48d2d3db253b	c1de47b4-7247-4b41-b403-ef23a2d54448	f96a2dd1-30b9-4c62-ad54-0e9109654e6a
 76a7891a-9fe5-4a55-be41-a60e8ee9ddeb	25cd89aa-956d-40bd-a484-202b57a9d56a	679e1bf5-ab82-473d-aab4-bee383773cf9
 a9458ebd-90e5-4e52-bfd6-c8f1eab060d7	ac45eeec-39d6-47a1-9150-6a91606b8069	679e1bf5-ab82-473d-aab4-bee383773cf9
 0ad5a4c1-55ba-49a1-abfe-e5de880b0e6c	b0d0692e-ea37-4b93-bc3d-dc50d711b62a	679e1bf5-ab82-473d-aab4-bee383773cf9
@@ -2082,6 +2091,8 @@ e1e52aef-0249-4f5d-8383-00c628f3f870	b0f35a10-5e67-403a-880a-9d0760cbc499	941099
 070fb424-3625-4bab-8adc-8613815d5794	b16dc55f-2dfa-4a81-9752-a82dfb019549	98a80c21-7511-45e4-9298-078e2f964f71
 d1c39774-b115-4dc9-88b5-a3eed37c5988	606f75e2-e540-4a3e-a826-3386d45ce808	d20fc59b-b3e7-404b-a4c7-70506f80a56b
 7175218d-c571-4601-9958-0b74bf2d1ffd	8d43f17b-8b3c-4aa9-b4d5-102f97da2fc6	2a10dfa4-fd61-49c3-98e1-81975560b222
+c6fe7072-cd90-43f5-b624-4eae47efb534	7e55a807-ca77-4bf5-9b89-8c75c84c4d4d	f96a2dd1-30b9-4c62-ad54-0e9109654e6a
+096d5af0-b338-4032-8180-31c2d0e7d66e	7e55a807-ca77-4bf5-9b89-8c75c84c4d4d	0c6f2d96-be7d-4734-afb4-89e15b301f8b
 13ea61dd-97ec-4d06-bce0-b275087918b1	08cd5ffe-8bc0-4432-b1a4-d7a773098188	ef0469eb-0281-4787-9bd4-3297f1fdc4f1
 d4cc5e82-99b0-4f48-9632-f76f5fb7b60b	a69b1653-e5d0-4bc0-bf75-17f0cfcb5536	311121a8-540b-4ff1-bb60-ed3be3d1ce17
 4d236dc1-1f5a-4534-906c-ae6da864a10f	27888cc9-f2a4-41c3-b8fa-9b0ae174a3be	ffbb78ce-0bb5-4fd1-b8c1-5b8158d42cb3
@@ -2103,6 +2114,8 @@ a5d4b45f-6bca-4204-964f-979f62b8dba4	26f1378b-84b8-48cd-8e70-bca766dabfae	f3abc3
 ea0c2e6d-abd8-473b-bc69-57e081627d47	7fb50338-a0f6-4894-b4f7-afafb53d3ec9	e3e0608e-c6c4-4e6d-b1c8-9cb88620fc26
 174d2bee-e1e9-4ccf-9960-9d870745ebf9	824b08b2-1ec5-43fd-a8b0-1b406e8cd45a	ef0469eb-0281-4787-9bd4-3297f1fdc4f1
 e5e7008c-a735-4392-9f6d-a9bdb5fa60ac	181207cd-b855-41d0-8dea-6745ace15775	a0db0537-b558-4931-a81c-a5336bff0b8a
+a6558b1c-dec1-4307-9749-9ec6271520ef	b987fe79-d376-43d3-9b5e-369974e4ca70	0c6f2d96-be7d-4734-afb4-89e15b301f8b
+31a3439a-f140-421f-b016-caa166e12458	b987fe79-d376-43d3-9b5e-369974e4ca70	8c89fda0-e257-4a04-be77-2db68903ebe4
 2ae7368d-2cb8-4893-9ee4-025e7ee89288	5561a2f9-534c-4147-896f-903061a8fb52	ba8d6ae0-fef5-43a2-82b2-f45ca9cb7136
 8634a252-f77a-4bd6-b817-82c978952242	d580c4ae-6acb-442d-9910-dacb2c022032	311121a8-540b-4ff1-bb60-ed3be3d1ce17
 fb98943c-0a0d-4531-8bb2-36ccdebefd4e	d620ab45-51e5-4bb0-847c-43b8fa037472	d2e3b60e-b406-48b3-aa3d-2a09156765f4
@@ -2171,7 +2184,7 @@ COPY "public"."user_dashboard_preferences" ("id", "user_id", "widgets", "layout"
 88647620-e715-453b-bef7-dd8995692515	d8c5e32f-c64d-4437-b302-3a64d8f3f116	[{"id": "widget-1", "type": "total-balance"}, {"id": "widget-2", "type": "monthly-income"}, {"id": "widget-3", "type": "monthly-expenses"}, {"id": "widget-4", "type": "groups"}, {"id": "widget-5", "type": "quick-actions"}, {"id": "widget-6", "type": "balances"}, {"id": "widget-7", "type": "cash-flow"}, {"id": "widget-8", "type": "expenses-by-category"}, {"id": "widget-9", "type": "balance-trend"}, {"id": "widget-10", "type": "group-balances"}, {"id": "widget-11", "type": "account-balances"}, {"id": "widget-12", "type": "recent-transactions"}]	[{"h": 1, "i": "widget-1", "w": 1, "x": 0, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-2", "w": 1, "x": 1, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-3", "w": 1, "x": 2, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-4", "w": 1, "x": 3, "y": 0, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-5", "w": 4, "x": 0, "y": 1, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-6", "w": 4, "x": 0, "y": 3, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-7", "w": 2, "x": 0, "y": 5, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-8", "w": 2, "x": 2, "y": 5, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-9", "w": 2, "x": 0, "y": 7, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-10", "w": 2, "x": 2, "y": 7, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-12", "w": 4, "x": 0, "y": 9, "minH": 1, "minW": 2}]	2025-11-13 16:41:43.26	2026-01-08 18:46:49.393
 625672c1-2a65-4f6d-9fb6-99f5ba4893ca	b88abd1d-92fe-4818-ba01-95681f09b96d	[{"id": "widget-1", "type": "total-balance"}, {"id": "widget-2", "type": "monthly-income"}, {"id": "widget-3", "type": "monthly-expenses"}, {"id": "widget-4", "type": "groups"}, {"id": "widget-5", "type": "quick-actions"}, {"id": "widget-6", "type": "balances"}, {"id": "widget-7", "type": "cash-flow"}, {"id": "widget-8", "type": "expenses-by-category"}, {"id": "widget-9", "type": "balance-trend"}, {"id": "widget-10", "type": "group-balances"}, {"id": "widget-11", "type": "account-balances"}, {"id": "widget-12", "type": "recent-transactions"}]	[{"h": 2, "i": "widget-1", "w": 1, "x": 0, "y": 0, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-2", "w": 1, "x": 1, "y": 0, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-3", "w": 1, "x": 2, "y": 0, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-4", "w": 1, "x": 3, "y": 0, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-5", "w": 4, "x": 0, "y": 2, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-6", "w": 4, "x": 0, "y": 4, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-7", "w": 2, "x": 0, "y": 6, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-8", "w": 2, "x": 2, "y": 6, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-9", "w": 2, "x": 0, "y": 8, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-10", "w": 2, "x": 2, "y": 8, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-12", "w": 4, "x": 0, "y": 10, "minH": 1, "minW": 2}]	2025-11-21 13:28:08.663	2025-12-10 16:12:59.378
 0182cccb-9a10-4e0f-acef-3f1b084c1f16	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	[{"id": "widget-1", "type": "total-balance"}, {"id": "widget-2", "type": "monthly-income"}, {"id": "widget-3", "type": "monthly-expenses"}, {"id": "widget-4", "type": "groups"}, {"id": "widget-5", "type": "quick-actions"}, {"id": "widget-6", "type": "balances"}, {"id": "widget-7", "type": "cash-flow"}, {"id": "widget-8", "type": "expenses-by-category"}, {"id": "widget-9", "type": "balance-trend"}, {"id": "widget-10", "type": "group-balances"}, {"id": "widget-11", "type": "account-balances"}, {"id": "widget-12", "type": "recent-transactions"}]	[{"h": 1, "i": "widget-1", "w": 1, "x": 0, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-2", "w": 1, "x": 1, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-3", "w": 1, "x": 2, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-4", "w": 1, "x": 3, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-5", "w": 4, "x": 0, "y": 1, "minH": 1, "minW": 2}, {"h": 3, "i": "widget-6", "w": 4, "x": 0, "y": 2, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-7", "w": 2, "x": 0, "y": 5, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-8", "w": 2, "x": 2, "y": 5, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-9", "w": 2, "x": 0, "y": 7, "minH": 1, "minW": 2}, {"h": 1, "i": "widget-10", "w": 2, "x": 2, "y": 7, "minH": 1, "minW": 2}, {"h": 3, "i": "widget-12", "w": 2, "x": 0, "y": 9, "minH": 1, "minW": 2}]	2025-11-21 13:26:50.465	2025-12-10 16:13:33.895
-305eb0c9-02bf-467a-a36f-d3a331ad9607	346b32d1-b21f-4ce9-ac27-a69e67abb103	[{"id": "widget-1", "type": "total-balance"}, {"id": "widget-2", "type": "monthly-income"}, {"id": "widget-3", "type": "monthly-expenses"}, {"id": "widget-7", "type": "cash-flow"}, {"id": "widget-9", "type": "balance-trend"}, {"id": "widget-11", "type": "account-balances"}, {"id": "widget-12", "type": "recent-transactions"}, {"id": "widget-1763575423316-yxrqyg2uk", "type": "expenses-by-parent-category", "settings": {}}, {"id": "widget-1763659024518-btdbfj5b4", "type": "personal-expenses", "settings": {}}, {"id": "widget-1763659046596-nfgbroz3w", "type": "shared-expenses", "settings": {}}, {"id": "widget-1763659066607-lsil57dug", "type": "savings", "settings": {}}, {"id": "widget-1763665253130-8wd45uwmx", "type": "balances", "settings": {}}, {"id": "widget-1767893724952-uhnpy81gq", "type": "top-tags", "settings": {}}, {"id": "widget-1767893803716-w6dt6bbrv", "type": "loans", "settings": {}}, {"id": "widget-1770039166733-otn08fzwk", "type": "group-balances", "settings": {}}, {"id": "widget-1770044976861-dsiy6n9ev", "type": "category-breakdown-list", "settings": {}}, {"id": "widget-1770045009268-pl54bkony", "type": "net-monthly-expenses", "settings": {}}]	[{"h": 1, "i": "widget-1", "w": 1, "x": 0, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-2", "w": 1, "x": 1, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-3", "w": 1, "x": 2, "y": 0, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-7", "w": 2, "x": 0, "y": 2, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-9", "w": 2, "x": 0, "y": 4, "minH": 1, "minW": 2}, {"h": 3, "i": "widget-12", "w": 2, "x": 0, "y": 6, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-1763575423316-yxrqyg2uk", "w": 2, "x": 0, "y": 9, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-1763659024518-btdbfj5b4", "w": 1, "x": 1, "y": 1, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-1763659046596-nfgbroz3w", "w": 1, "x": 0, "y": 1, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-1763659066607-lsil57dug", "w": 1, "x": 3, "y": 0, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-1763665253130-8wd45uwmx", "w": 2, "x": 2, "y": 2, "minH": 1, "minW": 1}, {"h": 4, "i": "widget-1767893724952-uhnpy81gq", "w": 2, "x": 2, "y": 7, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-1767893803716-w6dt6bbrv", "w": 2, "x": 0, "y": 11, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-1770039166733-otn08fzwk", "w": 2, "x": 2, "y": 11, "minH": 1, "minW": 1}, {"h": 3, "i": "widget-1770044976861-dsiy6n9ev", "w": 2, "x": 2, "y": 4, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-1770045009268-pl54bkony", "w": 1, "x": 2, "y": 1, "minH": 1, "minW": 1}]	2025-11-13 15:47:47.064	2026-02-02 18:16:43.496
+305eb0c9-02bf-467a-a36f-d3a331ad9607	346b32d1-b21f-4ce9-ac27-a69e67abb103	[{"id": "widget-1", "type": "total-balance"}, {"id": "widget-2", "type": "monthly-income"}, {"id": "widget-3", "type": "monthly-expenses"}, {"id": "widget-7", "type": "cash-flow"}, {"id": "widget-9", "type": "balance-trend"}, {"id": "widget-11", "type": "account-balances"}, {"id": "widget-12", "type": "recent-transactions"}, {"id": "widget-1763575423316-yxrqyg2uk", "type": "expenses-by-parent-category", "settings": {}}, {"id": "widget-1763659024518-btdbfj5b4", "type": "personal-expenses", "settings": {}}, {"id": "widget-1763659046596-nfgbroz3w", "type": "shared-expenses", "settings": {}}, {"id": "widget-1763659066607-lsil57dug", "type": "savings", "settings": {}}, {"id": "widget-1763665253130-8wd45uwmx", "type": "balances", "settings": {}}, {"id": "widget-1767893724952-uhnpy81gq", "type": "top-tags", "settings": {}}, {"id": "widget-1767893803716-w6dt6bbrv", "type": "loans", "settings": {}}, {"id": "widget-1770039166733-otn08fzwk", "type": "group-balances", "settings": {}}, {"id": "widget-1770044976861-dsiy6n9ev", "type": "category-breakdown-list", "settings": {}}, {"id": "widget-1770045009268-pl54bkony", "type": "net-monthly-expenses", "settings": {}}]	[{"h": 1, "i": "widget-1", "w": 1, "x": 0, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-2", "w": 1, "x": 1, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-3", "w": 1, "x": 2, "y": 0, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-7", "w": 2, "x": 0, "y": 2, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-9", "w": 2, "x": 0, "y": 4, "minH": 1, "minW": 2}, {"h": 3, "i": "widget-12", "w": 2, "x": 0, "y": 6, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-1763575423316-yxrqyg2uk", "w": 2, "x": 0, "y": 9, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-1763659024518-btdbfj5b4", "w": 1, "x": 1, "y": 1, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-1763659046596-nfgbroz3w", "w": 1, "x": 0, "y": 1, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-1763659066607-lsil57dug", "w": 1, "x": 3, "y": 0, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-1763665253130-8wd45uwmx", "w": 2, "x": 2, "y": 1, "minH": 1, "minW": 1}, {"h": 4, "i": "widget-1767893724952-uhnpy81gq", "w": 2, "x": 2, "y": 3, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-1767893803716-w6dt6bbrv", "w": 2, "x": 0, "y": 11, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-1770039166733-otn08fzwk", "w": 2, "x": 2, "y": 7, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-1770044976861-dsiy6n9ev", "w": 2, "x": 0, "y": 13, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-1770045009268-pl54bkony", "w": 2, "x": 2, "y": 9, "minH": 1, "minW": 1}]	2025-11-13 15:47:47.064	2026-02-03 21:29:38.93
 \.
 
 
@@ -2236,6 +2249,8 @@ b48aa046-3d1e-4fa2-b1c8-87f91717614b	346b32d1-b21f-4ce9-ac27-a69e67abb103	ajuste
 b2c12c72-00ad-465c-95ff-0a148779f8ed	346b32d1-b21f-4ce9-ac27-a69e67abb103	apple	74dbaf4c-1b84-4c6b-9383-de2b59a86cca	Apple	1	2	2026-01-29 20:43:45.749	2026-02-02 14:02:07.425
 4d23ed43-36ad-4506-99fb-c69324890cff	346b32d1-b21f-4ce9-ac27-a69e67abb103	gopro	74dbaf4c-1b84-4c6b-9383-de2b59a86cca	GoPro	1	1	2026-02-02 14:03:07.24	2026-02-02 14:03:07.24
 3fc17e04-aa1a-40b3-87a9-fb773dd19da3	346b32d1-b21f-4ce9-ac27-a69e67abb103	tcs	35e1feb2-b6d8-461c-a951-43f35be33f7a	TCS	1	1	2026-02-02 14:54:57.793	2026-02-02 14:54:57.793
+d3fe5b29-c34c-4f9a-b5f8-313d9f2fb65c	346b32d1-b21f-4ce9-ac27-a69e67abb103	hapi	90936b66-3ec7-4ebd-bf87-c5f030e12fce	Hapi	1	2	2026-02-03 18:28:48.911	2026-02-03 18:29:46.005
+290ab715-b699-4252-9aa4-75a3f0606066	346b32d1-b21f-4ce9-ac27-a69e67abb103	orionx	5ec041fc-8c57-4f46-a1e9-80ffc95bf107	OrionX	1	1	2026-02-03 19:31:21.508	2026-02-03 19:31:21.508
 \.
 
 
@@ -2315,6 +2330,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict dO78LfeBHB28WnGRcMoDenF0k1OyrJMjzCyKldJzhX6EroMI0X1dIzymrsy2QJg
+-- \unrestrict sVa6VibzO8o3Y9E1ksvGicIRThsifOfRoLUgmBnvPNW9LZ1fu9dPlG3qs0VRi3q
 
 RESET ALL;
