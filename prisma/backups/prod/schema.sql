@@ -171,6 +171,20 @@ CREATE TABLE IF NOT EXISTS "public"."accounts" (
 ALTER TABLE "public"."accounts" OWNER TO "postgres";
 
 
+CREATE TABLE IF NOT EXISTS "public"."ai_insights" (
+    "id" "text" NOT NULL,
+    "user_id" "text" NOT NULL,
+    "date" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "type" "text" NOT NULL,
+    "title" "text" NOT NULL,
+    "description" "text" NOT NULL,
+    "created_at" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+
+ALTER TABLE "public"."ai_insights" OWNER TO "postgres";
+
+
 CREATE TABLE IF NOT EXISTS "public"."budgets" (
     "id" "text" NOT NULL,
     "user_id" "text" NOT NULL,
@@ -518,6 +532,11 @@ ALTER TABLE ONLY "public"."accounts"
 
 
 
+ALTER TABLE ONLY "public"."ai_insights"
+    ADD CONSTRAINT "ai_insights_pkey" PRIMARY KEY ("id");
+
+
+
 ALTER TABLE ONLY "public"."budgets"
     ADD CONSTRAINT "budgets_pkey" PRIMARY KEY ("id");
 
@@ -628,6 +647,10 @@ CREATE INDEX "accounts_user_id_idx" ON "public"."accounts" USING "btree" ("user_
 
 
 CREATE INDEX "accounts_user_id_is_archived_idx" ON "public"."accounts" USING "btree" ("user_id", "is_archived");
+
+
+
+CREATE INDEX "ai_insights_user_id_date_idx" ON "public"."ai_insights" USING "btree" ("user_id", "date");
 
 
 
@@ -913,6 +936,11 @@ CREATE UNIQUE INDEX "users_email_key" ON "public"."users" USING "btree" ("email"
 
 ALTER TABLE ONLY "public"."accounts"
     ADD CONSTRAINT "accounts_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."users"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."ai_insights"
+    ADD CONSTRAINT "ai_insights_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."users"("id") ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 
@@ -1292,6 +1320,12 @@ GRANT ALL ON TABLE "public"."_prisma_migrations" TO "service_role";
 GRANT ALL ON TABLE "public"."accounts" TO "anon";
 GRANT ALL ON TABLE "public"."accounts" TO "authenticated";
 GRANT ALL ON TABLE "public"."accounts" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."ai_insights" TO "anon";
+GRANT ALL ON TABLE "public"."ai_insights" TO "authenticated";
+GRANT ALL ON TABLE "public"."ai_insights" TO "service_role";
 
 
 
