@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict IINj31FiokDRlZq4Z7yYK2udVnzn4NJavx0CgeS222Q7OXkEaJaRtWXs3pBGN0P
+-- \restrict ucMT9oLqS1XrJGr0VGN9ruPUP1MWXxhaniYGN6E2fGM8Xf7ul58E0ns2Bxf5Fkz
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -194,16 +194,16 @@ e1a50e36-a1b3-480d-a632-bdc4761e33cb	6885a550098e92e9d389263966ab6f0e792348ed9f8
 
 COPY "public"."accounts" ("id", "user_id", "name", "type", "balance", "currency", "is_default", "credit_limit", "billing_day", "created_at", "updated_at", "is_archived", "include_in_total_balance", "account_number", "color") FROM stdin;
 530b9e4b-d53a-440b-a713-51021e71436b	b88abd1d-92fe-4818-ba01-95681f09b96d	Cuenta de prueba	CASH	811760.00	CLP	t	\N	\N	2025-11-21 13:28:32.434	2025-11-25 13:01:45.91	f	t	\N	\N
+2db62b9a-1133-4a34-96bc-429d267a2a2a	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Rut	DEBIT	344.00	CLP	f	\N	\N	2025-11-25 19:21:05.154	2026-02-17 15:06:06.949	f	t	\N	#ff7900
 2c6743e1-4096-45b1-9ebb-8b998cedda57	346b32d1-b21f-4ce9-ac27-a69e67abb103	Santander Cuotas	CREDIT	3000000.00	CLP	f	3000000.00	31	2025-11-25 18:33:19.275	2026-02-05 20:23:07.058	f	f	\N	#EF4444
 3835a682-e360-443c-8946-98e86c744943	d8c5e32f-c64d-4437-b302-3a64d8f3f116	Cuenta de Prueba 	DEBIT	8438337.40	CLP	t	\N	\N	2025-11-13 16:44:14.609	2026-02-02 14:09:40.451	f	t	\N	\N
+d99144b6-5974-40e2-9f17-b36942774c9e	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta MercadoPago	DEBIT	10818181.00	CLP	f	\N	\N	2025-11-18 16:40:00.279	2026-02-17 16:20:10.38	f	t	\N	#ffe600
 6bae5c5c-fa7d-429b-a27d-e5f13fe5025a	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Corriente Scotiabank	DEBIT	21888.00	CLP	f	\N	\N	2025-11-25 19:19:19.533	2026-02-05 20:26:02.572	f	t	\N	#EC111A
-2db62b9a-1133-4a34-96bc-429d267a2a2a	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Rut	DEBIT	3464.00	CLP	f	\N	\N	2025-11-25 19:21:05.154	2026-02-05 20:28:49.821	f	t	\N	#ff7900
 062c317d-a49c-4545-ae96-a241d7b3a5f3	346b32d1-b21f-4ce9-ac27-a69e67abb103	Efectivo	CASH	50000.00	CLP	t	\N	\N	2026-02-08 12:41:49.242	2026-02-08 12:41:49.242	f	t	\N	#3b82f6
 34d0aa36-bc91-4383-95fb-578fbbc09e04	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Corriente Santander	DEBIT	10190.00	CLP	f	\N	\N	2025-11-25 19:18:47.604	2026-02-13 21:57:38.242	f	t	\N	#ec0000
 8388127f-3f9c-49d4-8b83-4cf9dcc9fbe0	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	Prueba	CASH	7211780.00	CLP	f	\N	\N	2025-11-21 13:27:41.406	2025-12-10 16:09:44.353	f	t	\N	\N
 646caf37-7684-45ac-87f3-cec83efb633d	346b32d1-b21f-4ce9-ac27-a69e67abb103	Santander VISA	CREDIT	7897826.00	CLP	f	8000000.00	31	2025-11-18 16:41:05.327	2026-02-15 20:45:37.074	f	f	000069640842	#7a7a7a
 0c046099-f7ff-4463-bf04-cdc01ecd9c09	346b32d1-b21f-4ce9-ac27-a69e67abb103	Lider BCI	CREDIT	775739.00	CLP	f	1000000.00	31	2025-11-18 16:40:18.575	2026-02-15 20:56:36.138	f	f	\N	#0053e2
-d99144b6-5974-40e2-9f17-b36942774c9e	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta MercadoPago	DEBIT	11018181.00	CLP	f	\N	\N	2025-11-18 16:40:00.279	2026-02-16 20:21:00.912	f	t	\N	#ffe600
 2e64b401-5a2f-4492-87c9-a618e7ba6f33	346b32d1-b21f-4ce9-ac27-a69e67abb103	Santander AMEX	CREDIT	6550759.00	CLP	f	8000000.00	31	2025-11-18 16:40:45.67	2026-02-16 20:51:21.757	f	f	\N	\N
 af297afb-aa32-48f5-bee2-844713748199	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Itau	DEBIT	2265.00	CLP	f	\N	\N	2025-11-25 19:19:59.48	2025-11-25 19:19:59.48	f	t	\N	#FF6200
 \.
@@ -426,6 +426,26 @@ bec7f652-733c-41cb-af7d-fc74b6b09323	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-0
 8392ce0f-0372-45a8-8965-cc6ae045cf88	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-17 01:00:43.232	achievement	Inversión en criptomonedas	Has invertido una cantidad significativa en criptomonedas a través de 'OrionX'. Esto muestra que estás diversificando tus inversiones y buscando oportunidades de crecimiento a largo plazo.	2026-02-17 01:00:43.234
 e18815bc-d5a5-4466-8eb5-68daab522de4	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-17 01:00:43.832	challenge	Reducir gastos en combustible	Tienes un gasto moderado en combustible. Considera explorar opciones para reducir tu consumo de combustible, como carpooling o el uso de transporte público, para ahorrar dinero y reducir tu huella de carbono.	2026-02-17 01:00:43.833
 49e9e18e-0f3f-4aa1-b31b-d54b73037c74	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-17 01:00:44.427	positive	Gastos en servicios básicos bajo control	Tus gastos en servicios básicos como electricidad e internet están bajo control, lo que indica que estás manejando tus finanzas de manera responsable y priorizando tus necesidades básicas.	2026-02-17 01:00:44.428
+8e341fac-c6cc-4e20-baa0-ff4e2dd1ebf9	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-02-18 01:00:10.223	warning	Gasto excesivo en deuda	Has gastado un total de $635,640.3 en pago de deuda este mes, lo que puede afectar negativamente tu estabilidad financiera. Considera revisar y ajustar tus pagos de deuda para evitar problemas futuros.	2026-02-18 01:00:10.224
+8ffd369a-3b51-4bed-918b-85ac2a1aec32	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-02-18 01:00:10.84	tip	Revisa tus pagos compartidos	El pago de balance compartido a Jesus Leon Rangel es tu gasto más grande este mes. Asegúrate de que este pago sea necesario y de que no haya errores en el monto o la frecuencia del pago.	2026-02-18 01:00:10.841
+eadc0c73-eda1-4aec-9fab-1ebbe0f2d5cd	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-02-18 01:00:11.437	challenge	Reducir la deuda	Te desafiamos a reducir tus pagos de deuda en un 20% para el próximo mes. Esto puede ayudarte a ahorrar dinero y mejorar tu situación financiera a largo plazo.	2026-02-18 01:00:11.438
+ed247d9f-122e-410b-a6ad-caae51f04972	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-02-18 01:00:12.035	achievement	Identifica tus gastos prioritarios	Has identificado claramente tus gastos prioritarios, lo que es un paso importante para una mejor gestión financiera. Sigue trabajando en este sentido para lograr una mayor estabilidad financiera.	2026-02-18 01:00:12.036
+937059af-b885-449a-870e-61f41aee98ce	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-02-18 01:00:12.631	positive	Oportunidad para la planificación	La falta de ingresos registrados te da la oportunidad de planificar y establecer metas financieras realistas. Considera establecer un presupuesto y trabajar en la generación de ingresos para mejorar tu situación financiera.	2026-02-18 01:00:12.632
+edac35d0-f286-45a0-a22b-d34f700b0cf5	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-02-18 01:00:19.936	warning	Gasto elevado en el mes actual	Tu gasto total en el mes actual es de $100,000, lo que sugiere que debes revisar y ajustar tus hábitos de gasto para evitar problemas financieros.	2026-02-18 01:00:19.937
+880c2512-9b58-4977-85ce-8e964a67f4c9	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-02-18 01:00:20.532	tip	Establece un presupuesto	Para controlar tus finanzas, es importante que establezcas un presupuesto que te permita asignar tus recursos de manera efectiva y alcanzar tus objetivos financieros.	2026-02-18 01:00:20.533
+1b0e3348-d3cd-4653-b568-309233439d41	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-02-18 01:00:21.128	challenge	Incrementa tu tasa de ahorro	Con una tasa de ahorro del 0%, es importante que te esfuerces por incrementarla para garantizar tu estabilidad financiera a largo plazo y alcanzar tus metas financieras.	2026-02-18 01:00:21.129
+e7b74838-ccf2-4a94-9fff-8955221b8195	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-02-18 01:00:21.725	achievement	No hay deudas reportadas	No se reportan deudas en tus finanzas, lo que es un logro positivo y te permite enfocarte en otros aspectos de tus finanzas personales.	2026-02-18 01:00:21.726
+3c9f1fbb-c615-4dd0-adb4-6a4c3c4f8574	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-02-18 01:00:22.32	positive	Oportunidad para invertir	Con un gasto total de $100,000 en el mes actual, podrías considerar invertir una parte de tus ingresos en oportunidades financieras que te permitan crecer tu patrimonio a largo plazo.	2026-02-18 01:00:22.321
+f2b2fa78-ab43-418f-a066-d226bd77b8e0	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-02-18 01:00:29.389	warning	Gastos elevados	En este mes, tus gastos han sido de $53,000, lo que puede ser un desafío para tu estabilidad financiera. Considera revisar tus gastos y buscar formas de reducirlos.	2026-02-18 01:00:29.39
+b2ea00ef-f09a-4382-9286-e10313966843	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-02-18 01:00:29.984	tip	Establece un presupuesto	Dado que no tienes ingresos registrados, es fundamental que establezcas un presupuesto para gestionar tus gastos de manera efectiva y evitar problemas financieros.	2026-02-18 01:00:29.985
+0838cafb-9bd5-416b-88ba-2b5ca909d196	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-02-18 01:00:30.58	challenge	Incrementa tu ingreso	Con un ingreso de $0, es un desafío mantener un equilibrio financiero saludable. Busca oportunidades para incrementar tus ingresos, como un trabajo adicional o la venta de productos o servicios.	2026-02-18 01:00:30.581
+2adc44f6-72b7-47b2-8670-d768267192f5	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-02-18 01:00:31.177	achievement	No hay deudas registradas	No se han registrado deudas en tu contexto financiero, lo que es un logro importante. Mantén esta tendencia y evita contraer deudas para proteger tu estabilidad financiera.	2026-02-18 01:00:31.178
+744a39cf-3f87-46b6-9919-7d620de489f8	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-02-18 01:00:31.772	positive	Oportunidad para ahorrar	Aunque no tienes ingresos registrados, puedes comenzar a planificar tus finanzas para el futuro. Considera establecer metas de ahorro y buscar formas de reducir tus gastos para alcanzar la estabilidad financiera.	2026-02-18 01:00:31.773
+04a9f75b-07a0-424f-bfe5-7be03ed4b7a2	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-18 01:00:41.939	warning	Gastos en préstamos	Tienes un gasto significativo en préstamos otorgados, lo que puede afectar tu capacidad de ahorro a largo plazo. Considera revisar tus finanzas y buscar opciones para reducir tus deudas.	2026-02-18 01:00:41.94
+f9a00b81-7c3e-4a21-8d7c-c6bdbbc982ab	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-18 01:00:42.537	tip	Optimiza tus gastos en supermercado	Puedes reducir tus gastos en supermercado planificando tus compras y aprovechando ofertas y descuentos. Esto te ayudará a ahorrar dinero y mejorar tu presupuesto.	2026-02-18 01:00:42.538
+69c92364-1a72-44d5-962a-67a402a72657	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-18 01:00:43.132	achievement	Inversión en criptomonedas	Felicidades por invertir en criptomonedas. Esto muestra que estás diversificando tus inversiones y buscando oportunidades de crecimiento a largo plazo.	2026-02-18 01:00:43.133
+8ef22f7b-bf0b-4657-a774-5b27413c40fa	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-18 01:00:43.727	challenge	Reducir gastos en combustible	Te desafiamos a reducir tus gastos en combustible en un 20% durante los próximos 3 meses. Puedes lograrlo planificando tus viajes, usando transporte público o bicicleta, y buscando rutas más eficientes.	2026-02-18 01:00:43.728
+70d37860-ec09-4fa3-9cd8-9549167512db	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-18 01:00:44.323	positive	Gastos en restaurantes bajo control	Estás haciendo un buen trabajo controlando tus gastos en restaurantes. Esto muestra que eres consciente de tus hábitos de gasto y estás tomando decisiones financieras responsables.	2026-02-18 01:00:44.324
 \.
 
 
@@ -1711,6 +1731,9 @@ e990d36b-0708-411f-b0de-00ead7c83163	346b32d1-b21f-4ce9-ac27-a69e67abb103	d99144
 58d94ce2-631e-4e8f-bf14-6035b2bf3297	346b32d1-b21f-4ce9-ac27-a69e67abb103	d99144b6-5974-40e2-9f17-b36942774c9e	EXPENSE	850000.00	e1dd8701-b920-4252-bc8a-26a23fed3fc1	Préstamo a Katty Rangel	2026-02-13 00:00:00	\N	Katty Rangel	Jesus Leon Rangel	\N	\N	2026-02-16 20:21:00.219	2026-02-16 20:21:00.219	43d5b9bf-0b95-4074-9467-1d857f6eefd4
 26227b1c-2335-42c2-9fd3-f2163c410649	346b32d1-b21f-4ce9-ac27-a69e67abb103	2e64b401-5a2f-4492-87c9-a618e7ba6f33	EXPENSE	1300.00	383b06d7-97c5-46fa-92e1-c0ba555cd879	Estacionamiento dia del afex	2026-02-16 20:47:35.031	\N	Mall Plaza Egaña	Jesus Leon Rangel	\N	\N	2026-02-16 20:49:25.354	2026-02-16 20:49:25.354	\N
 6f38907b-3440-473f-91ab-7b8ff0dd95f2	346b32d1-b21f-4ce9-ac27-a69e67abb103	2e64b401-5a2f-4492-87c9-a618e7ba6f33	EXPENSE	12990.00	74dbaf4c-1b84-4c6b-9383-de2b59a86cca	Suscripción mercado libre	2026-02-16 20:49:35.52	\N	MercadoLibre	Jesus Leon Rangel	\N	740cd06a-1994-40da-8eed-b6f3ba8e2e10	2026-02-16 20:51:20.077	2026-02-16 20:51:20.077	\N
+68220473-d968-4dd9-b1cf-2ac176d1f1f0	346b32d1-b21f-4ce9-ac27-a69e67abb103	2db62b9a-1133-4a34-96bc-429d267a2a2a	EXPENSE	1540.00	a46700b8-5afe-4bbb-b220-44775fd27bb5	Micro para ir al nutricionista	2026-02-13 15:03:00	\N	Metro/Bus	Jesus Leon Rangel	\N	\N	2026-02-17 15:04:43.477	2026-02-17 15:05:12.826	\N
+f3770af8-839b-47f5-aabf-7cc73bda8dfe	346b32d1-b21f-4ce9-ac27-a69e67abb103	2db62b9a-1133-4a34-96bc-429d267a2a2a	EXPENSE	1580.00	a46700b8-5afe-4bbb-b220-44775fd27bb5	Metro o Bus	2026-02-06 15:05:00	\N	Metro/Bus	Jesus Leon Rangel	\N	\N	2026-02-17 15:06:05.082	2026-02-17 15:06:05.082	\N
+ab8d0d13-de51-4dad-bd8d-8a1d2997f6f8	346b32d1-b21f-4ce9-ac27-a69e67abb103	d99144b6-5974-40e2-9f17-b36942774c9e	EXPENSE	200000.00	a432fac5-4158-46f6-9ba1-cb2067174a2c	Pago para el credito hipotecario	2026-02-12 16:18:00	\N	Banco Consorcio	Jesus Leon Rangel	\N	\N	2026-02-17 16:20:08.492	2026-02-17 16:20:08.492	\N
 \.
 
 
@@ -1829,7 +1852,7 @@ d8b43721-4277-41f4-ac71-ddb039660cf7	346b32d1-b21f-4ce9-ac27-a69e67abb103	11	202
 a3bcddbe-ebfb-49e6-99f2-87a35544b525	346b32d1-b21f-4ce9-ac27-a69e67abb103	12	2025	\N	3584676.00	3057594.70	1083097.00	1974497.70	527081.30	2026-01-08 15:57:51.602	2026-02-03 12:41:05.096
 08aa9029-eb7d-48eb-b0f0-18af4e1265dd	346b32d1-b21f-4ce9-ac27-a69e67abb103	1	2026	\N	3540585.00	2932383.70	1194663.00	1737720.70	608201.30	2026-01-08 15:57:53.732	2026-02-03 12:41:07.106
 b4af0d30-dc8e-423d-870e-290859ea0dbb	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2	2026	\N	0.00	504567.30	0.00	504567.30	-504567.30	2026-02-02 14:09:45.637	2026-02-16 20:51:18.153
-28d4dcba-f0dc-47c9-8b34-98f0847a3014	346b32d1-b21f-4ce9-ac27-a69e67abb103	2	2026	\N	3525280.00	1888393.70	711070.00	1177323.70	1636886.30	2026-02-02 12:28:49.137	2026-02-16 20:51:25.088
+28d4dcba-f0dc-47c9-8b34-98f0847a3014	346b32d1-b21f-4ce9-ac27-a69e67abb103	2	2026	\N	3525280.00	2091513.70	914190.00	1177323.70	1433766.30	2026-02-02 12:28:49.137	2026-02-17 16:20:14.09
 \.
 
 
@@ -2188,6 +2211,7 @@ f2965dbf-9af2-4278-aa9a-11a071980760	346b32d1-b21f-4ce9-ac27-a69e67abb103	Estaci
 b4e92644-a943-424d-8272-f78aadf03d3e	346b32d1-b21f-4ce9-ac27-a69e67abb103	service	\N	2026-02-11 18:45:59.878
 66d7d84e-c843-4d1a-accd-416502056ad1	346b32d1-b21f-4ce9-ac27-a69e67abb103	intereses_mercado_libre	\N	2026-02-11 19:50:59.911
 9b0cee61-b145-4609-9222-860ebccd7c1b	346b32d1-b21f-4ce9-ac27-a69e67abb103	suss	\N	2026-02-16 20:50:41.177
+6517bb59-22a7-4b39-a350-d5f29cfc5a4c	346b32d1-b21f-4ce9-ac27-a69e67abb103	casa_comisiones_bancarias	\N	2026-02-17 16:19:36.154
 \.
 
 
@@ -2290,6 +2314,7 @@ fcac7ecf-4ee4-47cd-ba70-bb4a89a97837	198d3fa6-863e-4a08-ae32-73a0f096e14f	ef0469
 a06c09b5-3c38-4d3e-9539-71069b1985cf	0552aece-1cd9-4201-b113-c8bfb60a9906	98a80c21-7511-45e4-9298-078e2f964f71
 8b0f5b25-8fd5-4b85-9a5a-837caf2299a3	b06c2416-09cc-4fb3-8efc-e9074e304b26	f02a293c-dd56-420f-bf42-5c8a99d1995a
 191333bd-472f-4b10-8ef0-089dbedd0293	9ca30568-e800-4ee7-bc21-35ac78c34e4e	8fa8a244-3180-4247-a46e-da39bc2b663a
+d33e1c09-c1a0-40e2-b3f2-df360ccfdccc	68220473-d968-4dd9-b1cf-2ac176d1f1f0	3206107f-11c6-4216-879e-a6fb14a239a9
 828f3bb4-d454-4556-a84f-9d83930d2f36	66282541-2d2d-47c6-a81e-9aa2db94d25b	d20fc59b-b3e7-404b-a4c7-70506f80a56b
 d9132582-0391-4792-b727-36cd09c4318f	35a2656d-d3ed-41d9-83cf-fba955dd36fe	d2e3b60e-b406-48b3-aa3d-2a09156765f4
 a35da299-3774-4047-b359-6541ad2df38b	5917db38-79d5-463e-9d9c-93a646b37c8c	051cdf66-73a4-4625-93f3-f311b608fd7f
@@ -2497,6 +2522,7 @@ fad984b0-4553-4ae7-909a-695768425f6a	a5369c18-d962-46e6-a125-011957a2f1e3	2a10df
 a81b045d-578a-4187-81b5-81970e7bf397	5f742134-c8f2-4cd3-a182-524189dc3158	98a80c21-7511-45e4-9298-078e2f964f71
 9f826676-7421-489a-928e-c5744b971e8a	c507291c-44d6-4c14-bed4-85d7fd1c6054	4687b1c3-fc46-4104-a4ba-167e28374d4c
 aa580601-f627-4637-b876-ac58b83cdf65	26227b1c-2335-42c2-9fd3-f2163c410649	98a80c21-7511-45e4-9298-078e2f964f71
+6ce7bf84-a051-480c-b742-697e5a124387	ab8d0d13-de51-4dad-bd8d-8a1d2997f6f8	6517bb59-22a7-4b39-a350-d5f29cfc5a4c
 13ea61dd-97ec-4d06-bce0-b275087918b1	08cd5ffe-8bc0-4432-b1a4-d7a773098188	ef0469eb-0281-4787-9bd4-3297f1fdc4f1
 d4cc5e82-99b0-4f48-9632-f76f5fb7b60b	a69b1653-e5d0-4bc0-bf75-17f0cfcb5536	311121a8-540b-4ff1-bb60-ed3be3d1ce17
 4d236dc1-1f5a-4534-906c-ae6da864a10f	27888cc9-f2a4-41c3-b8fa-9b0ae174a3be	ffbb78ce-0bb5-4fd1-b8c1-5b8158d42cb3
@@ -2563,6 +2589,7 @@ e396b820-d3e5-4b7b-86f4-d3d3f2beb40e	9d8f65bd-a0f0-4c30-bf65-53249148812c	f3abc3
 6a9be198-4cc8-40ae-8c13-a6c96a732e5e	1b2e415f-ee13-4930-8a1c-580b5e060cbf	d2e3b60e-b406-48b3-aa3d-2a09156765f4
 7aba5df9-eb87-4a22-b7df-135e3d1e670a	085c24ab-a85d-4a03-ac98-3b4ab177d97a	d2e3b60e-b406-48b3-aa3d-2a09156765f4
 9df157cb-4c9c-43fa-97e7-c64f4a2f84d4	a5af71a7-b8e5-4647-b730-de6735ed978e	f800c628-19ef-4a37-8109-dc2fa17127c5
+79e12041-1979-4809-baac-362788660a19	f3770af8-839b-47f5-aabf-7cc73bda8dfe	3206107f-11c6-4216-879e-a6fb14a239a9
 \.
 
 
@@ -2605,7 +2632,7 @@ COPY "public"."user_dashboard_preferences" ("id", "user_id", "widgets", "layout"
 88647620-e715-453b-bef7-dd8995692515	d8c5e32f-c64d-4437-b302-3a64d8f3f116	[{"id": "widget-1", "type": "total-balance"}, {"id": "widget-2", "type": "monthly-income"}, {"id": "widget-3", "type": "monthly-expenses"}, {"id": "widget-4", "type": "groups"}, {"id": "widget-5", "type": "quick-actions"}, {"id": "widget-6", "type": "balances"}, {"id": "widget-7", "type": "cash-flow"}, {"id": "widget-8", "type": "expenses-by-category"}, {"id": "widget-9", "type": "balance-trend"}, {"id": "widget-10", "type": "group-balances"}, {"id": "widget-11", "type": "account-balances"}, {"id": "widget-12", "type": "recent-transactions"}]	[{"h": 1, "i": "widget-1", "w": 1, "x": 0, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-2", "w": 1, "x": 1, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-3", "w": 1, "x": 2, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-4", "w": 1, "x": 3, "y": 0, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-5", "w": 4, "x": 0, "y": 1, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-6", "w": 4, "x": 0, "y": 3, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-7", "w": 2, "x": 0, "y": 5, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-8", "w": 2, "x": 2, "y": 5, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-9", "w": 2, "x": 0, "y": 7, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-10", "w": 2, "x": 2, "y": 7, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-12", "w": 4, "x": 0, "y": 9, "minH": 1, "minW": 2}]	2025-11-13 16:41:43.26	2026-01-08 18:46:49.393
 625672c1-2a65-4f6d-9fb6-99f5ba4893ca	b88abd1d-92fe-4818-ba01-95681f09b96d	[{"id": "widget-1", "type": "total-balance"}, {"id": "widget-2", "type": "monthly-income"}, {"id": "widget-3", "type": "monthly-expenses"}, {"id": "widget-4", "type": "groups"}, {"id": "widget-5", "type": "quick-actions"}, {"id": "widget-6", "type": "balances"}, {"id": "widget-7", "type": "cash-flow"}, {"id": "widget-8", "type": "expenses-by-category"}, {"id": "widget-9", "type": "balance-trend"}, {"id": "widget-10", "type": "group-balances"}, {"id": "widget-11", "type": "account-balances"}, {"id": "widget-12", "type": "recent-transactions"}]	[{"h": 2, "i": "widget-1", "w": 1, "x": 0, "y": 0, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-2", "w": 1, "x": 1, "y": 0, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-3", "w": 1, "x": 2, "y": 0, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-4", "w": 1, "x": 3, "y": 0, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-5", "w": 4, "x": 0, "y": 2, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-6", "w": 4, "x": 0, "y": 4, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-7", "w": 2, "x": 0, "y": 6, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-8", "w": 2, "x": 2, "y": 6, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-9", "w": 2, "x": 0, "y": 8, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-10", "w": 2, "x": 2, "y": 8, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-12", "w": 4, "x": 0, "y": 10, "minH": 1, "minW": 2}]	2025-11-21 13:28:08.663	2025-12-10 16:12:59.378
 0182cccb-9a10-4e0f-acef-3f1b084c1f16	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	[{"id": "widget-1", "type": "total-balance"}, {"id": "widget-2", "type": "monthly-income"}, {"id": "widget-3", "type": "monthly-expenses"}, {"id": "widget-4", "type": "groups"}, {"id": "widget-5", "type": "quick-actions"}, {"id": "widget-6", "type": "balances"}, {"id": "widget-7", "type": "cash-flow"}, {"id": "widget-8", "type": "expenses-by-category"}, {"id": "widget-9", "type": "balance-trend"}, {"id": "widget-10", "type": "group-balances"}, {"id": "widget-11", "type": "account-balances"}, {"id": "widget-12", "type": "recent-transactions"}]	[{"h": 1, "i": "widget-1", "w": 1, "x": 0, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-2", "w": 1, "x": 1, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-3", "w": 1, "x": 2, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-4", "w": 1, "x": 3, "y": 0, "minH": 1, "minW": 1}, {"h": 1, "i": "widget-5", "w": 4, "x": 0, "y": 1, "minH": 1, "minW": 2}, {"h": 3, "i": "widget-6", "w": 4, "x": 0, "y": 2, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-7", "w": 2, "x": 0, "y": 5, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-8", "w": 2, "x": 2, "y": 5, "minH": 1, "minW": 2}, {"h": 2, "i": "widget-9", "w": 2, "x": 0, "y": 7, "minH": 1, "minW": 2}, {"h": 1, "i": "widget-10", "w": 2, "x": 2, "y": 7, "minH": 1, "minW": 2}, {"h": 3, "i": "widget-12", "w": 2, "x": 0, "y": 9, "minH": 1, "minW": 2}]	2025-11-21 13:26:50.465	2025-12-10 16:13:33.895
-305eb0c9-02bf-467a-a36f-d3a331ad9607	346b32d1-b21f-4ce9-ac27-a69e67abb103	[{"id": "widget-7", "type": "cash-flow"}, {"id": "widget-9", "type": "balance-trend"}, {"id": "widget-11", "type": "account-balances"}, {"id": "widget-12", "type": "recent-transactions"}, {"id": "widget-1763575423316-yxrqyg2uk", "type": "expenses-by-parent-category", "settings": {}}, {"id": "widget-1763665253130-8wd45uwmx", "type": "balances", "settings": {}}, {"id": "widget-1767893724952-uhnpy81gq", "type": "top-tags", "settings": {}}, {"id": "widget-1767893803716-w6dt6bbrv", "type": "loans", "settings": {}}, {"id": "widget-1770039166733-otn08fzwk", "type": "group-balances", "settings": {}}, {"id": "widget-1770044976861-dsiy6n9ev", "type": "category-breakdown-list", "settings": {}}]	[{"h": 3, "i": "widget-7", "w": 2, "x": 0, "y": 0, "minH": 1, "minW": 2}, {"h": 3, "i": "widget-9", "w": 2, "x": 0, "y": 3, "minH": 1, "minW": 2}, {"h": 3, "i": "widget-12", "w": 2, "x": 0, "y": 6, "minH": 1, "minW": 2}, {"h": 3, "i": "widget-1763575423316-yxrqyg2uk", "w": 2, "x": 0, "y": 9, "minH": 1, "minW": 1}, {"h": 3, "i": "widget-1763665253130-8wd45uwmx", "w": 2, "x": 2, "y": 0, "minH": 1, "minW": 1}, {"h": 4, "i": "widget-1767893724952-uhnpy81gq", "w": 2, "x": 2, "y": 7, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-1767893803716-w6dt6bbrv", "w": 2, "x": 0, "y": 12, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-1770039166733-otn08fzwk", "w": 2, "x": 2, "y": 11, "minH": 1, "minW": 1}, {"h": 4, "i": "widget-1770044976861-dsiy6n9ev", "w": 2, "x": 2, "y": 3, "minH": 1, "minW": 1}]	2025-11-13 15:47:47.064	2026-02-16 20:51:38.346
+305eb0c9-02bf-467a-a36f-d3a331ad9607	346b32d1-b21f-4ce9-ac27-a69e67abb103	[{"id": "widget-7", "type": "cash-flow"}, {"id": "widget-9", "type": "balance-trend"}, {"id": "widget-11", "type": "account-balances"}, {"id": "widget-12", "type": "recent-transactions"}, {"id": "widget-1763575423316-yxrqyg2uk", "type": "expenses-by-parent-category", "settings": {}}, {"id": "widget-1763665253130-8wd45uwmx", "type": "balances", "settings": {}}, {"id": "widget-1767893724952-uhnpy81gq", "type": "top-tags", "settings": {}}, {"id": "widget-1767893803716-w6dt6bbrv", "type": "loans", "settings": {}}, {"id": "widget-1770039166733-otn08fzwk", "type": "group-balances", "settings": {}}, {"id": "widget-1770044976861-dsiy6n9ev", "type": "category-breakdown-list", "settings": {}}]	[{"h": 3, "i": "widget-7", "w": 2, "x": 0, "y": 0, "minH": 1, "minW": 2}, {"h": 3, "i": "widget-9", "w": 2, "x": 0, "y": 3, "minH": 1, "minW": 2}, {"h": 3, "i": "widget-12", "w": 2, "x": 0, "y": 6, "minH": 1, "minW": 2}, {"h": 3, "i": "widget-1763575423316-yxrqyg2uk", "w": 2, "x": 0, "y": 9, "minH": 1, "minW": 1}, {"h": 3, "i": "widget-1763665253130-8wd45uwmx", "w": 2, "x": 2, "y": 0, "minH": 1, "minW": 1}, {"h": 4, "i": "widget-1767893724952-uhnpy81gq", "w": 2, "x": 2, "y": 7, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-1767893803716-w6dt6bbrv", "w": 2, "x": 0, "y": 12, "minH": 1, "minW": 1}, {"h": 2, "i": "widget-1770039166733-otn08fzwk", "w": 2, "x": 2, "y": 11, "minH": 1, "minW": 1}, {"h": 4, "i": "widget-1770044976861-dsiy6n9ev", "w": 2, "x": 2, "y": 3, "minH": 1, "minW": 1}]	2025-11-13 15:47:47.064	2026-02-17 16:21:09.197
 \.
 
 
@@ -2677,7 +2704,6 @@ c8f221e4-0282-4f84-96e7-1f7c0ec8ea7c	346b32d1-b21f-4ce9-ac27-a69e67abb103	casta�
 f0e916ed-3901-4b97-8966-46c07e6e0cf3	346b32d1-b21f-4ce9-ac27-a69e67abb103	notaria	6870baf3-aa72-4c03-93c7-3e9cfeb89b76	Notaria	1	1	2026-02-05 20:13:52.188	2026-02-05 20:13:52.188
 8b95ff27-bdee-4513-8874-ed83a49e3324	346b32d1-b21f-4ce9-ac27-a69e67abb103	spotify	9db1fe37-0ec7-4467-9819-511256db4fe6	Spotify	1	1	2026-02-05 20:16:54.339	2026-02-05 20:16:54.339
 ec123182-f774-4bfd-b0b5-16871cf399ad	346b32d1-b21f-4ce9-ac27-a69e67abb103	bci seguros	6d6c20c0-81f2-4afb-a72e-228c0a3982e0	BCI Seguros	1	1	2026-02-05 20:18:03.624	2026-02-05 20:18:03.624
-ef998d6a-e8dd-4920-9930-efbb0ac62535	346b32d1-b21f-4ce9-ac27-a69e67abb103	metro/bus	a46700b8-5afe-4bbb-b220-44775fd27bb5	Metro/Bus	1	2	2026-02-05 20:28:15.623	2026-02-05 20:28:50.358
 f2fe9baa-b4f7-41df-bfa0-9d44fcd7fd46	346b32d1-b21f-4ce9-ac27-a69e67abb103	movistar	52a2a345-15f9-4494-93e8-8fd3d36913a5	Movistar	1	1	2026-02-06 12:07:45.787	2026-02-06 12:07:45.787
 551ccc16-4bd2-4ee7-a214-f07073cc5c03	346b32d1-b21f-4ce9-ac27-a69e67abb103	banco santander	a432fac5-4158-46f6-9ba1-cb2067174a2c	Banco Santander	1	2	2026-01-29 20:36:27.265	2026-02-11 18:29:37.808
 28722c0d-3281-4712-b311-ba7602ccb8f7	346b32d1-b21f-4ce9-ac27-a69e67abb103	dr simi	5d5e7a50-dbf4-4a0f-9704-2e3a6fe56232	Dr Simi	1	1	2026-02-11 18:39:16.354	2026-02-11 18:39:16.354
@@ -2688,6 +2714,8 @@ b7069177-9e40-4d8f-ab88-6cd0539016c8	346b32d1-b21f-4ce9-ac27-a69e67abb103	rutapa
 4597920f-d30c-4a11-aa0d-bc2b6432a224	346b32d1-b21f-4ce9-ac27-a69e67abb103	ramen ryoma	c4374810-0308-4355-952e-17986d76f696	Ramen Ryoma	1	1	2026-02-15 20:44:04.885	2026-02-15 20:44:04.885
 7fb381b8-5339-4ead-ad4c-0cba2cfa5168	346b32d1-b21f-4ce9-ac27-a69e67abb103	madeleine	3fe9bf24-0404-4d34-b127-374bff382241	Madeleine	1	1	2026-02-15 20:50:13.449	2026-02-15 20:50:13.449
 4c1b2345-e3ac-4c01-a9f0-cad49e9753d5	346b32d1-b21f-4ce9-ac27-a69e67abb103	aguarotoche	36aa155c-8121-41e7-b2b1-a399d6e6cb94	Aguarotoche	1	1	2026-02-15 20:51:40.816	2026-02-15 20:51:40.816
+ef998d6a-e8dd-4920-9930-efbb0ac62535	346b32d1-b21f-4ce9-ac27-a69e67abb103	metro/bus	a46700b8-5afe-4bbb-b220-44775fd27bb5	Metro/Bus	1	4	2026-02-05 20:28:15.623	2026-02-17 15:06:07.349
+067bed40-e30a-4350-9c86-2c71b29970b0	346b32d1-b21f-4ce9-ac27-a69e67abb103	banco consorcio	a432fac5-4158-46f6-9ba1-cb2067174a2c	Banco Consorcio	1	1	2026-02-17 16:20:10.785	2026-02-17 16:20:10.785
 \.
 
 
@@ -2767,6 +2795,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict IINj31FiokDRlZq4Z7yYK2udVnzn4NJavx0CgeS222Q7OXkEaJaRtWXs3pBGN0P
+-- \unrestrict ucMT9oLqS1XrJGr0VGN9ruPUP1MWXxhaniYGN6E2fGM8Xf7ul58E0ns2Bxf5Fkz
 
 RESET ALL;
