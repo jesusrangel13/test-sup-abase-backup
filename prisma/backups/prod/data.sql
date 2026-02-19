@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict ucMT9oLqS1XrJGr0VGN9ruPUP1MWXxhaniYGN6E2fGM8Xf7ul58E0ns2Bxf5Fkz
+-- \restrict Mn4lOt64com96544RoR5MUYnvIIlhVNWsf4TJS1wZ5PpBisXpI3m9lEpU8nm14e
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -446,6 +446,26 @@ f9a00b81-7c3e-4a21-8d7c-c6bdbbc982ab	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-0
 69c92364-1a72-44d5-962a-67a402a72657	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-18 01:00:43.132	achievement	Inversión en criptomonedas	Felicidades por invertir en criptomonedas. Esto muestra que estás diversificando tus inversiones y buscando oportunidades de crecimiento a largo plazo.	2026-02-18 01:00:43.133
 8ef22f7b-bf0b-4657-a774-5b27413c40fa	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-18 01:00:43.727	challenge	Reducir gastos en combustible	Te desafiamos a reducir tus gastos en combustible en un 20% durante los próximos 3 meses. Puedes lograrlo planificando tus viajes, usando transporte público o bicicleta, y buscando rutas más eficientes.	2026-02-18 01:00:43.728
 70d37860-ec09-4fa3-9cd8-9549167512db	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-18 01:00:44.323	positive	Gastos en restaurantes bajo control	Estás haciendo un buen trabajo controlando tus gastos en restaurantes. Esto muestra que eres consciente de tus hábitos de gasto y estás tomando decisiones financieras responsables.	2026-02-18 01:00:44.324
+5c2238c1-4cbf-45c7-b6c8-c219ddffd2a8	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-02-19 01:00:10.115	warning	Gasto excepcionalmente alto	Ten cuidado, has registrado un gasto de $635,640.3 en el pago de balance compartido a Jesus Leon Rangel, lo que representa un gasto excepcionalmente alto para el mes actual.	2026-02-19 01:00:10.116
+854633b1-63d3-49f1-b0a4-e005f6dab7ee	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-02-19 01:00:10.75	tip	Revisa tus deudas	Es importante que revises detenidamente tus deudas y consideres la posibilidad de negociar un plan de pago más asequible para el pago de deuda que has registrado.	2026-02-19 01:00:10.751
+5327521f-f94f-469c-b981-fc0bd34cb91c	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-02-19 01:00:11.333	challenge	Reduce tus deudas	Te desafiamos a reducir tus deudas en un 20% en el próximo mes, considera crear un plan de ahorro y reducir tus gastos para lograrlo.	2026-02-19 01:00:11.334
+7e498a80-9576-4285-93ec-a509da614eeb	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-02-19 01:00:11.911	achievement	Prioriza tus gastos	Aunque has registrado un gasto excepcionalmente alto, es importante que priorices tus gastos y consideres la posibilidad de asignar tu dinero a otras categorías, como ahorro o inversión.	2026-02-19 01:00:11.912
+9c42be2e-2f1d-4b2c-a970-3f31f8fefe0f	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-02-19 01:00:12.491	positive	Toma el control de tus finanzas	Ahora que estás al tanto de tus gastos, es momento de tomar el control de tus finanzas, considera crear un presupuesto y establecer metas financieras para el futuro.	2026-02-19 01:00:12.492
+6608c323-94d7-4f58-87f4-2aa2d3f70cfb	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-02-19 01:00:19.726	warning	Gastos excesivos	Tu gasto total es de $100,000 en el mes actual, lo que puede ser un indicador de un patrón de gasto excesivo. Es importante revisar tus finanzas y considerar formas de reducir tus gastos.	2026-02-19 01:00:19.727
+116006cd-f04d-4e6a-87a3-9e9a6c382079	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-02-19 01:00:20.303	tip	Establece un presupuesto	No tienes ingresos registrados, lo que puede estar afectando tu capacidad para ahorrar. Establece un presupuesto que te permita asignar tus recursos de manera efectiva y alcanzar tus objetivos financieros.	2026-02-19 01:00:20.304
+a5aad0cf-b9b1-449c-bf17-3382428608be	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-02-19 01:00:20.881	challenge	Aumenta tu tasa de ahorro	Tu tasa de ahorro actual es del 0%, lo que significa que no estás ahorrando nada. Te desafiamos a aumentar tu tasa de ahorro al 10% en el próximo mes para empezar a construir una reserva financiera.	2026-02-19 01:00:20.882
+20c14a50-aa9b-4195-b67d-c48896259f3e	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-02-19 01:00:21.462	positive	Oportunidad para optimizar	No tienes merchantes ni subcategorías destacadas, lo que te da la oportunidad de empezar a rastrear tus gastos y optimizar tus finanzas desde cero. Aprovecha esta oportunidad para crear buenos hábitos financieros.	2026-02-19 01:00:21.463
+903cba75-0f6a-4f63-ba5d-089dd6028938	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-02-19 01:00:22.041	achievement	No hay deudas registradas	No se han registrado deudas en tus finanzas, lo que es un logro importante. Sigue trabajando en mantener tus finanzas saludables y evitar deudas en el futuro.	2026-02-19 01:00:22.042
+0e00421b-700c-4e11-9f0b-82ebcd53c974	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-02-19 01:00:29.182	warning	Gastos elevados	Tus gastos totales para el mes actual son de $53,000, lo que puede ser un desafío para mantener un equilibrio financiero saludable.	2026-02-19 01:00:29.183
+50a40910-1b1e-4ac5-998a-6d368e8a3693	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-02-19 01:00:29.759	tip	Identifica tus áreas de gasto	Aunque no hay información sobre tus merchants y categorías de gasto, es importante que identifiques en qué áreas estás gastando más dinero para poder tomar decisiones informadas sobre cómo reducir tus gastos.	2026-02-19 01:00:29.76
+539dfedd-31b9-434d-9794-7fd507f5ffa7	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-02-19 01:00:30.338	challenge	Establece una meta de ahorro	Con una tasa de ahorro del 0%, es importante que establezcas una meta de ahorro realista para el mes actual y tomes medidas para alcanzarla, como reducir gastos o aumentar tus ingresos.	2026-02-19 01:00:30.339
+a49b719f-67a9-4c6c-abf4-15474eafaee6	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-02-19 01:00:30.917	achievement	Reconoce tus logros	Aunque no hay información sobre tus logros financieros, es importante que te tomes un momento para reflexionar sobre lo que has logrado hasta ahora y cómo puedes construir sobre esas bases para mejorar tu situación financiera.	2026-02-19 01:00:30.918
+6b854b88-bf7e-4f52-9b07-56b328e092fb	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-02-19 01:00:31.495	positive	Oportunidad para mejorar	La falta de información sobre tus ingresos y gastos te brinda la oportunidad de empezar de cero y crear un plan financiero personalizado que se adapte a tus necesidades y objetivos.	2026-02-19 01:00:31.496
+f08df3e1-790b-4236-aa37-403ffae45295	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-19 01:00:41.456	warning	Gastos en supermercado elevados	Tu gasto en supermercados como Lider Express y La Vega es alto, con un total de $182184 en la categoría de Supermercado. Considera planificar tus compras y buscar ofertas para reducir tus gastos.	2026-02-19 01:00:41.457
+0399be84-5ba8-4a25-ada8-052258b310f0	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-19 01:00:42.038	tip	Optimiza tus gastos en combustible	Con un gasto total de $49183 en combustible, considera explorar opciones para reducir tu consumo, como carpooling o vehículos más eficientes en combustible.	2026-02-19 01:00:42.039
+357d9207-8cf0-4fc2-95fc-e83d6353fe01	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-19 01:00:42.617	achievement	Inversión en criptomonedas	Felicitaciones por tu inversión de $150000 en criptomonedas. Esto muestra que estás diversificando tus inversiones y explorando nuevas oportunidades de crecimiento.	2026-02-19 01:00:42.618
+f3f65347-c0e3-4003-9c6f-938379ff4c4e	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-19 01:00:43.195	challenge	Reducir gastos en restaurantes	Desafío: reduce tus gastos en restaurantes, que actualmente son de $28160. Intenta cocinar en casa con más frecuencia y busca opciones más económicas para comer fuera.	2026-02-19 01:00:43.196
+44ae3ed6-217e-4e43-b9a1-a0c1f8a4509d	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-19 01:00:43.774	positive	Inversión en hipoteca	Tu inversión de $831219 en hipoteca es un paso importante hacia la propiedad de una vivienda. Esto puede ser una excelente inversión a largo plazo y un activo valioso.	2026-02-19 01:00:43.776
 \.
 
 
@@ -2795,6 +2815,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict ucMT9oLqS1XrJGr0VGN9ruPUP1MWXxhaniYGN6E2fGM8Xf7ul58E0ns2Bxf5Fkz
+-- \unrestrict Mn4lOt64com96544RoR5MUYnvIIlhVNWsf4TJS1wZ5PpBisXpI3m9lEpU8nm14e
 
 RESET ALL;
