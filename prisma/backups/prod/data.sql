@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict kETRwDAE5Krr3271Q38nuiT1fzlqC3nEjZiBvvJMO4mmV8MDTZrgC1KwXQMbC0M
+-- \restrict TJBQ1NFfQdlqixW3y7cUve3vYXplXuSPFIaGMDrav4xkbiKm3acIGQdNe3hafRF
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -486,6 +486,26 @@ b32b4a31-c10b-4e03-b1a9-aa61f3ec9d7d	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-0
 362d595f-46b8-4c9f-a3b2-b8a7a8efa337	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-20 01:00:43.438	achievement	Inversión en criptomonedas	Felicitaciones por tu inversión de $150,000 en criptomonedas. Esto muestra que estás diversificando tus inversiones y explorando nuevas oportunidades de crecimiento financiero.	2026-02-20 01:00:43.438
 57d274d5-6331-4612-92b0-07b3ac76165b	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-20 01:00:44.03	challenge	Reducir gastos en restaurantes	Has gastado $28,160 en restaurantes este mes. Te desafiamos a reducir este gasto en un 20% para el próximo mes, cocinando en casa con más frecuencia o buscando opciones más económicas para comer fuera.	2026-02-20 01:00:44.031
 f0b2a13f-ea02-48b6-a3ff-8ea66a2042c2	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-20 01:00:44.623	positive	Uso eficiente de servicios	Has demostrado un uso responsable de servicios como internet y electricidad, con gastos de $29,501 y $72,111 respectivamente. Sigue así, ya que esto muestra una gestión eficiente de tus recursos.	2026-02-20 01:00:44.624
+2c725b4f-6550-4e29-9bf8-6a4ebbc248c1	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-02-21 01:00:10.044	warning	Gasto significativo en deuda	Has gastado un total de $635,640.3 en pago de deuda este mes, lo que sugiere que es necesario revisar y ajustar tus finanzas para evitar problemas de liquidez.	2026-02-21 01:00:10.045
+a8ec7adf-efe8-4215-aa17-4c38f4cb8197	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-02-21 01:00:10.639	tip	Revisa tus obligaciones financieras	Es importante que revises tus obligaciones financieras con Jesus Leon Rangel y explores opciones para reducir o reestructurar tus deudas, si es posible.	2026-02-21 01:00:10.64
+ae76e032-4ef4-4e4c-b6a0-027c10749553	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-02-21 01:00:11.221	challenge	Reducir el gasto en deuda	Te desafío a reducir el gasto en deuda en un 20% el próximo mes, lo que te permitirá ahorrar $127,128.06 y mejorar tu salud financiera.	2026-02-21 01:00:11.222
+e306eb8a-9b65-4602-871b-ae699f21ae37	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-02-21 01:00:11.799	achievement	Prioriza tus pagos	Has priorizado el pago de tus deudas, lo que es un paso importante hacia la estabilidad financiera, ahora debes seguir trabajando en reducir tus deudas y aumentar tus ahorros.	2026-02-21 01:00:11.801
+7d2f0bd4-7aff-495d-855d-fffb3b942370	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-02-21 01:00:12.379	positive	Oportunidad para mejorar la salud financiera	Aunque has gastado una gran cantidad en deuda, esto también te da la oportunidad de revisar y ajustar tus finanzas para mejorar tu salud financiera a largo plazo, considera buscar asesoramiento financiero para obtener orientación personalizada.	2026-02-21 01:00:12.38
+3b123f1b-901e-4d38-8a74-a70bec14f080	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-02-21 01:00:19.678	warning	Gasto excesivo	En el mes actual, tus gastos totales son de $100,000, lo que sugiere que debes revisar tus hábitos de gasto y considerar formas de reducirlos para alcanzar un equilibrio financiero saludable.	2026-02-21 01:00:19.679
+fafc99c3-77a1-4b26-afa4-100b5f2629c0	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-02-21 01:00:20.265	tip	Establece un presupuesto	Debido a que no tienes ingresos registrados, es fundamental que establezcas un presupuesto que se adapte a tus necesidades y te permita comenzar a ahorrar y administrar tus finanzas de manera efectiva.	2026-02-21 01:00:20.266
+d6d81b27-6647-4098-9e49-353ad84a4aa7	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-02-21 01:00:20.847	challenge	Aumenta tu tasa de ahorro	Con una tasa de ahorro actual del 0%, te desafío a establecer una meta de ahorro del 10% o más de tus ingresos futuros, lo que te ayudará a construir una base financiera sólida y a alcanzar tus objetivos a largo plazo.	2026-02-21 01:00:20.848
+45439d3b-5ed7-47f1-bc07-64e76af09b3a	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-02-21 01:00:21.424	positive	Oportunidad de crecimiento	Aunque actualmente no tienes ingresos, esto podría ser una oportunidad para explorar nuevas fuentes de ingresos y establecer una base financiera sólida desde cero, lo que te permitirá crecer financieramente de manera sostenible.	2026-02-21 01:00:21.425
+0ce05dfd-12f0-45da-9a14-c5a6196d0fa6	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-02-21 01:00:22.003	achievement	Reconocimiento de conciencia financiera	El hecho de que estés revisando y analizando tus finanzas personales es un logro en sí mismo, ya que la conciencia y el control de tus finanzas son los primeros pasos hacia el éxito financiero y la estabilidad a largo plazo.	2026-02-21 01:00:22.004
+e8f69ad0-4e88-4a9e-b0fe-45816d600c6d	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-02-21 01:00:29.068	warning	Gastos elevados	Tus gastos totales en el mes actual son de $53,000, lo que sugiere que debes revisar y ajustar tus hábitos de gasto para evitar un desequilibrio financiero.	2026-02-21 01:00:29.068
+d0a4bacf-3955-4ea5-b963-13283d6354fa	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-02-21 01:00:29.646	tip	Establece un presupuesto	Considera crear un presupuesto personalizado para tener un control más preciso sobre tus ingresos y gastos, y así poder identificar áreas de mejora.	2026-02-21 01:00:29.648
+03a42472-0009-4f4f-bd66-327de9150c67	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-02-21 01:00:30.224	challenge	Aumenta tus ingresos	Dado que tus ingresos actuales son de $0, te desafío a explorar oportunidades para aumentar tus ingresos, ya sea mediante un nuevo empleo, freelance o inversiones.	2026-02-21 01:00:30.225
+d0f9714e-c75d-4ff0-a8e0-4f8cb3a7d1fa	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-02-21 01:00:30.802	achievement	No hay deudas registradas	No se han detectado deudas o pagos pendientes en tus finanzas, lo que es un logro positivo. Mantén esta tendencia para asegurar una situación financiera saludable.	2026-02-21 01:00:30.803
+01abf46c-6d53-4fc2-a74b-81de408ed551	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-02-21 01:00:31.379	positive	Oportunidad de invertir	Aunque tus ingresos son de $0, puedes considerar oportunidades de inversión a largo plazo para generar ingresos pasivos y mejorar tu situación financiera en el futuro.	2026-02-21 01:00:31.38
+46bfc37a-2088-4754-b09f-4379bf5fc3bb	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-21 01:00:41.406	warning	Gastos en préstamos y créditos	Ten cuidado, porque tienes un gran desembolso en préstamos y créditos, como se ve en tus gastos en 'Préstamo otorgado' y 'Hipoteca', que suman más de 1.6 millones. Considera revisar tus finanzas y buscar opciones para reducir estos gastos.	2026-02-21 01:00:41.407
+ae3ee0ac-05f7-4400-897b-d6d39760366c	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-21 01:00:41.985	tip	Optimiza tus gastos en supermercado	Parece que frecuentas 'Lider Express' con 6 transacciones este mes. Intenta planificar tus compras y buscar ofertas para reducir tus gastos en supermercado, que actualmente son de más de 180 mil.	2026-02-21 01:00:41.986
+65fa760c-31b5-4546-abdf-4a822d8e6683	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-21 01:00:42.563	achievement	Inversión en criptomonedas	Felicitaciones, has invertido 150 mil en criptomonedas, lo que demuestra que estás explorando diferentes opciones de inversión. Considera seguir diversificando tus inversiones para maximizar tus ganancias.	2026-02-21 01:00:42.565
+5bc177a1-0c61-4ae5-b76d-e74137429353	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-21 01:00:43.141	challenge	Reducir gastos en combustible	Desafío: intenta reducir tus gastos en combustible, que actualmente son de más de 49 mil. Considera opciones como carpooling, usar transporte público o vehículos más eficientes para reducir tus gastos y ayudar al medio ambiente.	2026-02-21 01:00:43.142
+586cf827-c406-465f-b36b-f0e8173d0d2d	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-21 01:00:43.718	positive	Gastos en salud	Es genial que estés invirtiendo en tu salud, con gastos en 'Medicinas' y 'pastillas' que suman más de 53 mil. Recuerda que la salud es lo más importante, así que sigue priorizándola en tus finanzas.	2026-02-21 01:00:43.718
 \.
 
 
@@ -2835,6 +2855,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict kETRwDAE5Krr3271Q38nuiT1fzlqC3nEjZiBvvJMO4mmV8MDTZrgC1KwXQMbC0M
+-- \unrestrict TJBQ1NFfQdlqixW3y7cUve3vYXplXuSPFIaGMDrav4xkbiKm3acIGQdNe3hafRF
 
 RESET ALL;
