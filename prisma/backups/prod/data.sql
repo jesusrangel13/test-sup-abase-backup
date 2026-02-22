@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict TJBQ1NFfQdlqixW3y7cUve3vYXplXuSPFIaGMDrav4xkbiKm3acIGQdNe3hafRF
+-- \restrict 9BPrBhzXS5L6atyBNzgJ8pcCH8JU0YKgMAPZ5uu9SWg5GbilpzoVpxJoFcSPIxH
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -506,6 +506,26 @@ ae3ee0ac-05f7-4400-897b-d6d39760366c	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-0
 65fa760c-31b5-4546-abdf-4a822d8e6683	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-21 01:00:42.563	achievement	Inversión en criptomonedas	Felicitaciones, has invertido 150 mil en criptomonedas, lo que demuestra que estás explorando diferentes opciones de inversión. Considera seguir diversificando tus inversiones para maximizar tus ganancias.	2026-02-21 01:00:42.565
 5bc177a1-0c61-4ae5-b76d-e74137429353	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-21 01:00:43.141	challenge	Reducir gastos en combustible	Desafío: intenta reducir tus gastos en combustible, que actualmente son de más de 49 mil. Considera opciones como carpooling, usar transporte público o vehículos más eficientes para reducir tus gastos y ayudar al medio ambiente.	2026-02-21 01:00:43.142
 586cf827-c406-465f-b36b-f0e8173d0d2d	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-21 01:00:43.718	positive	Gastos en salud	Es genial que estés invirtiendo en tu salud, con gastos en 'Medicinas' y 'pastillas' que suman más de 53 mil. Recuerda que la salud es lo más importante, así que sigue priorizándola en tus finanzas.	2026-02-21 01:00:43.718
+cf77c5aa-6fa9-477c-a5c2-29bf2323578a	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-02-22 01:00:10.315	warning	Gasto excepcional en pago de deuda	Has tenido un gasto de $635,640.3 en pago de deuda en el mes actual, lo que puede ser un indicio de una situación financiera delicada. Es importante revisar y ajustar tus finanzas para evitar problemas futuros.	2026-02-22 01:00:10.316
+7c924e84-43fb-4475-91fa-c815b379d133	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-02-22 01:00:10.905	tip	Revisa tus obligaciones financieras	Considera revisar tus obligaciones financieras con Jesus Leon Rangel para entender mejor el pago de $635,640.3 y explorar opciones para reducir o reestructurar la deuda si es necesario.	2026-02-22 01:00:10.906
+31baa4e1-5bf6-42af-b0fc-2f08f39a3039	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-02-22 01:00:11.484	challenge	Establece un plan de ahorro	Te desafiamos a establecer un plan de ahorro para el mes próximo, considerando reducir gastos no esenciales y asignar una parte de tus ingresos a un fondo de emergencia para evitar situaciones financieras difíciles en el futuro.	2026-02-22 01:00:11.485
+0b62fbc4-41d7-4b1f-ba4d-af4e49fc5631	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-02-22 01:00:12.063	achievement	Identifica áreas de mejora	Has identificado un área de mejora en tus finanzas al reconocer el gasto excepcional en pago de deuda. Ahora puedes trabajar en reducir o gestionar esta deuda para mejorar tu situación financiera.	2026-02-22 01:00:12.064
+1a3a9fae-9f51-4a72-926e-370cd463ba92	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-02-22 01:00:12.641	positive	Oportunidad para reestructurar	El pago de $635,640.3 puede ser una oportunidad para reestructurar tus finanzas y establecer un plan de pago más manejable. Considera hablar con un asesor financiero para explorar opciones y encontrar la mejor solución para tu situación.	2026-02-22 01:00:12.642
+d936b8f3-a5b1-4765-a969-1354a79ea30b	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-02-22 01:00:19.881	warning	Gastos excesivos	Ten cuidado, tus gastos totales ($100,000) superan significativamente tus ingresos ($0) en este mes. Revisa tus hábitos de gasto para evitar problemas financieros.	2026-02-22 01:00:19.882
+74f88ff0-0497-4df6-b9f6-024cee716c9e	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-02-22 01:00:20.458	tip	Establece un presupuesto	Es importante que crees un presupuesto personalizado para tener un mejor control sobre tus finanzas. Considera asignar un porcentaje de tus ingresos a ahorro y gastos esenciales.	2026-02-22 01:00:20.459
+a8aec4dd-8bd8-4d37-8d10-08c33bba9dde	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-02-22 01:00:21.034	challenge	Aumenta tus ingresos	Desafío: busca oportunidades para aumentar tus ingresos, como un trabajo adicional o freelance, para mejorar tu situación financiera y alcanzar una tasa de ahorro positiva.	2026-02-22 01:00:21.035
+e5f73f3c-a60a-4f8a-9098-bd01bc7245d4	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-02-22 01:00:21.615	achievement	Identifica áreas de mejora	Has identificado un área importante para mejorar: tus gastos. Ahora, busca formas de reducirlos y optimizar tus finanzas para alcanzar una mayor estabilidad económica.	2026-02-22 01:00:21.616
+ded0cbd0-afeb-416a-9ac5-e5ef1f29cfb9	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-02-22 01:00:22.195	positive	Oportunidad para el ahorro	Aunque tus ingresos son cero en este momento, puedes comenzar a planificar tu futuro financiero. Investiga opciones de ahorro y considera abrir una cuenta de ahorros para cuando tus ingresos se reactiven.	2026-02-22 01:00:22.196
+7a022ce6-a6af-4007-8889-bb943ed222eb	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-02-22 01:00:29.135	warning	Gastos elevados	Tu gasto total es de $53,000 en el mes actual, lo que sugiere que debes revisar tus hábitos de consumo y buscar formas de reducir tus gastos para evitar problemas financieros.	2026-02-22 01:00:29.136
+13c39bf4-ef25-46ad-b3ea-e579432c4b84	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-02-22 01:00:29.712	tip	Establece un presupuesto	Debido a que no tienes ingresos registrados, te recomiendo establecer un presupuesto para llevar un control adecuado de tus gastos y encontrar formas de generar ingresos para equilibrar tus finanzas.	2026-02-22 01:00:29.713
+46e8598b-68bf-42a7-a165-e277df1d7e59	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-02-22 01:00:30.292	challenge	Incrementa tu tasa de ahorro	Con una tasa de ahorro del 0%, es importante que te esfuerces por aumentar tus ahorros para tener una mayor seguridad financiera y alcanzar tus metas a largo plazo.	2026-02-22 01:00:30.292
+9f744761-12cd-40d7-bf14-51a29013095f	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-02-22 01:00:30.868	achievement	No hay deudas registradas	No se han registrado deudas en tu contexto financiero, lo que es un logro positivo y te permite enfocarte en otros aspectos de tus finanzas, como el ahorro y la inversión.	2026-02-22 01:00:30.869
+bab53cf4-81d1-46f4-9e95-60011c8dd781	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-02-22 01:00:31.446	positive	Oportunidad para mejorar	La falta de información sobre tus hábitos de gasto y categorías te brinda la oportunidad de empezar a registrar y analizar tus gastos para tomar decisiones informadas y mejorar tus finanzas personales.	2026-02-22 01:00:31.447
+976e6ac6-c35a-46d6-9f65-1afe3d987650	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-22 01:00:41.38	warning	Gastos en supermercado	Tu gasto en supermercados como Lider Express y La Vega es alto, considera planificar tus compras y buscar ofertas para reducir este gasto.	2026-02-22 01:00:41.381
+30ffe7a3-a1c5-4347-bee1-496f36a1fe79	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-22 01:00:41.97	tip	Optimiza tus gastos en combustible	Con un gasto total de $49,183 en combustible, te recomendamos considerar alternativas de transporte más económicas o planificar tus viajes para reducir este gasto.	2026-02-22 01:00:41.971
+028efe72-447c-490e-be91-fc0bd2bfa1ef	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-22 01:00:42.549	achievement	Inversión en criptomonedas	Felicitaciones, has invertido $150,000 en criptomonedas, lo que demuestra tu capacidad para diversificar tus inversiones y asumir riesgos calculados.	2026-02-22 01:00:42.55
+43bf6f48-94e2-4308-9b72-63ac13a714be	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-22 01:00:43.127	challenge	Reducir gastos en restaurantes	Te desafiamos a reducir tus gastos en restaurantes, que actualmente son de $28,160, preparando comidas en casa y reservando salidas a restaurantes para ocasiones especiales.	2026-02-22 01:00:43.128
+fe490faa-21c5-4a7b-8a77-e3c539fd1c60	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-22 01:00:43.706	positive	Gestión de deudas	Has demostrado una buena gestión de deudas, como se refleja en tus pagos de préstamos y créditos, lo que te permite mantener un buen historial crediticio y reducir tus gastos en intereses.	2026-02-22 01:00:43.706
 \.
 
 
@@ -2855,6 +2875,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict TJBQ1NFfQdlqixW3y7cUve3vYXplXuSPFIaGMDrav4xkbiKm3acIGQdNe3hafRF
+-- \unrestrict 9BPrBhzXS5L6atyBNzgJ8pcCH8JU0YKgMAPZ5uu9SWg5GbilpzoVpxJoFcSPIxH
 
 RESET ALL;
