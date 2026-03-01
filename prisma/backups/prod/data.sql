@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict A7ibwy3t85kOeLZFdYyNF5kTTzgxBi24q7Cy1o9QJPuNFF6cNw9K3XGMCj0GJeM
+-- \restrict eC1tYR0KbZk0jRYhuegCINhOgb8PZ5n03knn1r3mfSEXNrKfxKgeqAC9eBiDztW
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -654,6 +654,26 @@ d8b45a15-6fde-4c65-9b00-92eb63a44280	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-0
 d07c103e-4831-4e20-a2f5-8ce00ff656d1	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-28 01:00:43.632	achievement	Inversión en criptomonedas	Has invertido $150000 en criptomonedas, lo que demuestra tu interés en diversificar tus inversiones. Considera seguir investigando y ajustando tu estrategia de inversión para maximizar tus ganancias.	2026-02-28 01:00:43.633
 d1d9b568-d8fa-4b3d-bf73-9a6bc3587060	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-28 01:00:44.229	challenge	Reducir gastos en restaurantes	Has gastado $28160 en restaurantes este mes. Te desafiamos a reducir tus gastos en restaurantes en un 20% durante el próximo mes. Considera cocinar en casa más a menudo y buscar opciones más económicas para comer fuera.	2026-02-28 01:00:44.23
 9e7df08a-5f35-4075-9f34-977f4895fb4f	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-02-28 01:00:44.827	positive	Gestión eficaz de préstamos	Has gestionado préstamos por un total de $850000 este mes, lo que sugiere que estás tomando medidas proactivas para administrar tus deudas. Sigue trabajando en reducir tus deudas y mejorar tu salud financiera.	2026-02-28 01:00:44.828
+5f131d11-c11c-4452-895c-eae3bf1f0b2c	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-01 01:00:09.059	warning	Gastos elevados	Tus gastos están muy por encima de tus ingresos, lo que puede generar problemas financieros. Considera reducir tus gastos y buscar formas de aumentar tus ingresos.	2026-03-01 01:00:09.06
+b228ce82-b154-4832-af9f-b67a8a1ef7ec	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-01 01:00:09.724	tip	Revisa tus categorías	Aunque no hay información sobre tus categorías de gastos, es importante que revises y clasifiques tus gastos para entender mejor dónde se está yendo tu dinero.	2026-03-01 01:00:09.725
+3d62cf21-1fd5-4858-948e-05da45518c57	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-01 01:00:10.374	challenge	Establece un objetivo de ahorro	Con una tasa de ahorro del 0%, es importante que establezcas un objetivo de ahorro y trabajés para alcanzarlo. Considera establecer un objetivo realista y crear un plan para lograrlo.	2026-03-01 01:00:10.376
+c9298163-05f2-4b72-92ad-62866a6dcc30	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-01 01:00:11.023	positive	No hay deudas informadas	No se han informado deudas en tu contexto financiero, lo que es un buen indicador. Mantén el buen trabajo y sigue gestionando tus finanzas de manera responsable.	2026-03-01 01:00:11.024
+fe824f0b-cd04-4396-ae5e-df0efc4bfc94	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-01 01:00:11.67	achievement	No se han identificado hábitos de gasto problemáticos	No se han identificado hábitos de gasto problemáticos en tu contexto financiero, lo que sugiere que tienes un buen control sobre tus gastos. Sigue adelante con este buen trabajo y mantén un ojo en tus finanzas.	2026-03-01 01:00:11.671
+546a8c86-8fff-4a7e-9b19-8c8811eb3d19	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-01 01:00:19.886	warning	Gastos elevados	Tus gastos totales este mes son de $100,000, lo que puede ser un desafío para mantener un equilibrio financiero saludable. Considera revisar tus categorías de gasto para identificar áreas de mejora.	2026-03-01 01:00:19.887
+d47a2e84-0fcc-4333-8292-33ddbcf5da35	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-01 01:00:20.533	tip	Establece una meta de ahorro	No tienes ingresos registrados este mes, lo que puede dificultar el ahorro. Intenta establecer una meta de ahorro realista y busca formas de aumentar tus ingresos para alcanzarla.	2026-03-01 01:00:20.534
+8327ba76-72be-4b07-94a4-5f56a0c4b7e0	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-01 01:00:21.18	challenge	Reduce gastos en categorías no esenciales	Aunque no se proporcionan detalles sobre tus categorías de gasto, es importante revisar tus hábitos de gasto y reducir el gasto en categorías no esenciales para liberar fondos para ahorro y gastos más importantes.	2026-03-01 01:00:21.181
+45c882ea-e6a8-4391-9f78-a4619ffd2539	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-01 01:00:21.828	achievement	Reconocimiento de conciencia financiera	El hecho de que estés revisando tus finanzas y buscando mejorar tus hábitos de gasto es un paso importante. Aprovecha esta conciencia para hacer cambios positivos en tu situación financiera.	2026-03-01 01:00:21.829
+fb21653e-11f1-4ff1-babd-f668d28969c7	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-01 01:00:22.474	positive	Oportunidad para mejorar	La falta de ingresos y el alto gasto te presentan una oportunidad para replantear tus finanzas y establecer un plan para mejorar tu situación financiera a largo plazo. Busca formas de aumentar tus ingresos y reducir tus gastos para alcanzar la estabilidad financiera.	2026-03-01 01:00:22.475
+82264d9a-a5a5-40a4-bd59-2b0104644681	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-01 01:00:30.376	warning	Gastos elevados	Tus gastos totales en el mes actual ascienden a $53,000, lo que puede ser un desafío para mantener la estabilidad financiera sin ingresos registrados.	2026-03-01 01:00:30.377
+68a4a0aa-01a5-46c4-aff1-f22ad96f53fd	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-01 01:00:31.023	tip	Revisa tus categorías de gasto	Aunque no hay datos disponibles sobre tus categorías de gasto, te recomiendo revisar y categorizar tus gastos para entender mejor dónde se está asignando tu dinero y podrías optimizar tus finanzas.	2026-03-01 01:00:31.023
+c45ca1f3-ee6e-4079-a81c-133dabb9a918	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-01 01:00:31.669	challenge	Establece un presupuesto	Desafío: Establece un presupuesto realista para el próximo mes, considerando tus gastos actuales y explorando formas de reducirlos o aumentar tus ingresos.	2026-03-01 01:00:31.67
+d2314b0e-62b9-4e1b-ba61-b2015b2f2823	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-01 01:00:32.444	achievement	Sin deuda registrada	No se registran deudas o pagos de intereses en tus finanzas actuales, lo que es un logro positivo. Mantén el enfoque en mantener tus finanzas libres de deudas.	2026-03-01 01:00:32.446
+51a74606-3fa7-420b-aa99-6df838125d3b	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-01 01:00:33.092	positive	Oportunidad para el ahorro	Aunque actualmente no hay una tasa de ahorro, cualquier esfuerzo por comenzar a ahorrar, aunque sea una pequeña cantidad, puede marcar el inicio de un hábito saludable hacia la acumulación de riqueza.	2026-03-01 01:00:33.093
+5df7b354-5d34-4c92-b441-73ff4ee99290	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-01 01:00:40.933	positive	Ahorrador destacado	Tu tasa de ahorro del 26% es notable, sigue manteniendo este ritmo para asegurar un futuro financiero estable.	2026-03-01 01:00:40.934
+f7eabdc8-057d-4f34-9e9b-100b1588d43a	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-01 01:00:41.579	tip	Optimiza tus ingresos	Con un ingreso de $5,010,920.3 en este mes, considera invertir en activos que generen rendimientos pasivos para aumentar tu riqueza a largo plazo.	2026-03-01 01:00:41.58
+480e130f-e9bb-4622-9a44-6a79e674c9c2	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-01 01:00:42.227	warning	Gastos significativos	Tus gastos totales de $3,716,288 son considerablemente altos, revisa tus hábitos de gasto para identificar áreas donde puedas reducir costos y aumentar tus ahorros.	2026-03-01 01:00:42.228
+fdefacc2-2fd5-4c04-930b-8728a7443387	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-01 01:00:42.873	achievement	Logro financiero	Felicitaciones, has mantenido un equilibrio saludable entre tus ingresos y gastos, lo que te permite ahorrar y disfrutar de tus logros financieros.	2026-03-01 01:00:42.874
+398692ca-17c0-4a4c-a0df-340974c7936f	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-01 01:00:43.519	challenge	Desafío de reducción de gastos	Te desafiamos a reducir tus gastos en un 10% durante el próximo mes, esto te permitirá ahorrar $371,629 adicionales y acercarte a tus metas financieras.	2026-03-01 01:00:43.52
 \.
 
 
@@ -3083,6 +3103,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict A7ibwy3t85kOeLZFdYyNF5kTTzgxBi24q7Cy1o9QJPuNFF6cNw9K3XGMCj0GJeM
+-- \unrestrict eC1tYR0KbZk0jRYhuegCINhOgb8PZ5n03knn1r3mfSEXNrKfxKgeqAC9eBiDztW
 
 RESET ALL;
