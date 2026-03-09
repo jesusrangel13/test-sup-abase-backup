@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict 4yEH55jmshV3e4yuPdJzUNZoI8oKpcBPtZqw5chKvXbfaOJtmAHICGHsR5sdR4X
+-- \restrict nVHFgRV7m12NKxtmR12I1pMEVZTZPKHKwsDLHcFh11jzAwZc7TPQa7fbz2XvBxn
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -814,6 +814,26 @@ a4389887-6808-4748-88e8-36f41579d1b7	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-0
 19f6ec3f-d0fa-48a0-a074-826f05295a38	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-08 01:00:44.685	achievement	Inversión en criptomonedas	Felicitaciones por invertir $150,000 en criptomonedas. Esto muestra que estás dispuesto a asumir riesgos y diversificar tus inversiones. Mantén un ojo en el mercado y ajusta tu estrategia según sea necesario.	2026-03-08 01:00:44.686
 4c2b4a28-5422-4bd1-9302-62849b683749	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-08 01:00:45.315	challenge	Reduce gastos en combustible	Has gastado $49,575 en combustible, lo que sugiere que podrías estar conduciendo frecuentemente o no aprovechando opciones de transporte más eficientes. Intenta reducir tus gastos en combustible en un 20% en el próximo mes.	2026-03-08 01:00:45.316
 891e5f52-a4a6-4766-87de-3a9d1833a336	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-08 01:00:45.945	positive	Inversión en tu salud	Has invertido $29,980 en medicinas y $14,990 en servicios personales, lo que muestra que valoras tu salud y bienestar. Sigue priorizando tu salud y considera invertir en programas de prevención y cuidado personal.	2026-03-08 01:00:45.945
+841f7d5b-73d9-4f7d-b03e-70747adf07c4	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-09 01:00:09.779	warning	Gasto excepcionalmente alto en deuda	Este mes has gastado $486,674.9 en pago de deuda, lo cual es un monto considerable. Es importante revisar y ajustar tus finanzas para evitar gastos excesivos en el futuro.	2026-03-09 01:00:09.781
+6a884687-ddbc-4b50-bf15-119bb77ac503	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-09 01:00:10.376	tip	Prioriza la reducción de deuda	Considera asignar una parte de tus ingresos futuros a la reducción de deuda para disminuir el monto total y evitar intereses adicionales.	2026-03-09 01:00:10.377
+5a199838-7117-4fb0-9da3-d4bc3d233966	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-09 01:00:10.952	challenge	Desafío de ahorro	Te desafiamos a aumentar tu tasa de ahorro actual del 0% a un mínimo del 10% en los próximos 3 meses. Esto te ayudará a tener una mayor estabilidad financiera y a reducir la deuda.	2026-03-09 01:00:10.953
+c4e0e2ff-6111-489a-baaf-d686b52480ee	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-09 01:00:11.524	achievement	Identificación de gasto principal	Has identificado claramente tu gasto principal en el pago de deuda a Jesus Leon Rangel. Ahora es momento de tomar medidas para reducir y gestionar este gasto de manera efectiva.	2026-03-09 01:00:11.526
+ff08bccc-d562-4853-b196-39051695dad6	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-09 01:00:12.1	positive	Oportunidad de reestructuración financiera	La identificación de tu gasto excepcionalmente alto en deuda te brinda la oportunidad de reestructurar tus finanzas y establecer un plan para reducir la deuda y aumentar tus ahorros en el futuro.	2026-03-09 01:00:12.101
+6b25ea28-7f20-464e-a9b2-570a2e4f3b68	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-09 01:00:19.082	warning	Gastos elevados	Tus gastos totales de $100,000 en el mes actual son considerablemente altos. Considera revisar y ajustar tus gastos para lograr un mejor equilibrio financiero.	2026-03-09 01:00:19.083
+7a148798-cc41-47de-a66b-f2d24be7a5f5	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-09 01:00:19.655	tip	Establece un presupuesto	Dado que no tienes ingresos registrados, es fundamental establecer un presupuesto para gestionar tus gastos de manera efectiva y evitar problemas financieros.	2026-03-09 01:00:19.656
+f473b168-aee4-42f7-8325-3c337865b9ca	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-09 01:00:20.228	challenge	Incrementa tu tasa de ahorro	Tu tasa de ahorro actual es del 0%. Te desafío a establecer metas de ahorro realistas y a trabajar para incrementar esta tasa en el próximo mes.	2026-03-09 01:00:20.229
+ceb529b8-4ea0-4ce1-8fdb-916f3565b00c	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-09 01:00:20.802	achievement	Oportunidad de mejora	Aunque no tienes información sobre tus hábitos de gasto, esta es una oportunidad para empezar a rastrear tus gastos y identificar áreas de mejora en tus finanzas personales.	2026-03-09 01:00:20.804
+db3531a3-f3e4-48d0-9000-1e295695ca4d	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-09 01:00:21.377	positive	Nueva oportunidad financiera	El nuevo mes te brinda la oportunidad de comenzar de nuevo y tomar decisiones financieras informadas. Aprovecha esta oportunidad para sentar las bases de una situación financiera más estable y próspera.	2026-03-09 01:00:21.377
+22015978-fdee-4686-ada9-cb69b4b72e51	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-09 01:00:28.238	warning	Gastos elevados	Tus gastos totales este mes ascienden a $53,000, lo que puede ser una carga financiera significativa. Considera revisar tus gastos para identificar áreas donde puedas reducir costos.	2026-03-09 01:00:28.239
+3308e371-aac1-4c0d-90ff-3117011450a4	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-09 01:00:28.815	tip	Establece un presupuesto	Dado que no tienes ingresos registrados, es fundamental establecer un presupuesto para gestionar tus gastos de manera efectiva. Esto te ayudará a priorizar tus necesidades y a evitar gastos innecesarios.	2026-03-09 01:00:28.816
+49cedb5d-d5d9-49cb-b510-eebff5f854d0	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-09 01:00:29.389	challenge	Aumenta tu tasa de ahorro	Tu tasa de ahorro actual es del 0%, lo que significa que no estás ahorrando nada. Te desafío a establecer una meta de ahorro para este mes y a trabajar hacia ella.	2026-03-09 01:00:29.39
+9998cb14-9bc7-4e4a-9c2c-e9a4be338df2	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-09 01:00:29.961	positive	Oportunidad para optimizar	No tener ingresos registrados puede ser una oportunidad para revisar tus finanzas y optimizar tus gastos. Aprovecha esta oportunidad para identificar áreas donde puedas mejorar tu situación financiera.	2026-03-09 01:00:29.962
+0e318584-9826-46e8-8d39-896257bc8d4d	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-09 01:00:30.536	achievement	Reconocimiento de situación financiera	Has tomado el primer paso hacia el control de tus finanzas al registrar tus gastos y reconocer tu situación actual. Esto es un logro importante y te permite avanzar hacia una mejor gestión de tus recursos.	2026-03-09 01:00:30.537
+17b6a140-e4e4-4125-91bc-af50658d3534	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-09 01:00:40.406	warning	Gasto en hipoteca	Tu gasto en hipoteca es muy alto, representando $833.310 en el mes actual. Considera revisar y negociar tus términos de pago para reducir el monto.	2026-03-09 01:00:40.407
+66c3a3bf-614e-4f2b-88e9-4feab62fb5ed	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-09 01:00:40.981	tip	Optimiza tus compras en supermercado	Has gastado $89.281 en supermercado en el mes actual. Intenta planificar tus compras y buscar ofertas para reducir el gasto en este rubro.	2026-03-09 01:00:40.982
+13caf7a8-ccf0-4c52-88c5-da6e9dae7e84	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-09 01:00:41.555	achievement	Inversión en criptomonedas	Felicitaciones, has invertido $150.000 en criptomonedas. Esto muestra que estás diversificando tus inversiones y considerando opciones de crecimiento a largo plazo.	2026-03-09 01:00:41.556
+650d995e-9c0c-4d86-97e0-e0b8b9c51edc	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-09 01:00:42.13	challenge	Reducir gastos en combustible	Tu gasto en combustible es de $49.575 en el mes actual. Te desafiamos a reducir este gasto en un 20% en el próximo mes, considerando opciones como conducir menos o buscar rutas más eficientes.	2026-03-09 01:00:42.131
+bc73d6dc-802c-47cd-bba5-38fe44d1e67d	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-09 01:00:42.702	positive	Inversión en tu salud	Has invertido $29.980 en medicinas y $14.990 en servicios personales, mostrando que valoras tu salud y bienestar. Sigue priorizando estas inversiones para mantener un estilo de vida saludable.	2026-03-09 01:00:42.703
 \.
 
 
@@ -3406,6 +3426,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict 4yEH55jmshV3e4yuPdJzUNZoI8oKpcBPtZqw5chKvXbfaOJtmAHICGHsR5sdR4X
+-- \unrestrict nVHFgRV7m12NKxtmR12I1pMEVZTZPKHKwsDLHcFh11jzAwZc7TPQa7fbz2XvBxn
 
 RESET ALL;
