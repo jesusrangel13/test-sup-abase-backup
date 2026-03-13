@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict JZVc9TvBkTvDNSgUx6KixkncPlgwyJ8XFOG5ITXpnSZGfA1PxhdpmToxL9Pffof
+-- \restrict jLWoZFo9gaJBwH8zlvw5KCDcrWFTlK9qGkZh9POSxUmlVOweKKZToBmtSSUWaxi
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -894,6 +894,26 @@ d0e76dcc-6450-4c6d-9be9-62f12edc73d2	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-0
 d08f1a82-37b3-4abb-96b1-2c40bbbe3453	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-12 01:00:45.944	achievement	Inversión en criptomonedas	Felicitaciones por invertir $150,000 en criptomonedas, lo que demuestra tu interés en diversificar tus inversiones y explorar nuevas oportunidades de crecimiento.	2026-03-12 01:00:45.944
 7d4e01be-a3f5-44ab-a55e-d71867d463b9	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-12 01:00:46.577	challenge	Reduce tus gastos en combustible	Te desafiamos a reducir tus gastos en combustible, que actualmente son de $49,575, considerando opciones como la compra de un vehículo más eficiente o la planificación de rutas más eficientes.	2026-03-12 01:00:46.578
 9cbfb4b1-f3de-4047-9c11-5f11a03a7de6	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-12 01:00:47.338	positive	Ingresos por préstamos otorgados	Es positivo ver que has recibido $850,000 por préstamos otorgados, lo que puede ser una fuente adicional de ingresos y ayudarte a alcanzar tus objetivos financieros.	2026-03-12 01:00:47.339
+dca60e23-ce1b-4bdf-954a-9031a76cb74c	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-13 01:00:11.034	warning	Gasto excesivo en pago de deuda	Has gastado un total de $486,674.9 en pago de deuda este mes, lo que puede ser un indicador de que necesitas revisar tus finanzas y buscar formas de reducir tus deudas.	2026-03-13 01:00:11.035
+f687f60e-7c2a-460d-b600-cf09fddadf9f	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-13 01:00:11.702	tip	Considera la posibilidad de negociar con tus acreedores	Dado que tienes un solo pago de deuda por un monto muy alto, es posible que puedas negociar con el acreedor para reducir el monto o establecer un plan de pago más manejable.	2026-03-13 01:00:11.703
+13b40c76-3039-4d22-ae61-c3ea5ec52fd8	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-13 01:00:12.351	challenge	Desafío: reducir el pago de deuda en un 20%	Te desafiamos a reducir el pago de deuda en un 20% para el próximo mes, lo que te permitiría ahorrar $97,334.98 y mejorar tus finanzas.	2026-03-13 01:00:12.352
+d2204099-9476-4f23-a954-942dcae6407d	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-13 01:00:13	achievement	Has identificado tu gasto más grande	Has identificado que el pago de deuda es tu gasto más grande, lo que es un paso importante para tomar el control de tus finanzas y hacer cambios positivos.	2026-03-13 01:00:13.001
+1bc9f034-0657-460f-8854-ab0abc393737	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-13 01:00:13.647	positive	Oportunidad para mejorar tus finanzas	Aunque tienes un gasto alto en pago de deuda, esto también es una oportunidad para revisar tus finanzas y encontrar formas de mejorar tu situación financiera a largo plazo.	2026-03-13 01:00:13.648
+684a8f42-da87-4855-8735-4d7492c423cb	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-13 01:00:21.619	warning	Gastos excesivos	Ten cuidado, tus gastos totales ($100,000) son significativamente altos en relación con tus ingresos. Considera revisar y ajustar tus hábitos de gasto para evitar problemas financieros.	2026-03-13 01:00:21.62
+0bec3b4e-f823-41ff-8f05-88626fe4ba68	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-13 01:00:22.268	tip	Establece un presupuesto	Dado que no hay ingresos registrados, es crucial que establezcas un presupuesto para gestionar tus gastos de manera efectiva. Esto te ayudará a priorizar tus necesidades y evitar gastos innecesarios.	2026-03-13 01:00:22.269
+e5d4a404-e858-4b64-8839-461b3f2d7f94	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-13 01:00:22.914	challenge	Incrementa tus ingresos	Desafíate a encontrar formas de aumentar tus ingresos. Esto podría incluir buscar nuevas fuentes de ingreso, mejorar tus habilidades para un aumento salarial o explorar oportunidades de inversión.	2026-03-13 01:00:22.915
+18582fbf-b171-4367-9b5a-0ea9987d5d0e	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-13 01:00:23.563	achievement	Identifica áreas de mejora	Aunque no hay datos sobre tus hábitos de gasto específicos, has dado el primer paso hacia el control de tus finanzas. Ahora, enfócate en identificar áreas donde puedas reducir gastos y mejorar tu situación financiera.	2026-03-13 01:00:23.564
+a1b6bafe-f604-457a-9632-40a08920d87f	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-13 01:00:24.216	positive	Oportunidad para comenzar de cero	Con un nuevo mes por delante, tienes la oportunidad de empezar de cero y establecer hábitos financieros saludables. Aprovecha esta oportunidad para crear un plan financiero sólido y trabajar hacia una situación económica más estable.	2026-03-13 01:00:24.217
+21354e4d-3ea3-4aa7-8445-ab434529eaea	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-13 01:00:32.089	warning	Gastos elevados	Tus gastos totales este mes ascienden a $53,000, lo que puede ser un indicador de un posible desequilibrio en tu presupuesto. Considera revisar tus gastos y ajustarlos según sea necesario.	2026-03-13 01:00:32.09
+fe726a2f-6731-49ba-81db-fcbc34ca6933	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-13 01:00:32.864	tip	Establece un presupuesto	Debido a que no hay ingresos registrados, es fundamental establecer un presupuesto para gestionar tus finanzas de manera efectiva. Esto te ayudará a priorizar tus gastos y a alcanzar tus objetivos financieros.	2026-03-13 01:00:32.865
+a0a021e3-f17b-4697-ae53-fb8af49c8521	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-13 01:00:33.511	challenge	Incrementa tu tasa de ahorro	Con una tasa de ahorro del 0%, es importante que te esfuerces por aumentarla. Establece metas de ahorro realistas y busca formas de reducir tus gastos para alcanzar un equilibrio financiero saludable.	2026-03-13 01:00:33.512
+d6b373af-5a67-412a-b61c-dfe1bd4b9170	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-13 01:00:34.157	achievement	No hay deudas registradas	No se han registrado deudas en tu contexto financiero, lo que es un logro positivo. Mantén este ritmo y asegúrate de seguir gestionando tus finanzas de manera responsable.	2026-03-13 01:00:34.158
+03baef15-e0de-427e-80d8-895d15a58c50	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-13 01:00:34.806	positive	Oportunidad para optimizar	La falta de información sobre tus hábitos de gasto y categorías te brinda la oportunidad de empezar a trackear y optimizar tus finanzas desde cero. Aprovecha esta oportunidad para establecer buenos hábitos financieros y alcanzar tus objetivos.	2026-03-13 01:00:34.806
+d3ad394c-3dc0-4e3a-bba3-d5fbf0bb483f	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-13 01:00:45.784	warning	Gastos en hipoteca	Tienes un gasto significativo en hipoteca, con un total de $833.310 en el mes actual. Es importante considerar la posibilidad de renegociar la tasa de interés o explorar opciones para reducir este gasto.	2026-03-13 01:00:45.785
+0be7306d-11f7-457e-9216-30bf3e126fff	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-13 01:00:46.433	tip	Optimización de gastos en supermercado	Has gastado $91.081 en supermercado en el mes actual. Considera planificar tus compras y buscar ofertas para reducir este gasto y ahorrar dinero.	2026-03-13 01:00:46.434
+f8034db5-d95c-4cc2-bc5d-ba275b8e68da	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-13 01:00:47.08	achievement	Inversión en acciones	Felicitaciones, has invertido $355.519 en acciones a través de Hapi Broker. Esto demuestra tu compromiso con la planificación financiera a largo plazo.	2026-03-13 01:00:47.081
+269002e7-2599-42f2-b8e6-26bbe93343fb	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-13 01:00:47.726	challenge	Reducir gastos en combustible	Has gastado $49.575 en combustible en el mes actual. Te desafiamos a reducir este gasto en un 20% en el próximo mes, explorando opciones como carpooling o transporte público.	2026-03-13 01:00:47.727
+c4620437-fd3d-40bd-8f53-2301b0b3266a	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-13 01:00:48.501	positive	Ingresos por préstamos otorgados	Has recibido $850.000 por préstamos otorgados a través de Katty Rangel. Esto es un ingreso significativo que puedes considerar para invertir o ahorrar para el futuro.	2026-03-13 01:00:48.502
 \.
 
 
@@ -3563,6 +3583,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict JZVc9TvBkTvDNSgUx6KixkncPlgwyJ8XFOG5ITXpnSZGfA1PxhdpmToxL9Pffof
+-- \unrestrict jLWoZFo9gaJBwH8zlvw5KCDcrWFTlK9qGkZh9POSxUmlVOweKKZToBmtSSUWaxi
 
 RESET ALL;
