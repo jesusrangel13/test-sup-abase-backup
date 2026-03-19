@@ -69,6 +69,16 @@ CREATE TYPE "public"."AccountType" AS ENUM (
 ALTER TYPE "public"."AccountType" OWNER TO "postgres";
 
 
+CREATE TYPE "public"."BrokerSyncMethod" AS ENUM (
+    'CSV_UPLOAD',
+    'SCRAPER_BOT',
+    'SNAPTRADE_API'
+);
+
+
+ALTER TYPE "public"."BrokerSyncMethod" OWNER TO "postgres";
+
+
 CREATE TYPE "public"."ImportHistoryStatus" AS ENUM (
     'PROCESSING',
     'COMPLETED',
@@ -86,6 +96,30 @@ CREATE TYPE "public"."ImportStatus" AS ENUM (
 
 
 ALTER TYPE "public"."ImportStatus" OWNER TO "postgres";
+
+
+CREATE TYPE "public"."InvestmentAssetType" AS ENUM (
+    'STOCK',
+    'ETF',
+    'CRYPTO',
+    'FOREX'
+);
+
+
+ALTER TYPE "public"."InvestmentAssetType" OWNER TO "postgres";
+
+
+CREATE TYPE "public"."InvestmentTransactionType" AS ENUM (
+    'BUY',
+    'SELL',
+    'DIVIDEND',
+    'DEPOSIT',
+    'WITHDRAWAL',
+    'FEE'
+);
+
+
+ALTER TYPE "public"."InvestmentTransactionType" OWNER TO "postgres";
 
 
 CREATE TYPE "public"."LoanStatus" AS ENUM (
@@ -164,7 +198,11 @@ CREATE TABLE IF NOT EXISTS "public"."accounts" (
     "is_archived" boolean DEFAULT false NOT NULL,
     "include_in_total_balance" boolean DEFAULT true NOT NULL,
     "account_number" "text",
-    "color" "text"
+    "color" "text",
+    "broker_name" "text",
+    "broker_sync_method" "public"."BrokerSyncMethod",
+    "is_broker_account" boolean DEFAULT false NOT NULL,
+    "last_synced_at" timestamp(3) without time zone
 );
 
 
@@ -309,6 +347,70 @@ CREATE TABLE IF NOT EXISTS "public"."imported_transactions" (
 
 
 ALTER TABLE "public"."imported_transactions" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."investment_positions" (
+    "id" "text" NOT NULL,
+    "account_id" "text" NOT NULL,
+    "user_id" "text" NOT NULL,
+    "ticker" "text" NOT NULL,
+    "asset_name" "text",
+    "asset_type" "public"."InvestmentAssetType" NOT NULL,
+    "shares" numeric(20,8) NOT NULL,
+    "average_cost" numeric(15,4) NOT NULL,
+    "currency" "text" DEFAULT 'USD'::"text" NOT NULL,
+    "last_known_price" numeric(15,4),
+    "last_price_updated_at" timestamp(3) without time zone,
+    "change_24h" numeric(10,4),
+    "realized_pnl" numeric(15,4) DEFAULT 0 NOT NULL,
+    "created_at" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updated_at" timestamp(3) without time zone NOT NULL
+);
+
+
+ALTER TABLE "public"."investment_positions" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."investment_price_cache" (
+    "id" "text" NOT NULL,
+    "ticker" "text" NOT NULL,
+    "asset_type" "public"."InvestmentAssetType" NOT NULL,
+    "price" numeric(15,4) NOT NULL,
+    "currency" "text" DEFAULT 'USD'::"text" NOT NULL,
+    "change_24h" numeric(10,4),
+    "source" "text" NOT NULL,
+    "is_stale" boolean DEFAULT false NOT NULL,
+    "fetched_at" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updated_at" timestamp(3) without time zone NOT NULL
+);
+
+
+ALTER TABLE "public"."investment_price_cache" OWNER TO "postgres";
+
+
+CREATE TABLE IF NOT EXISTS "public"."investment_transactions" (
+    "id" "text" NOT NULL,
+    "account_id" "text" NOT NULL,
+    "user_id" "text" NOT NULL,
+    "position_id" "text",
+    "ticker" "text",
+    "asset_type" "public"."InvestmentAssetType",
+    "type" "public"."InvestmentTransactionType" NOT NULL,
+    "shares" numeric(20,8),
+    "price" numeric(15,4),
+    "total_amount" numeric(15,2) NOT NULL,
+    "fees" numeric(10,4) DEFAULT 0 NOT NULL,
+    "currency" "text" DEFAULT 'USD'::"text" NOT NULL,
+    "date" timestamp(3) without time zone NOT NULL,
+    "notes" "text",
+    "source_hash" "text",
+    "raw_data" "jsonb",
+    "created_at" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updated_at" timestamp(3) without time zone NOT NULL
+);
+
+
+ALTER TABLE "public"."investment_transactions" OWNER TO "postgres";
 
 
 CREATE TABLE IF NOT EXISTS "public"."loan_payments" (
@@ -515,7 +617,9 @@ CREATE TABLE IF NOT EXISTS "public"."users" (
     "created_at" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     "updated_at" timestamp(3) without time zone NOT NULL,
     "default_shared_expense_account_id" "text",
-    "language" "text" DEFAULT 'es'::"text" NOT NULL
+    "language" "text" DEFAULT 'es'::"text" NOT NULL,
+    "snaptrade_user_id" "text",
+    "snaptrade_user_secret" "text"
 );
 
 
@@ -574,6 +678,21 @@ ALTER TABLE ONLY "public"."import_history"
 
 ALTER TABLE ONLY "public"."imported_transactions"
     ADD CONSTRAINT "imported_transactions_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."investment_positions"
+    ADD CONSTRAINT "investment_positions_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."investment_price_cache"
+    ADD CONSTRAINT "investment_price_cache_pkey" PRIMARY KEY ("id");
+
+
+
+ALTER TABLE ONLY "public"."investment_transactions"
+    ADD CONSTRAINT "investment_transactions_pkey" PRIMARY KEY ("id");
 
 
 
@@ -647,6 +766,10 @@ CREATE INDEX "accounts_user_id_idx" ON "public"."accounts" USING "btree" ("user_
 
 
 CREATE INDEX "accounts_user_id_is_archived_idx" ON "public"."accounts" USING "btree" ("user_id", "is_archived");
+
+
+
+CREATE INDEX "accounts_user_id_is_broker_account_idx" ON "public"."accounts" USING "btree" ("user_id", "is_broker_account");
 
 
 
@@ -739,6 +862,66 @@ CREATE INDEX "imported_transactions_import_history_id_idx" ON "public"."imported
 
 
 CREATE INDEX "imported_transactions_transaction_id_idx" ON "public"."imported_transactions" USING "btree" ("transaction_id");
+
+
+
+CREATE INDEX "investment_positions_account_id_idx" ON "public"."investment_positions" USING "btree" ("account_id");
+
+
+
+CREATE UNIQUE INDEX "investment_positions_account_id_ticker_key" ON "public"."investment_positions" USING "btree" ("account_id", "ticker");
+
+
+
+CREATE INDEX "investment_positions_ticker_idx" ON "public"."investment_positions" USING "btree" ("ticker");
+
+
+
+CREATE INDEX "investment_positions_user_id_idx" ON "public"."investment_positions" USING "btree" ("user_id");
+
+
+
+CREATE INDEX "investment_price_cache_fetched_at_idx" ON "public"."investment_price_cache" USING "btree" ("fetched_at");
+
+
+
+CREATE UNIQUE INDEX "investment_price_cache_ticker_asset_type_key" ON "public"."investment_price_cache" USING "btree" ("ticker", "asset_type");
+
+
+
+CREATE INDEX "investment_price_cache_ticker_idx" ON "public"."investment_price_cache" USING "btree" ("ticker");
+
+
+
+CREATE INDEX "investment_price_cache_updated_at_idx" ON "public"."investment_price_cache" USING "btree" ("updated_at");
+
+
+
+CREATE INDEX "investment_transactions_account_id_date_idx" ON "public"."investment_transactions" USING "btree" ("account_id", "date");
+
+
+
+CREATE INDEX "investment_transactions_account_id_idx" ON "public"."investment_transactions" USING "btree" ("account_id");
+
+
+
+CREATE INDEX "investment_transactions_date_idx" ON "public"."investment_transactions" USING "btree" ("date");
+
+
+
+CREATE INDEX "investment_transactions_position_id_idx" ON "public"."investment_transactions" USING "btree" ("position_id");
+
+
+
+CREATE UNIQUE INDEX "investment_transactions_source_hash_key" ON "public"."investment_transactions" USING "btree" ("source_hash");
+
+
+
+CREATE INDEX "investment_transactions_user_id_date_idx" ON "public"."investment_transactions" USING "btree" ("user_id", "date");
+
+
+
+CREATE INDEX "investment_transactions_user_id_idx" ON "public"."investment_transactions" USING "btree" ("user_id");
 
 
 
@@ -934,6 +1117,10 @@ CREATE UNIQUE INDEX "users_email_key" ON "public"."users" USING "btree" ("email"
 
 
 
+CREATE UNIQUE INDEX "users_snaptrade_user_id_key" ON "public"."users" USING "btree" ("snaptrade_user_id");
+
+
+
 ALTER TABLE ONLY "public"."accounts"
     ADD CONSTRAINT "accounts_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."users"("id") ON UPDATE CASCADE ON DELETE CASCADE;
 
@@ -1006,6 +1193,31 @@ ALTER TABLE ONLY "public"."imported_transactions"
 
 ALTER TABLE ONLY "public"."imported_transactions"
     ADD CONSTRAINT "imported_transactions_transaction_id_fkey" FOREIGN KEY ("transaction_id") REFERENCES "public"."transactions"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."investment_positions"
+    ADD CONSTRAINT "investment_positions_account_id_fkey" FOREIGN KEY ("account_id") REFERENCES "public"."accounts"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."investment_positions"
+    ADD CONSTRAINT "investment_positions_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."users"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."investment_transactions"
+    ADD CONSTRAINT "investment_transactions_account_id_fkey" FOREIGN KEY ("account_id") REFERENCES "public"."accounts"("id") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+
+ALTER TABLE ONLY "public"."investment_transactions"
+    ADD CONSTRAINT "investment_transactions_position_id_fkey" FOREIGN KEY ("position_id") REFERENCES "public"."investment_positions"("id") ON UPDATE CASCADE ON DELETE SET NULL;
+
+
+
+ALTER TABLE ONLY "public"."investment_transactions"
+    ADD CONSTRAINT "investment_transactions_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."users"("id") ON UPDATE CASCADE ON DELETE CASCADE;
 
 
 
@@ -1374,6 +1586,24 @@ GRANT ALL ON TABLE "public"."import_history" TO "service_role";
 GRANT ALL ON TABLE "public"."imported_transactions" TO "anon";
 GRANT ALL ON TABLE "public"."imported_transactions" TO "authenticated";
 GRANT ALL ON TABLE "public"."imported_transactions" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."investment_positions" TO "anon";
+GRANT ALL ON TABLE "public"."investment_positions" TO "authenticated";
+GRANT ALL ON TABLE "public"."investment_positions" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."investment_price_cache" TO "anon";
+GRANT ALL ON TABLE "public"."investment_price_cache" TO "authenticated";
+GRANT ALL ON TABLE "public"."investment_price_cache" TO "service_role";
+
+
+
+GRANT ALL ON TABLE "public"."investment_transactions" TO "anon";
+GRANT ALL ON TABLE "public"."investment_transactions" TO "authenticated";
+GRANT ALL ON TABLE "public"."investment_transactions" TO "service_role";
 
 
 

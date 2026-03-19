@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict Kf0otp5rHQxYapGaJXOUEvQrIoecf3SF3AG73sc7dhWUfopjg7lHv9Jno6ye0yw
+-- \restrict o3Hjjrsed87AeazC9dtoChEWSPQNBfi1KHuPcmtR5VPza3iPXexJ9zqaqsiMNX9
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -200,21 +200,21 @@ e1a50e36-a1b3-480d-a632-bdc4761e33cb	6885a550098e92e9d389263966ab6f0e792348ed9f8
 -- Data for Name: accounts; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY "public"."accounts" ("id", "user_id", "name", "type", "balance", "currency", "is_default", "credit_limit", "billing_day", "created_at", "updated_at", "is_archived", "include_in_total_balance", "account_number", "color") FROM stdin;
-530b9e4b-d53a-440b-a713-51021e71436b	b88abd1d-92fe-4818-ba01-95681f09b96d	Cuenta de prueba	CASH	811760.00	CLP	t	\N	\N	2025-11-21 13:28:32.434	2025-11-25 13:01:45.91	f	t	\N	\N
-2db62b9a-1133-4a34-96bc-429d267a2a2a	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Rut	DEBIT	344.00	CLP	f	\N	\N	2025-11-25 19:21:05.154	2026-02-17 15:06:06.949	f	t	\N	#ff7900
-2c6743e1-4096-45b1-9ebb-8b998cedda57	346b32d1-b21f-4ce9-ac27-a69e67abb103	Santander Cuotas	CREDIT	3000000.00	CLP	f	3000000.00	31	2025-11-25 18:33:19.275	2026-02-05 20:23:07.058	f	f	\N	#EF4444
-f5829fd4-531a-4c99-9852-19047a6d370c	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Ahorro Banco Consorcio	SAVINGS	150000.00	CLP	f	\N	\N	2026-03-16 15:02:46.877	2026-03-16 15:03:39.987	f	t	\N	#14B8A6
-2e64b401-5a2f-4492-87c9-a618e7ba6f33	346b32d1-b21f-4ce9-ac27-a69e67abb103	Santander AMEX	CREDIT	6297648.00	CLP	f	8000000.00	31	2025-11-18 16:40:45.67	2026-03-16 15:04:30.908	f	f	\N	\N
-d99144b6-5974-40e2-9f17-b36942774c9e	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta MercadoPago	DEBIT	10882675.90	CLP	f	\N	\N	2025-11-18 16:40:00.279	2026-03-16 15:07:35.52	f	t	\N	#ffe600
-3835a682-e360-443c-8946-98e86c744943	d8c5e32f-c64d-4437-b302-3a64d8f3f116	Cuenta de Prueba 	DEBIT	7951662.50	CLP	t	\N	\N	2025-11-13 16:44:14.609	2026-03-02 14:44:08.174	f	t	\N	\N
-6bae5c5c-fa7d-429b-a27d-e5f13fe5025a	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Corriente Scotiabank	DEBIT	29360.00	CLP	f	\N	\N	2025-11-25 19:19:19.533	2026-03-10 13:06:30.382	f	t	\N	#EC111A
-062c317d-a49c-4545-ae96-a241d7b3a5f3	346b32d1-b21f-4ce9-ac27-a69e67abb103	Efectivo	CASH	50000.00	CLP	t	\N	\N	2026-02-08 12:41:49.242	2026-02-08 12:41:49.242	f	t	\N	#3b82f6
-34d0aa36-bc91-4383-95fb-578fbbc09e04	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Corriente Santander	DEBIT	897.00	CLP	f	\N	\N	2025-11-25 19:18:47.604	2026-03-10 13:07:55.186	f	t	\N	#ec0000
-8388127f-3f9c-49d4-8b83-4cf9dcc9fbe0	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	Prueba	CASH	7211780.00	CLP	f	\N	\N	2025-11-21 13:27:41.406	2025-12-10 16:09:44.353	f	t	\N	\N
-646caf37-7684-45ac-87f3-cec83efb633d	346b32d1-b21f-4ce9-ac27-a69e67abb103	Santander VISA	CREDIT	7878833.00	CLP	f	8000000.00	31	2025-11-18 16:41:05.327	2026-03-16 14:17:27.761	f	f	000069640842	#7a7a7a
-af297afb-aa32-48f5-bee2-844713748199	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Itau	DEBIT	2265.00	CLP	f	\N	\N	2025-11-25 19:19:59.48	2025-11-25 19:19:59.48	f	t	\N	#FF6200
-0c046099-f7ff-4463-bf04-cdc01ecd9c09	346b32d1-b21f-4ce9-ac27-a69e67abb103	Lider BCI	CREDIT	682866.00	CLP	f	1000000.00	31	2025-11-18 16:40:18.575	2026-03-16 14:56:16.706	f	f	\N	#0053e2
+COPY "public"."accounts" ("id", "user_id", "name", "type", "balance", "currency", "is_default", "credit_limit", "billing_day", "created_at", "updated_at", "is_archived", "include_in_total_balance", "account_number", "color", "broker_name", "broker_sync_method", "is_broker_account", "last_synced_at") FROM stdin;
+530b9e4b-d53a-440b-a713-51021e71436b	b88abd1d-92fe-4818-ba01-95681f09b96d	Cuenta de prueba	CASH	811760.00	CLP	t	\N	\N	2025-11-21 13:28:32.434	2025-11-25 13:01:45.91	f	t	\N	\N	\N	\N	f	\N
+2db62b9a-1133-4a34-96bc-429d267a2a2a	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Rut	DEBIT	344.00	CLP	f	\N	\N	2025-11-25 19:21:05.154	2026-02-17 15:06:06.949	f	t	\N	#ff7900	\N	\N	f	\N
+2c6743e1-4096-45b1-9ebb-8b998cedda57	346b32d1-b21f-4ce9-ac27-a69e67abb103	Santander Cuotas	CREDIT	3000000.00	CLP	f	3000000.00	31	2025-11-25 18:33:19.275	2026-02-05 20:23:07.058	f	f	\N	#EF4444	\N	\N	f	\N
+f5829fd4-531a-4c99-9852-19047a6d370c	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Ahorro Banco Consorcio	SAVINGS	150000.00	CLP	f	\N	\N	2026-03-16 15:02:46.877	2026-03-16 15:03:39.987	f	t	\N	#14B8A6	\N	\N	f	\N
+2e64b401-5a2f-4492-87c9-a618e7ba6f33	346b32d1-b21f-4ce9-ac27-a69e67abb103	Santander AMEX	CREDIT	6297648.00	CLP	f	8000000.00	31	2025-11-18 16:40:45.67	2026-03-16 15:04:30.908	f	f	\N	\N	\N	\N	f	\N
+d99144b6-5974-40e2-9f17-b36942774c9e	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta MercadoPago	DEBIT	10882675.90	CLP	f	\N	\N	2025-11-18 16:40:00.279	2026-03-16 15:07:35.52	f	t	\N	#ffe600	\N	\N	f	\N
+3835a682-e360-443c-8946-98e86c744943	d8c5e32f-c64d-4437-b302-3a64d8f3f116	Cuenta de Prueba 	DEBIT	7951662.50	CLP	t	\N	\N	2025-11-13 16:44:14.609	2026-03-02 14:44:08.174	f	t	\N	\N	\N	\N	f	\N
+6bae5c5c-fa7d-429b-a27d-e5f13fe5025a	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Corriente Scotiabank	DEBIT	29360.00	CLP	f	\N	\N	2025-11-25 19:19:19.533	2026-03-10 13:06:30.382	f	t	\N	#EC111A	\N	\N	f	\N
+062c317d-a49c-4545-ae96-a241d7b3a5f3	346b32d1-b21f-4ce9-ac27-a69e67abb103	Efectivo	CASH	50000.00	CLP	t	\N	\N	2026-02-08 12:41:49.242	2026-02-08 12:41:49.242	f	t	\N	#3b82f6	\N	\N	f	\N
+34d0aa36-bc91-4383-95fb-578fbbc09e04	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Corriente Santander	DEBIT	897.00	CLP	f	\N	\N	2025-11-25 19:18:47.604	2026-03-10 13:07:55.186	f	t	\N	#ec0000	\N	\N	f	\N
+8388127f-3f9c-49d4-8b83-4cf9dcc9fbe0	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	Prueba	CASH	7211780.00	CLP	f	\N	\N	2025-11-21 13:27:41.406	2025-12-10 16:09:44.353	f	t	\N	\N	\N	\N	f	\N
+646caf37-7684-45ac-87f3-cec83efb633d	346b32d1-b21f-4ce9-ac27-a69e67abb103	Santander VISA	CREDIT	7878833.00	CLP	f	8000000.00	31	2025-11-18 16:41:05.327	2026-03-16 14:17:27.761	f	f	000069640842	#7a7a7a	\N	\N	f	\N
+af297afb-aa32-48f5-bee2-844713748199	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Itau	DEBIT	2265.00	CLP	f	\N	\N	2025-11-25 19:19:59.48	2025-11-25 19:19:59.48	f	t	\N	#FF6200	\N	\N	f	\N
+0c046099-f7ff-4463-bf04-cdc01ecd9c09	346b32d1-b21f-4ce9-ac27-a69e67abb103	Lider BCI	CREDIT	682866.00	CLP	f	1000000.00	31	2025-11-18 16:40:18.575	2026-03-16 14:56:16.706	f	f	\N	#0053e2	\N	\N	f	\N
 \.
 
 
@@ -222,11 +222,11 @@ af297afb-aa32-48f5-bee2-844713748199	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta
 -- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY "public"."users" ("id", "email", "password_hash", "name", "avatar_url", "currency", "country", "is_verified", "created_at", "updated_at", "default_shared_expense_account_id", "language") FROM stdin;
-d8c5e32f-c64d-4437-b302-3a64d8f3f116	olguita.m8@gmail.com	$2b$10$m4eZRHBf8RzdCpuCIJVWa.7tsI7twVBtfXpDMDosQ/Fjbe0Jy0Am2	Olga Manyoma	\N	CLP	\N	f	2025-11-13 16:41:41.221	2025-12-01 13:51:25.831	3835a682-e360-443c-8946-98e86c744943	es
-f06079b2-c6a7-421a-8c5c-287dbb21e3ca	pedroperez@gmail.com	$2b$10$KcpPa9V/Gn/6EjBPGSIyUOUE6LjzbBMH5q/o.lj1mvGcOhvr6hmNS	Pedro Perez	\N	CLP	\N	f	2025-11-21 13:26:44.885	2025-12-10 16:10:19.934	8388127f-3f9c-49d4-8b83-4cf9dcc9fbe0	es
-b88abd1d-92fe-4818-ba01-95681f09b96d	juanperez@gmail.com	$2b$10$ENEWWpfqdTygexUfCX2FQ.XK5yZrYh1HoA.OZePnLRqGyZlouU8ee	Juan Perez	\N	CLP	Chile	f	2025-11-21 13:28:03.574	2025-12-10 16:13:11.425	530b9e4b-d53a-440b-a713-51021e71436b	es
-346b32d1-b21f-4ce9-ac27-a69e67abb103	jesusrangel.255@gmail.com	$2b$10$5XD4EXU3I6EoKNYnr40uyOIuvgceKIZR2JbxeNsYdW.KyzWv.L4fK	Jesus Leon Rangel	\N	CLP	Chile	f	2025-11-13 15:47:41.58	2026-02-08 12:41:55.106	d99144b6-5974-40e2-9f17-b36942774c9e	es
+COPY "public"."users" ("id", "email", "password_hash", "name", "avatar_url", "currency", "country", "is_verified", "created_at", "updated_at", "default_shared_expense_account_id", "language", "snaptrade_user_id", "snaptrade_user_secret") FROM stdin;
+d8c5e32f-c64d-4437-b302-3a64d8f3f116	olguita.m8@gmail.com	$2b$10$m4eZRHBf8RzdCpuCIJVWa.7tsI7twVBtfXpDMDosQ/Fjbe0Jy0Am2	Olga Manyoma	\N	CLP	\N	f	2025-11-13 16:41:41.221	2025-12-01 13:51:25.831	3835a682-e360-443c-8946-98e86c744943	es	\N	\N
+f06079b2-c6a7-421a-8c5c-287dbb21e3ca	pedroperez@gmail.com	$2b$10$KcpPa9V/Gn/6EjBPGSIyUOUE6LjzbBMH5q/o.lj1mvGcOhvr6hmNS	Pedro Perez	\N	CLP	\N	f	2025-11-21 13:26:44.885	2025-12-10 16:10:19.934	8388127f-3f9c-49d4-8b83-4cf9dcc9fbe0	es	\N	\N
+b88abd1d-92fe-4818-ba01-95681f09b96d	juanperez@gmail.com	$2b$10$ENEWWpfqdTygexUfCX2FQ.XK5yZrYh1HoA.OZePnLRqGyZlouU8ee	Juan Perez	\N	CLP	Chile	f	2025-11-21 13:28:03.574	2025-12-10 16:13:11.425	530b9e4b-d53a-440b-a713-51021e71436b	es	\N	\N
+346b32d1-b21f-4ce9-ac27-a69e67abb103	jesusrangel.255@gmail.com	$2b$10$5XD4EXU3I6EoKNYnr40uyOIuvgceKIZR2JbxeNsYdW.KyzWv.L4fK	Jesus Leon Rangel	\N	CLP	Chile	f	2025-11-13 15:47:41.58	2026-02-08 12:41:55.106	d99144b6-5974-40e2-9f17-b36942774c9e	es	\N	\N
 \.
 
 
@@ -955,6 +955,26 @@ ceade0d0-8e48-4e17-823c-904bf0e543f1	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-0
 05b05529-ef7b-4d53-9202-88b44018e34b	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-18 01:00:47.26	achievement	Inversión en criptomonedas	Has invertido $150000 en criptomonedas, lo que demuestra tu interés en diversificar tus inversiones. Considera seguir educándote sobre este tema para tomar decisiones informadas.	2026-03-18 01:00:47.262
 3cc3fe94-0acb-4f44-ae20-2793e62bc587	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-18 01:00:47.897	challenge	Reducir gastos en delivery	Has gastado $76847 en delivery, lo que podría ser un área de mejora. Considera cocinar en casa más frecuentemente o buscar opciones más económicas para reducir tus gastos en este rubro.	2026-03-18 01:00:47.898
 2fcf1235-5ba8-4f95-acc4-970abd2a95c0	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-18 01:00:48.66	positive	Gastos responsables en viajes	Has gastado $187803 en viajes, lo que demuestra que valoras las experiencias y estás dispuesto a invertir en ellas. Considera seguir planificando tus viajes con anticipación para obtener los mejores precios y disfrutar de tus destinos sin preocupaciones financieras.	2026-03-18 01:00:48.661
+92a1f65b-fdf5-40c1-8660-ff89cb4368b4	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-19 01:00:11.633	warning	Gasto excesivo en deuda	Has gastado un total de $486,674.9 en pago de deuda este mes, lo que representa el 100% de tus gastos. Es importante revisar y priorizar tus deudas para evitar problemas financieros futuros.	2026-03-19 01:00:11.634
+c0803a25-f8c5-4dd0-bdb8-602e75ea2409	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-19 01:00:12.311	tip	Revisa tus obligaciones financieras	Es recomendable revisar tus obligaciones financieras con Jesus Leon Rangel y considerar la posibilidad de renegociar o reestructurar el pago de la deuda para reducir el impacto en tus finanzas personales.	2026-03-19 01:00:12.312
+5f348624-d93c-43c0-8be5-f4afdcac4228	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-19 01:00:12.976	challenge	Establece un plan de ahorro	Te desafío a establecer un plan de ahorro para el próximo mes, con el objetivo de ahorrar al menos el 10% de tus ingresos. Esto te ayudará a reducir tu dependencia de la deuda y a mejorar tu estabilidad financiera.	2026-03-19 01:00:12.977
+80421fdc-9479-4c54-a60d-a517946467f9	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-19 01:00:13.641	achievement	Priorización de gastos	Felicitaciones por priorizar tus gastos y enfocarte en el pago de la deuda. Esto demuestra que estás tomando medidas proactivas para mejorar tus finanzas personales.	2026-03-19 01:00:13.642
+31f777b2-4cd6-41e2-94e3-70d9d7ae2821	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-19 01:00:14.306	positive	Oportunidad de mejora	La falta de ingresos registrados en este período puede ser una oportunidad para replantear tus fuentes de ingresos y buscar nuevas formas de generar dinero. Considera explorar opciones como freelance, inversiones o negocios secundarios para diversificar tus ingresos y mejorar tu estabilidad financiera.	2026-03-19 01:00:14.307
+380d1767-669b-4011-9250-ef46728ca0ca	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-19 01:00:22.335	warning	Gasto excesivo	Ten cuidado, tus gastos totales superan los $100,000 en el mes actual, lo que puede afectar negativamente tus finanzas a largo plazo.	2026-03-19 01:00:22.336
+a1757d4a-8507-466b-9616-8772377813ab	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-19 01:00:23.001	tip	Establece un presupuesto	Considera crear un plan de gastos para priorizar y controlar tus egresos, ya que no hay ingresos registrados en el mes actual.	2026-03-19 01:00:23.002
+c44e8f06-99a0-4932-8ce9-dc2689b4e02d	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-19 01:00:23.666	challenge	Incrementa tu ingreso	Desafíate a aumentar tus ingresos, ya que actualmente no tienes ingresos registrados, lo que puede ser un obstáculo para alcanzar tus objetivos financieros.	2026-03-19 01:00:23.666
+107ec63a-66c8-4f57-82cd-1ca669d0fa0a	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-19 01:00:24.328	achievement	Oportunidad para ahorrar	Aunque no hay un porcentaje de ahorro establecido, puedes considerar esta situación como una oportunidad para comenzar a ahorrar y establecer metas financieras realistas.	2026-03-19 01:00:24.329
+60dcf7d4-e720-4705-8d50-95dcbbc7d32b	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-19 01:00:24.994	positive	Nueva oportunidad financiera	El mes actual puede ser un punto de partida para replantear tus finanzas y establecer un plan sólido para el futuro, aprovechando esta oportunidad para crecer financieramente.	2026-03-19 01:00:24.995
+ce8c0afe-113e-49a4-b10f-1b342da82304	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-19 01:00:33.017	warning	Gasto elevado en el mes	Tienes un gasto total de $53,000 en el mes actual, lo que puede ser un desafío para mantener un equilibrio financiero saludable. Considera revisar tus gastos y buscar áreas para reducirlos.	2026-03-19 01:00:33.018
+17ccfc4a-c2c2-4ffd-a41f-0cabf5057006	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-19 01:00:33.816	tip	Establece un presupuesto	No tienes ingresos registrados en el mes actual. Establecer un presupuesto te ayudará a tener una visión clara de tus finanzas y a tomar decisiones informadas sobre tus gastos.	2026-03-19 01:00:33.817
+8b81a546-95ae-42ff-a42d-6f98cd39a893	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-19 01:00:34.478	challenge	Incrementa tu tasa de ahorro	Tu tasa de ahorro actual es del 0%. Te desafiamos a aumentarla al 10% en los próximos 3 meses. Esto te ayudará a construir una reserva financiera y a alcanzar tus objetivos a largo plazo.	2026-03-19 01:00:34.479
+502a6a23-0fac-44a7-99cd-48f1a0e069b8	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-19 01:00:35.143	positive	Oportunidad para optimizar	No tienes merchants ni categorías destacadas en tus gastos. Esto te da la oportunidad de empezar a registrar tus gastos y a identificar áreas para optimizar y reducir costos.	2026-03-19 01:00:35.144
+efb08a97-3e22-49ea-a1b5-d2d92f2936db	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-19 01:00:35.806	achievement	Registro de gastos	Has comenzado a registrar tus gastos, lo que es un gran paso hacia el control de tus finanzas. Sigue adelante y mantén el registro de tus gastos para tener una visión clara de tu situación financiera.	2026-03-19 01:00:35.807
+7b071fb4-e0b7-4926-8fd4-62848158279f	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-19 01:00:46.843	warning	Gastos elevados en supermercados	Has gastado un total de $242,706 en supermercados este mes, lo que podría estar afectando tu capacidad de ahorro. Considera revisar tus hábitos de compra y buscar oportunidades para reducir tus gastos.	2026-03-19 01:00:46.844
+1606fa9a-a336-4e6b-9867-d756494ed098	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-19 01:00:47.509	tip	Optimiza tus gastos en combustible	Con un total de $49,575 gastados en combustible, podrías considerar opciones para reducir tus gastos, como planificar tus viajes o considerar la compra de un vehículo más eficiente.	2026-03-19 01:00:47.51
+50719cf7-ece2-439c-bcc3-66b535b0d2af	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-19 01:00:48.173	achievement	Inversión en criptomonedas	Has invertido $150,000 en criptomonedas, lo que demuestra tu compromiso con la diversificación de tus inversiones. Considera seguir monitoreando el mercado y ajustar tus inversiones según sea necesario.	2026-03-19 01:00:48.174
+cd52d095-ff5f-4bf6-a7b3-a8dcdc8e6bd9	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-19 01:00:48.974	challenge	Reducir gastos en delivery	Has gastado $76,847 en delivery este mes, lo que podría estar afectando tu salud financiera. Te desafiamos a reducir tus gastos en delivery en un 20% durante el próximo mes y a utilizar ese dinero para aumentar tus ahorros.	2026-03-19 01:00:48.975
+6a022c81-eacc-4b31-aba7-513b3a8f377a	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-19 01:00:49.641	positive	Gestión efectiva de préstamos	Has gestionado efectivamente tus préstamos, con un total de $850,000 otorgados y $833,310 destinados a hipoteca. Esto demuestra tu capacidad para manejar tus deudas y tomar decisiones financieras informadas.	2026-03-19 01:00:49.641
 \.
 
 
@@ -2538,6 +2558,30 @@ ca716e96-00c5-4107-9a2e-05970413fd40	cb94bec4-70bb-431e-9681-d9720ff53508	0a1252
 
 
 --
+-- Data for Name: investment_positions; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."investment_positions" ("id", "account_id", "user_id", "ticker", "asset_name", "asset_type", "shares", "average_cost", "currency", "last_known_price", "last_price_updated_at", "change_24h", "realized_pnl", "created_at", "updated_at") FROM stdin;
+\.
+
+
+--
+-- Data for Name: investment_price_cache; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."investment_price_cache" ("id", "ticker", "asset_type", "price", "currency", "change_24h", "source", "is_stale", "fetched_at", "updated_at") FROM stdin;
+\.
+
+
+--
+-- Data for Name: investment_transactions; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY "public"."investment_transactions" ("id", "account_id", "user_id", "position_id", "ticker", "asset_type", "type", "shares", "price", "total_amount", "fees", "currency", "date", "notes", "source_hash", "raw_data", "created_at", "updated_at") FROM stdin;
+\.
+
+
+--
 -- Data for Name: loan_payments; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -3730,6 +3774,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict Kf0otp5rHQxYapGaJXOUEvQrIoecf3SF3AG73sc7dhWUfopjg7lHv9Jno6ye0yw
+-- \unrestrict o3Hjjrsed87AeazC9dtoChEWSPQNBfi1KHuPcmtR5VPza3iPXexJ9zqaqsiMNX9
 
 RESET ALL;
