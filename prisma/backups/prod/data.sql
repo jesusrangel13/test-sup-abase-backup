@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict ehRjQN2zBARrdFxpHe9LvxInmI2rrnrEarP1rEeAApdtZ9WYg15krjinUAKGeT8
+-- \restrict aw9yPUWLsLBPh3bqBg09KisNQv5ITilx7YTtbWE2n6KkIEAbkcvy4rfFTjYHWZO
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -1051,6 +1051,26 @@ c159d981-2c81-428c-899b-bab1c1df1d37	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-0
 d3cdde8e-fcd2-49cc-b701-bafe7c49ce14	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-22 01:00:48.896	achievement	Inversión en criptomonedas	Has invertido $150,000 en criptomonedas, lo que demuestra tu interés en diversificar tus inversiones. Considera seguir investigando y aprendiendo sobre este tipo de inversión para maximizar tus beneficios.	2026-03-22 01:00:48.897
 b2e5392a-0c73-4706-9a89-2a546955207b	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-22 01:00:49.695	challenge	Reduce tus gastos en delivery	Has gastado $76,847 en delivery este mes, lo que puede ser un área de oportunidad para reducir tus gastos. Considera retarte a ti mismo a cocinar en casa más a menudo y reducir tus pedidos de delivery.	2026-03-22 01:00:49.696
 49fba3b0-64e0-45de-8c64-452ce1d1c074	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-22 01:00:50.36	positive	Gastos en viajes	Has gastado $187,803 en viajes este mes, lo que sugiere que estás disfrutando de tus momentos de ocio. Considera seguir explorando nuevos destinos y experiencias, y no olvides planificar con anticipación para maximizar tus ahorros.	2026-03-22 01:00:50.361
+5efefd9d-7d6b-4387-858c-cf119094f0d2	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-23 01:00:11.208	warning	Gasto excepcionalmente alto en deuda	Has gastado $486,674.9 en el pago de deuda esta mensualidad, lo cual puede ser un indicador de que necesitas revisar y ajustar tus finanzas para evitar problemas de liquidez.	2026-03-23 01:00:11.21
+ce61c1a0-a7be-4b17-bb46-e87b3fb540e3	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-23 01:00:11.889	tip	Negocia con Jesus Leon Rangel	Considera hablar con Jesus Leon Rangel para ver si hay posibilidad de renegociar el pago de la deuda compartida y así reducir el monto a pagar.	2026-03-23 01:00:11.89
+97741e8e-85f0-4123-9e14-2253b0979e3f	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-23 01:00:12.555	challenge	Reducir el pago de deuda	Te desafiamos a reducir el pago de deuda en un 20% para la próxima mensualidad, busca formas de ahorrar o reestructurar tus deudas para lograrlo.	2026-03-23 01:00:12.555
+181aad7d-4f7b-4a3a-b31a-8dae5e235a36	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-23 01:00:13.22	achievement	Prioriza tus deudas	Has identificado y priorizado el pago de la deuda compartida con Jesus Leon Rangel, ahora es importante seguir trabajando en la reducción de esta deuda y buscar formas de aumentar tus ingresos.	2026-03-23 01:00:13.221
+88d83b67-1c7e-446b-8bb6-de21ac8c786a	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-23 01:00:13.886	positive	Oportunidad de mejora	La falta de ingresos registrados en este periodo puede ser una oportunidad para revisar tus fuentes de ingreso y buscar formas de aumentar tus ganancias, lo que te permitirá hacer frente a tus deudas de manera más efectiva.	2026-03-23 01:00:13.887
+7170515e-7e56-4e36-8a77-9dca5e95b1aa	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-23 01:00:21.968	warning	Gastos elevados	Tus gastos totales de $100,000 en el mes actual son considerablemente altos. Es importante revisar tus hábitos de gasto para identificar áreas de mejora.	2026-03-23 01:00:21.969
+3473bb62-d78d-4699-a12c-4dfd27f1c020	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-23 01:00:22.633	tip	Establece un presupuesto	Dado que no tienes ingresos registrados, te recomiendo establecer un presupuesto para gestionar tus gastos de manera efectiva y evitar problemas financieros.	2026-03-23 01:00:22.634
+45d73ab4-d08f-49a0-a83d-45806db3a25c	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-23 01:00:23.297	challenge	Incrementa tu tasa de ahorro	Con una tasa de ahorro del 0%, es importante que te esfuerces por aumentarla. Intenta establecer metas de ahorro realistas y trabaja para alcanzarlas.	2026-03-23 01:00:23.298
+0ad13d9e-a763-4c42-af18-10b42329a927	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-23 01:00:23.963	achievement	No tienes deudas registradas	No se han registrado deudas en tu contexto financiero, lo que es un logro positivo. Mantén este buen hábito y sigue gestionando tus finanzas de manera responsable.	2026-03-23 01:00:23.964
+559aa583-0afd-485f-9511-8d3de27ea2bf	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-23 01:00:24.625	positive	Oportunidad para mejorar	La falta de información sobre tus hábitos de gasto y categorías te brinda la oportunidad de empezar a registrar y analizar tus finanzas para tomar decisiones informadas y mejorar tu situación financiera.	2026-03-23 01:00:24.626
+820e6181-012f-409f-b39f-7c8603fcd301	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-23 01:00:32.808	warning	Gasto excesivo	Ten cuidado, tus gastos totales ($53,000) superan significativamente tus ingresos ($0) este mes. Esto podría llevar a dificultades financieras.	2026-03-23 01:00:32.809
+28aa5cfd-a651-4dde-92a7-19fa9bdb8ce8	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-23 01:00:33.604	tip	Revisa tus egresos	Es importante que revises y ajustes tus egresos para evitar un déficit presupuestario. Considera reducir gastos no esenciales para equilibrar tus finanzas.	2026-03-23 01:00:33.605
+082cf82c-be39-4cd4-bb45-ca688b831362	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-23 01:00:34.268	challenge	Incrementa tus ingresos	Desafío: busca oportunidades para aumentar tus ingresos. Esto podría incluir encontrar una fuente adicional de ingresos, pedir un aumento salarial o invertir en tu educación para mejorar tus oportunidades laborales.	2026-03-23 01:00:34.269
+76489f5f-3da5-480d-b09e-af49deba480c	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-23 01:00:34.931	achievement	No hay deudas conocidas	No se han registrado deudas en tu perfil, lo cual es un logro. Mantén este buen hábito y sigue trabajando para fortalecer tu situación financiera.	2026-03-23 01:00:34.933
+0ebae280-d61d-4670-9361-8c3078112e13	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-23 01:00:35.596	positive	Oportunidad para ahorrar	Aunque actualmente no tienes ingresos, puedes planificar para el futuro. Cuando tus ingresos se reactiven, considera asignar una parte a ahorros para construir una base financiera sólida.	2026-03-23 01:00:35.596
+cc1ad5ff-7b03-4ebe-99d9-1fa5eb481275	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-23 01:00:46.866	warning	Gastos elevados en supermercados	Has gastado un total de $242,706 en supermercados este mes, lo que podría ser un área de oportunidad para reducir gastos y aumentar tus ahorros.	2026-03-23 01:00:46.866
+100115eb-a83f-4f0f-adae-dffa71b3a546	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-23 01:00:47.53	tip	Optimiza tus gastos en combustible	Con un total de $49,575 gastado en combustible, considera explorar opciones para reducir tu consumo de combustible, como planificar tus rutas o considerar vehículos más eficientes en términos de combustible.	2026-03-23 01:00:47.53
+3dc35c76-0cf6-4784-9a8e-42bcc6912671	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-23 01:00:48.194	achievement	Inversión en criptomonedas	Has invertido $150,000 en criptomonedas, lo que demuestra tu interés en diversificar tus inversiones y aprovechar oportunidades de crecimiento a largo plazo.	2026-03-23 01:00:48.195
+79796971-5070-4bd3-a78e-ede088a5cd00	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-23 01:00:48.991	challenge	Desafío de reducción de gastos en delivery	Has gastado $76,847 en delivery este mes, te desafiamos a reducir este gasto en un 20% durante el próximo mes y a asignar el ahorro resultante a tus metas financieras.	2026-03-23 01:00:48.992
+c7f82c67-d070-4975-ae75-b5e2fbcb60db	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-23 01:00:49.654	positive	Pagos oportunos de servicios básicos	Has demostrado una buena gestión de tus finanzas al pagar oportunamente tus servicios básicos, como electricidad, con un total de $71,530 gastado en este concepto.	2026-03-23 01:00:49.655
 \.
 
 
@@ -3850,6 +3870,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict ehRjQN2zBARrdFxpHe9LvxInmI2rrnrEarP1rEeAApdtZ9WYg15krjinUAKGeT8
+-- \unrestrict aw9yPUWLsLBPh3bqBg09KisNQv5ITilx7YTtbWE2n6KkIEAbkcvy4rfFTjYHWZO
 
 RESET ALL;
