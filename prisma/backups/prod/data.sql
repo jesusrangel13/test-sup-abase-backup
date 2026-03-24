@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict aw9yPUWLsLBPh3bqBg09KisNQv5ITilx7YTtbWE2n6KkIEAbkcvy4rfFTjYHWZO
+-- \restrict fb1MU8jknluzgFW7dWxhiZ2CXnMFY4yi9cQCqGWRxLGgonb8fG13hm90YcuFaqJ
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -1071,6 +1071,26 @@ cc1ad5ff-7b03-4ebe-99d9-1fa5eb481275	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-0
 3dc35c76-0cf6-4784-9a8e-42bcc6912671	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-23 01:00:48.194	achievement	Inversión en criptomonedas	Has invertido $150,000 en criptomonedas, lo que demuestra tu interés en diversificar tus inversiones y aprovechar oportunidades de crecimiento a largo plazo.	2026-03-23 01:00:48.195
 79796971-5070-4bd3-a78e-ede088a5cd00	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-23 01:00:48.991	challenge	Desafío de reducción de gastos en delivery	Has gastado $76,847 en delivery este mes, te desafiamos a reducir este gasto en un 20% durante el próximo mes y a asignar el ahorro resultante a tus metas financieras.	2026-03-23 01:00:48.992
 c7f82c67-d070-4975-ae75-b5e2fbcb60db	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-23 01:00:49.654	positive	Pagos oportunos de servicios básicos	Has demostrado una buena gestión de tus finanzas al pagar oportunamente tus servicios básicos, como electricidad, con un total de $71,530 gastado en este concepto.	2026-03-23 01:00:49.655
+48cccdd6-2369-4f24-bdeb-492992c81a73	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-24 01:00:11.667	warning	Gasto excepcionalmente alto	Has tenido un gasto de $486,674.9 en el pago de deuda, lo que sugiere que tienes una deuda significativa. Es importante que revises tu estrategia de pago y consideres la posibilidad de renegociar o consolidar tus deudas.	2026-03-24 01:00:11.667
+30e5919d-2b92-4937-bd5a-86157cb389ea	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-24 01:00:12.33	tip	Revisa tus pagos recurrentes	Asegúrate de que el pago de $486,674.9 a Jesus Leon Rangel sea un pago único y no un pago recurrente. Si es recurrente, considera revisar tu presupuesto para asegurarte de que puedas afrontar este gasto de manera sostenible.	2026-03-24 01:00:12.33
+66293f3c-2414-49f9-9752-b3deb920a1e8	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-24 01:00:12.979	challenge	Desafío de ahorro	Te desafiamos a ahorrar un porcentaje de tus ingresos en el próximo mes. Aunque no tienes ingresos registrados en este mes, es importante que comiences a ahorrar para tener una red de seguridad financiera.	2026-03-24 01:00:12.98
+3fb966da-f6f6-418e-808c-36bc16448783	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-24 01:00:13.629	achievement	Priorización de deudas	Has priorizado el pago de tus deudas, lo que es un paso importante hacia la estabilidad financiera. Sigue trabajando en reducir tus deudas y mejorar tu salud financiera.	2026-03-24 01:00:13.63
+23c7f28f-1af4-4cf6-ba8d-65d2451d4c96	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-24 01:00:14.294	positive	Progreso hacia la libertad financiera	Aunque tienes una deuda significativa, el hecho de que estés abordándola es un paso positivo. Sigue adelante y celebra tus logros en el camino hacia la libertad financiera.	2026-03-24 01:00:14.295
+b56da246-5425-4d04-9abc-6359dc13bbc4	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-24 01:00:22.271	warning	Gastos elevados	Tus gastos totales en el mes actual son de $100,000, lo que puede ser un indicador de que necesitas revisar y ajustar tus hábitos de gasto para evitar problemas financieros.	2026-03-24 01:00:22.272
+80fda55f-67ce-4f2a-a1c9-55e8be519225	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-24 01:00:22.921	tip	Establece un presupuesto	Debido a que no tienes ingresos registrados, es fundamental que establezcas un presupuesto para gestionar tus gastos y evitar el endeudamiento.	2026-03-24 01:00:22.922
+8678c3f5-698f-4731-b572-6ff085b62521	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-24 01:00:23.572	challenge	Aumenta tus ingresos	Considera buscar formas de aumentar tus ingresos, como un segundo empleo o freelance, para mejorar tu situación financiera y poder ahorrar.	2026-03-24 01:00:23.573
+1fd04782-8505-4c94-a948-1480a82eba24	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-24 01:00:24.22	achievement	No hay deudas registradas	No se han registrado deudas en tu contexto financiero, lo que es un logro positivo. Mantén este buen hábito y sigue trabajando para mejorar tu situación financiera.	2026-03-24 01:00:24.221
+4eb90ea9-3a7a-48fc-b1cb-dd68300a2358	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-24 01:00:24.869	positive	Oportunidad de crecimiento	La falta de ingresos y gastos registrados en tus hábitos y categorías te brinda la oportunidad de empezar a construir un historial financiero saludable y planificar tu futuro financiero de manera efectiva.	2026-03-24 01:00:24.87
+ac92a3c2-6991-4a2a-9296-022888bbade1	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-24 01:00:32.867	warning	Gasto elevado en el mes actual	Has gastado $53,000 en el mes actual, lo que puede ser un indicador de un patrón de gasto excesivo. Es importante revisar tus finanzas y considerar formas de reducir tus gastos.	2026-03-24 01:00:32.868
+65309fcb-846b-49dc-be9a-bf44e1cb9247	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-24 01:00:33.647	tip	Establece un presupuesto	No tienes ingresos registrados, lo que puede dificultar la creación de un presupuesto efectivo. Considera establecer un presupuesto basado en tus gastos actuales y ajustarlo según sea necesario.	2026-03-24 01:00:33.647
+02fc0b88-8c9b-4ae4-9be3-a8150dfc1871	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-24 01:00:34.297	challenge	Incrementa tu tasa de ahorro	Tu tasa de ahorro actual es del 0%, lo que significa que no estás ahorrando nada. Te desafiamos a establecer una meta de ahorro del 10% de tus ingresos y a trabajar hacia ella.	2026-03-24 01:00:34.298
+0f6a29eb-33d8-4e7e-b9b5-58b53cbfadf9	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-24 01:00:34.947	achievement	No tienes deudas registradas	No se han registrado deudas en tu perfil financiero, lo que es un logro importante. Continúa trabajando en mantener tus finanzas saludables y sin deudas.	2026-03-24 01:00:34.948
+f6175bf7-e696-42a6-ace4-1e6644fd6c26	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-24 01:00:35.596	positive	Oportunidad para optimizar tus finanzas	No tienes información sobre tus hábitos de gasto o categorías de gasto, lo que significa que tienes la oportunidad de empezar a trackear tus finanzas y optimizar tus hábitos de gasto para alcanzar tus objetivos financieros.	2026-03-24 01:00:35.597
+7607d0f6-aaed-433d-8a38-3dd66af13f54	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-24 01:00:46.573	warning	Gastos frecuentes en supermercados	Has realizado múltiples compras en Lider Express y Lider, lo que sugiere que podrías estar gastando demasiado en supermercados. Considera planificar tus compras y buscar ofertas para reducir tus gastos.	2026-03-24 01:00:46.574
+294b4a0a-39d3-4988-a4ba-981287cdfcf4	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-24 01:00:47.222	tip	Optimiza tus gastos en vuelos	Has gastado un total de 187803 en vuelos con Latam. Considera buscar ofertas y promociones para tus próximos viajes y planificar con anticipación para ahorrar dinero.	2026-03-24 01:00:47.223
+cef3c549-29dc-41fe-a47d-f11990954546	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-24 01:00:47.873	achievement	Inversión en hipoteca	Has invertido un total de 833310 en hipoteca, lo que es un paso importante hacia la propiedad de tu hogar. Sigue adelante con tus objetivos financieros y considera revisar tus inversiones para asegurarte de que estás en el camino correcto.	2026-03-24 01:00:47.874
+08968ece-8b82-4608-9382-aaf8c53de168	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-24 01:00:48.521	challenge	Reducir gastos en delivery	Has gastado un total de 76847 en delivery. Te desafiamos a reducir tus gastos en delivery en un 20% durante el próximo mes. Considera cocinar en casa y buscar alternativas más económicas para ahorrar dinero.	2026-03-24 01:00:48.522
+506fe96c-5a77-49e1-81b5-51951a04afa9	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-24 01:00:49.3	positive	Inversión en criptomonedas	Has invertido un total de 150000 en criptomonedas, lo que es un paso hacia la diversificación de tus inversiones. Sigue informándote y considera revisar tus inversiones para asegurarte de que estás en el camino correcto.	2026-03-24 01:00:49.301
 \.
 
 
@@ -3870,6 +3890,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict aw9yPUWLsLBPh3bqBg09KisNQv5ITilx7YTtbWE2n6KkIEAbkcvy4rfFTjYHWZO
+-- \unrestrict fb1MU8jknluzgFW7dWxhiZ2CXnMFY4yi9cQCqGWRxLGgonb8fG13hm90YcuFaqJ
 
 RESET ALL;
