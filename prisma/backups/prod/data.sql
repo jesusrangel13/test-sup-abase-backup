@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict pAU4Cgo8pH2vdRYrwByxR0iBcoB7OLbgBEe5XDrWNNsHPkiNH44slAWGe3OOwmS
+-- \restrict TPycBgKj8kWIRHvk4NmIYaqKOS6oV1sisAWrNPtKk3n6Fh9Vwm22mOmzYwf0dqi
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -1131,6 +1131,26 @@ fd6a7056-7f7f-49d7-b12b-1c423d87259c	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-0
 89ae4999-362b-48c1-a2d4-a9b18ffd8b2a	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-26 01:00:43.876	challenge	Reducir gastos en delivery	Has gastado $76,847 en delivery, lo que podría ser un área de mejora. Te desafiamos a reducir tus gastos en delivery en un 20% durante el próximo mes y a buscar alternativas más económicas para comer en casa.	2026-03-26 01:00:43.877
 cc597f23-74a1-4def-92bf-5bb2c7965e4d	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-26 01:00:44.474	achievement	Inversión en criptomonedas	Felicitaciones por invertir $150,000 en criptomonedas. Esto demuestra que estás diversificando tus inversiones y considerando opciones innovadoras para crecer tu patrimonio.	2026-03-26 01:00:44.475
 18bce5dc-77ff-4112-808d-863d99ac199d	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-26 01:00:45.07	positive	Gestión eficiente de tus préstamos	Has demostrado una buena gestión de tus préstamos, con un total de $833,310 en hipoteca y $306,586 en crédito de carro. Esto sugiere que estás manejando tus deudas de manera responsable y planificada.	2026-03-26 01:00:45.071
+76526acc-929f-4dee-9bed-aa02ab12d0f1	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-27 01:00:10.398	warning	Gasto excepcionalmente alto en pago de deuda	Has tenido un gasto de $486,674.9 en pago de deuda en el mes actual, lo que puede ser un indicio de una situación financiera complicada. Considera revisar tus deudas y buscar asesoramiento para gestionarlas de manera efectiva.	2026-03-27 01:00:10.399
+3ab85df2-fee6-4afd-b4f1-2e3a6918500c	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-27 01:00:10.992	tip	Revisa tus pagos compartidos	El pago de balance compartido a Jesus Leon Rangel es tu gasto más alto en el mes. Asegúrate de que este pago sea correcto y no haya errores en la factura.	2026-03-27 01:00:10.994
+047e9068-9ee2-4f0e-b791-f2867aa56909	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-27 01:00:11.575	challenge	Desafío de reducción de deuda	Intenta reducir tu pago de deuda en un 10% para el próximo mes. Esto te ayudará a ahorrar $48,667.49 y a mejorar tu situación financiera.	2026-03-27 01:00:11.576
+07e72fef-7f3d-425a-b1f1-7f61ec164274	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-27 01:00:12.157	achievement	Prioriza tus gastos	No tienes otros gastos registrados aparte de pago de deuda. Esto indica que estás priorizando tus gastos y centrando tus esfuerzos en saldar tus deudas.	2026-03-27 01:00:12.158
+da6beaa7-8328-416a-98d5-c6705a9c3927	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-03-27 01:00:12.737	positive	Oportunidad de mejorar la tasa de ahorro	Con un gasto de $486,674.9 en pago de deuda, tienes la oportunidad de mejorar tu tasa de ahorro una vez que hayas saldado tus deudas. Considera establecer metas de ahorro y trabajar hacia ellas.	2026-03-27 01:00:12.738
+76da3a0a-c558-44c2-9bd2-09acac44eceb	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-27 01:00:20.231	warning	Gasto excesivo	Tienes un gasto total de $100,000 en el mes actual, lo que podría estar afectando negativamente tus finanzas. Considera revisar tus gastos y ajustarlos para evitar problemas financieros.	2026-03-27 01:00:20.232
+70c35ab0-a2d5-40aa-9e3d-a80caa78bffa	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-27 01:00:20.812	tip	Establece un presupuesto	No tienes ingresos registrados, lo que podría dificultar la planificación financiera. Establece un presupuesto para tener una visión clara de tus ingresos y gastos, y ajusta tus hábitos de gasto en consecuencia.	2026-03-27 01:00:20.813
+1f2d0b40-bc67-46a5-a5e4-47a2687e7be9	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-27 01:00:21.393	challenge	Aumenta tu tasa de ahorro	Tu tasa de ahorro actual es del 0%, lo que significa que no estás ahorrando nada. Te desafío a aumentar tu tasa de ahorro al 10% en los próximos 3 meses, lo que te ayudará a construir una reserva financiera y a alcanzar tus objetivos a largo plazo.	2026-03-27 01:00:21.394
+b6378d3a-82a4-48b4-8e60-d9f20c9a0ecf	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-27 01:00:21.977	achievement	No tienes deudas registradas	No se registran deudas en tu contexto financiero, lo que es un logro importante. Continúa trabajando en mantener tus finanzas saludables y evita contraer deudas en el futuro.	2026-03-27 01:00:21.978
+bd70a863-a8d5-40be-a6a6-4c61f8e1aa3a	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-03-27 01:00:22.561	positive	Oportunidad para optimizar	No tienes información sobre tus hábitos de gasto y categorías, lo que significa que tienes la oportunidad de empezar a trackedar y optimizar tus finanzas desde cero. Aprovecha esta oportunidad para crear buenos hábitos y tomar decisiones informadas sobre tus finanzas.	2026-03-27 01:00:22.562
+caea7673-c753-4699-901a-c97a62e42792	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-27 01:00:30.22	warning	Gastos elevados	Tus gastos totales de $53,000 en el mes actual son considerablemente altos, lo que podría afectar tu estabilidad financiera a largo plazo. Considera revisar tus gastos y buscar áreas de reducción.	2026-03-27 01:00:30.22
+a3f4560f-603e-4b30-9452-b9fc0e402967	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-27 01:00:30.802	tip	Establece un presupuesto	No tienes ingresos registrados, lo que puede dificultar la creación de un plan financiero efectivo. Establece un presupuesto que refleje tus ingresos y gastos reales para tomar decisiones informadas.	2026-03-27 01:00:30.803
+1e5fa0a6-e669-41c6-8f26-53dd98240307	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-27 01:00:31.385	challenge	Incrementa tus ingresos	Con ingresos de $0, es crucial que explores formas de aumentar tus ingresos para equilibrar tus finanzas. Considera buscar nuevas fuentes de ingresos o mejorar tus habilidades para aumentar tus oportunidades laborales.	2026-03-27 01:00:31.387
+8be91e6a-8e00-4e74-8de4-6b1a63b23157	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-27 01:00:32.09	achievement	Sin deuda registrada	No se han registrado deudas en tu contexto financiero, lo que es un logro positivo. Mantén este buen hábito y evita contraer deudas para preservar tu salud financiera.	2026-03-27 01:00:32.09
+303a997f-e721-43d7-bcc5-4b97ac6c2311	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-03-27 01:00:32.671	positive	Oportunidad para ahorrar	Aunque actualmente no tienes ingresos, puedes planificar para el futuro. Cuando comiences a recibir ingresos, asegúrate de asignar una parte a tus ahorros para construir una base financiera sólida.	2026-03-27 01:00:32.672
+9692f106-6e24-4760-88ac-b35e32331476	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-27 01:00:43.075	tip	Optimiza tus gastos en supermercado	Has gastado un total de $242,706 en supermercado este mes. Considera planificar tus compras y buscar ofertas para reducir este gasto.	2026-03-27 01:00:43.076
+80706fca-3aee-4d03-9116-574d5e70b7c7	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-27 01:00:43.656	warning	Gastos frecuentes en Lider Express	Has realizado 6 transacciones en Lider Express por un total de $103,805. Revisa si estos gastos son necesarios y considera reducir su frecuencia.	2026-03-27 01:00:43.656
+6de39d9e-0726-4f1a-a67c-2b947595da01	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-27 01:00:44.237	achievement	Inversión en criptomonedas	Has invertido $150,000 en criptomonedas. Felicidades por diversificar tus inversiones. Considera seguir monitoreando el rendimiento de esta inversión.	2026-03-27 01:00:44.237
+933b641a-2721-4576-b8c0-60266720c391	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-27 01:00:44.817	challenge	Reduce tus gastos en delivery	Has gastado $76,847 en delivery este mes. Te desafiamos a reducir este gasto en un 20% durante el próximo mes. Considera cocinar en casa más a menudo.	2026-03-27 01:00:44.818
+30d712f9-d38c-4b46-b768-d0f313d53030	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-03-27 01:00:45.4	positive	Inversión en hipoteca	Has invertido $833,310 en hipoteca. Esto es un gran paso hacia la seguridad financiera a largo plazo. Considera seguir invirtiendo en tu futuro.	2026-03-27 01:00:45.401
 \.
 
 
@@ -3930,6 +3950,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict pAU4Cgo8pH2vdRYrwByxR0iBcoB7OLbgBEe5XDrWNNsHPkiNH44slAWGe3OOwmS
+-- \unrestrict TPycBgKj8kWIRHvk4NmIYaqKOS6oV1sisAWrNPtKk3n6Fh9Vwm22mOmzYwf0dqi
 
 RESET ALL;
