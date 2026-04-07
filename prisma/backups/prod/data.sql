@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict e9B01cuvql4vBrj9DrW6jBPrzr4QlGB0H9aF689YPUfXAo3IZRhjuBpfKif2XWH
+-- \restrict cQ8aaWqf1NuUxlZlmrwRjbpuoVEYHYdkMZitdW17qCnDwc2zCtSww3gCb4KkrnI
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -1351,6 +1351,26 @@ cd14ee93-5b5d-4555-aa69-a0740142d823	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-0
 714b9d67-f76f-4727-84f5-78532d99bc68	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-06 01:00:47.594	warning	Gasto único pero significativo	Ten cuidado con gastos únicos pero significativos como el realizado en 'Banco Santander', que representa el 100% de tus gastos este mes, y considera diversificar tus transacciones.	2026-04-06 01:00:47.595
 be103c80-b604-4af7-8261-33d9b1d2fdad	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-06 01:00:48.285	positive	Ingresos significativos	Tienes ingresos muy altos este mes, lo que te da una gran flexibilidad para ahorrar, invertir o realizar gastos significativos si es necesario.	2026-04-06 01:00:48.286
 440a1412-5d11-4a2d-bcbe-d5d16f93efbf	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-06 01:00:49.115	challenge	Desafío de diversificación de gastos	Te desafiamos a diversificar tus gastos entre diferentes categorías y merchants para evitar dependencias financieras y mejorar tu resiliencia financiera.	2026-04-06 01:00:49.115
+21c7ef5d-2dbe-49c2-a9f0-8981ff03c033	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-07 01:00:09.422	warning	Gasto excepcionalmente alto en pago de deuda	Has gastado un total de $574,597.7 en pago de deuda en el mes actual, lo que puede ser un indicador de que necesitas revisar tus finanzas y considerar formas de reducir tus deudas.	2026-04-07 01:00:09.423
+df99f796-01ed-4d33-9ec0-b3a548c4ac13	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-07 01:00:10.103	tip	Considera un plan de pago a plazos	Dado que tienes un solo pago de $574,597.7 a Jesus Leon Rangel, podrías considerar pedir un plan de pago a plazos para hacerlo más manejable y evitar problemas de liquidez en el futuro.	2026-04-07 01:00:10.104
+b1a5f60f-bf16-4aa6-a267-91a5e1ae7932	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-07 01:00:10.765	challenge	Reducir la dependencia de pagos de deuda	Te desafiamos a reducir la cantidad de dinero dedicada a pagos de deuda en el próximo mes, explorando opciones para minimizar tus deudas y maximizar tus ahorros.	2026-04-07 01:00:10.766
+b4a203ba-34e1-4b30-b742-40f269603509	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-07 01:00:11.427	achievement	Priorización del pago de deuda	Has demostrado responsabilidad al priorizar el pago de deuda en el mes actual, lo que es un paso importante hacia la estabilidad financiera.	2026-04-07 01:00:11.428
+00a230ae-0083-40cf-9732-f9198396921b	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-07 01:00:12.088	positive	Oportunidad para revisar y ajustar	El pago excepcionalmente alto en el mes actual puede ser una oportunidad para revisar tus finanzas y ajustar tus hábitos de gasto y ahorro para lograr una mayor estabilidad y seguridad financiera en el futuro.	2026-04-07 01:00:12.09
+9319141d-1ddf-4920-9aab-4df53b4459ba	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-07 01:00:20.454	warning	Gastos elevados	Tus gastos totales para el mes actual son de $100,000, lo que puede indicar un desequilibrio en tu presupuesto. Es importante revisar y ajustar tus gastos para evitar problemas financieros.	2026-04-07 01:00:20.454
+23ef2b50-95a8-488e-bdf8-be3737f03cc8	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-07 01:00:21.117	tip	Establece un presupuesto	Dado que no tienes ingresos registrados, es fundamental establecer un presupuesto que te permita gestionar tus gastos de manera efectiva y alcanzar tus objetivos financieros.	2026-04-07 01:00:21.118
+40e5d16d-261b-4309-a45f-e80a03ac2fe3	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-07 01:00:21.781	challenge	Incrementa tu ingreso	Con un ingreso de $0, es un desafío generar ahorros. Considera explorar oportunidades para aumentar tus ingresos, como buscar un nuevo empleo, iniciar un negocio o desarrollar habilidades para obtener ingresos adicionales.	2026-04-07 01:00:21.782
+8afcc3d2-90bf-43d6-af4c-6930ddbb0215	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-07 01:00:22.443	achievement	No hay deudas registradas	No se han registrado deudas en tu contexto financiero, lo que es un logro positivo. Mantén este buen hábito y sigue trabajando en la gestión de tus finanzas para alcanzar la estabilidad financiera.	2026-04-07 01:00:22.444
+8e35492c-00a9-48dc-b15a-ed654d2d6ab1	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-07 01:00:23.107	positive	Oportunidad para crear un plan de ahorro	Con una tasa de ahorro del 0%, tienes la oportunidad de crear un plan de ahorro personalizado que se adapte a tus necesidades y objetivos financieros. Establece metas y comienza a trabajar en ellas para mejorar tu situación financiera.	2026-04-07 01:00:23.108
+88a7ecd7-8e0b-4d65-91e4-98efaf36f323	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-07 01:00:31.217	warning	Gastos elevados	Tus gastos totales este mes son de $53,000, lo que puede ser un desafío para mantener un equilibrio financiero saludable. Considera revisar tus gastos y ajustarlos según sea necesario.	2026-04-07 01:00:31.218
+160cdef7-91cd-4316-ba35-3d1cc0864a61	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-07 01:00:31.879	tip	Establece una meta de ahorro	Con una tasa de ahorro del 0%, es importante establecer una meta de ahorro para empezar a acumular fondos para el futuro. Considera asignar un porcentaje de tus ingresos a un fondo de ahorro.	2026-04-07 01:00:31.88
+b37505b3-fc11-4103-be4b-40ba2ff34545	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-07 01:00:32.673	challenge	Incrementa tus ingresos	Dado que tus ingresos son $0, es un desafío encontrar formas de aumentar tus ingresos. Considera buscar nuevas oportunidades laborales, freelance o emprendimientos para aumentar tus ingresos.	2026-04-07 01:00:32.674
+a5ec5f2c-5012-401b-b465-1c8bc22202a2	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-07 01:00:33.333	positive	Oportunidad de empezar de cero	No tener deudas ni gastos fijos te da la oportunidad de empezar de cero y crear un plan financiero personalizado. Aprovecha esta oportunidad para establecer buenos hábitos financieros.	2026-04-07 01:00:33.334
+674a649b-cb62-46c5-a9c9-f37f5f3c0795	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-07 01:00:33.996	achievement	Sin deudas	No tener deudas es un logro significativo. Aprovecha esta situación para enfocarte en ahorrar y invertir para tu futuro financiero.	2026-04-07 01:00:33.997
+46c481bd-7f8f-45ed-9cf0-ad0a3445050f	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-07 01:00:44.073	achievement	Alta tasa de ahorro	Felicitaciones, tienes una tasa de ahorro del 96% este mes, lo que indica un excelente control sobre tus finanzas.	2026-04-07 01:00:44.074
+0d303b78-dd8a-439f-b3ec-06805fed2a24	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-07 01:00:44.753	tip	Revisa y categoriza tus gastos	La mayoría de tus gastos están categorizados como 'Uncategorized'. Te recomendamos revisar y categorizar tus gastos para tener una visión más clara de tus finanzas.	2026-04-07 01:00:44.754
+4b62d673-4863-4be7-b866-2fa797c70d31	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-07 01:00:45.415	warning	Dependencia de un solo banco	La mayoría de tus transacciones se realizan a través de Banco Santander. Es importante considerar diversificar tus opciones bancarias para evitar dependencias excesivas.	2026-04-07 01:00:45.416
+8197ea6f-407c-4b2a-be1b-48c4343d8659	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-07 01:00:46.077	positive	Ingresos significativos	Tienes ingresos significativos de $574,597.7 este mes, lo que te brinda una buena base financiera para ahorrar e invertir.	2026-04-07 01:00:46.078
+a4c7cf2e-cb17-4699-869e-db182d71e440	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-07 01:00:46.748	challenge	Reducir gastos en suscripciones personales	La etiqueta 'personal_suscripcion' tiene un total de $22,864. Te desafiamos a reducir tus gastos en suscripciones personales y a encontrar formas de optimizar tus gastos.	2026-04-07 01:00:46.749
 \.
 
 
@@ -4366,6 +4386,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict e9B01cuvql4vBrj9DrW6jBPrzr4QlGB0H9aF689YPUfXAo3IZRhjuBpfKif2XWH
+-- \unrestrict cQ8aaWqf1NuUxlZlmrwRjbpuoVEYHYdkMZitdW17qCnDwc2zCtSww3gCb4KkrnI
 
 RESET ALL;
