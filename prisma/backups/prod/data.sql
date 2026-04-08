@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict cQ8aaWqf1NuUxlZlmrwRjbpuoVEYHYdkMZitdW17qCnDwc2zCtSww3gCb4KkrnI
+-- \restrict tXG3dOOVaOhaWMmBQQchVKWKxvQBV7XrTSZEUTYFb1uyND5F8tCknZrhIlTLU9T
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -1371,6 +1371,26 @@ a5ec5f2c-5012-401b-b465-1c8bc22202a2	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-0
 4b62d673-4863-4be7-b866-2fa797c70d31	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-07 01:00:45.415	warning	Dependencia de un solo banco	La mayoría de tus transacciones se realizan a través de Banco Santander. Es importante considerar diversificar tus opciones bancarias para evitar dependencias excesivas.	2026-04-07 01:00:45.416
 8197ea6f-407c-4b2a-be1b-48c4343d8659	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-07 01:00:46.077	positive	Ingresos significativos	Tienes ingresos significativos de $574,597.7 este mes, lo que te brinda una buena base financiera para ahorrar e invertir.	2026-04-07 01:00:46.078
 a4c7cf2e-cb17-4699-869e-db182d71e440	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-07 01:00:46.748	challenge	Reducir gastos en suscripciones personales	La etiqueta 'personal_suscripcion' tiene un total de $22,864. Te desafiamos a reducir tus gastos en suscripciones personales y a encontrar formas de optimizar tus gastos.	2026-04-07 01:00:46.749
+ed4bfc0d-b9a4-4e13-8e74-39965fcadcf6	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-08 01:00:10.619	warning	Gasto excesivo en deuda	Has gastado un total de $574,597.7 en pago de deuda en el mes actual, lo que podría estar afectando negativamente tu situación financiera. Es importante revisar y priorizar tus deudas para evitar problemas futuros.	2026-04-08 01:00:10.62
+65143eb0-9a67-4df0-a882-26b9f18fff04	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-08 01:00:11.304	tip	Revisa tus obligaciones financieras	Es posible que tengas una deuda compartida con Jesus Leon Rangel que estás pagando. Asegúrate de revisar los términos y condiciones de este acuerdo para entender mejor tus obligaciones financieras.	2026-04-08 01:00:11.305
+72ad78c3-5751-4275-97fc-434a1ff84d7b	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-08 01:00:11.967	challenge	Reducir gastos en deuda	Te desafiamos a reducir tus gastos en pago de deuda en un 20% para el próximo mes. Esto te ayudará a asignar más fondos a otras áreas importantes de tu vida financiera.	2026-04-08 01:00:11.968
+91dbfe86-7248-4f3e-a4e8-0ebbe9116d90	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-08 01:00:12.63	achievement	Prioriza tus finanzas	Aunque no has generado ingresos en el mes actual, has identificado claramente tus gastos en deuda. Esto es un buen comienzo para priorizar tus finanzas y trabajar hacia una situación financiera más estable.	2026-04-08 01:00:12.631
+ff84650d-6054-4d94-ad7f-c44c746b5091	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-08 01:00:13.3	positive	Oportunidad para reestructurar deudas	El pago de deuda compartida con Jesus Leon Rangel puede ser una oportunidad para reestructurar tus deudas y encontrar una solución más favorable. Considera hablar con un asesor financiero para explorar opciones y mejorar tu situación financiera.	2026-04-08 01:00:13.302
+0a44111a-5a20-4ca9-8c75-1c72de85714f	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-08 01:00:21.331	warning	Gasto excesivo	En el mes actual, has gastado $100,000 sin tener ingresos registrados, es importante revisar y ajustar tus gastos para evitar dificultades financieras.	2026-04-08 01:00:21.332
+6a2d1e4d-5e67-458c-b7f8-eff045ff73f7	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-08 01:00:21.994	tip	Establece un presupuesto	Debido a que no hay ingresos registrados, es fundamental establecer un presupuesto que te permita gestionar tus gastos de manera efectiva y alcanzar tus objetivos financieros.	2026-04-08 01:00:21.995
+11093d98-516a-44f6-bf85-c83c07dd1dcc	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-08 01:00:22.656	challenge	Incrementa tus ingresos	El no tener ingresos registrados en el mes actual es un desafío, te propongo buscar formas de incrementar tus ingresos, como desarrollar habilidades nuevas o buscar oportunidades laborales adicionales.	2026-04-08 01:00:22.657
+334b5c3a-470a-4a67-9b87-dc490a9f6a0b	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-08 01:00:23.318	achievement	No hay deudas registradas	Aunque no hay ingresos, no se registran deudas, lo cual es un logro. Mantén esta tendencia y busca formas de ahorrar y generar patrimonio.	2026-04-08 01:00:23.319
+6909d95c-36fa-4317-9025-d75d0fcf9454	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-08 01:00:23.983	positive	Oportunidad para replantear	La situación actual es una oportunidad para replantear tus finanzas personales, establecer metas claras y trabajar en un plan para mejorar tu situación financiera a largo plazo.	2026-04-08 01:00:23.984
+5e79c493-3873-4fd1-80b1-7675bd3183ee	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-08 01:00:32.237	warning	Gastos elevados	Tus gastos totales este mes son de $53,000, lo que sugiere que debes revisar y ajustar tus hábitos de gasto para evitar problemas financieros.	2026-04-08 01:00:32.238
+c28d3718-c64b-46a0-bb7e-0d61c5961de2	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-08 01:00:33.032	tip	Establece un presupuesto	Dado que no tienes ingresos registrados, es fundamental que establezcas un presupuesto para gestionar tus gastos de manera efectiva y evitar el endeudamiento.	2026-04-08 01:00:33.033
+d27348a0-2f52-42b6-acaf-421a9c24bb33	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-08 01:00:33.696	challenge	Reduce gastos innecesarios	Te desafío a identificar y reducir gastos innecesarios para liberar recursos y mejorar tu situación financiera. Comienza por revisar tus gastos y priorizar tus necesidades.	2026-04-08 01:00:33.697
+c3a5502c-9d69-42b3-8e12-7f327897ce69	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-08 01:00:34.36	achievement	Oportunidad para ahorrar	Aunque no tienes ingresos registrados, esto te da la oportunidad de planificar y establecer metas de ahorro para cuando tengas ingresos. Establece objetivos claros y trabaja hacia ellos.	2026-04-08 01:00:34.361
+ab677e7a-4449-422b-bfa8-e2d034790e54	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-08 01:00:35.021	positive	Toma el control de tus finanzas	La falta de información sobre tus hábitos de gasto y merchants te da la oportunidad de empezar de cero y tomar el control de tus finanzas. Aprovecha esta oportunidad para establecer buenas prácticas y mejorar tu situación financiera.	2026-04-08 01:00:35.022
+28d7987e-0fd5-4d80-b571-3808fda380f5	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-08 01:00:44.911	achievement	Altas tasas de ahorro	Felicidades, tienes una tasa de ahorro del 96% este mes. Esto es un logro notable y muestra que estás gestionando bien tus finanzas.	2026-04-08 01:00:44.912
+73fcf6c5-c311-48f4-a96f-26d2c027eeb6	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-08 01:00:45.573	warning	Gastos no categorizados	La mayoría de tus gastos están clasificados como 'Uncategorized'. Te recomiendo revisar y categorizar tus gastos para tener una mejor visión de tus finanzas.	2026-04-08 01:00:45.574
+7c52d2a3-d338-437e-a2e6-c1c98ba45b1f	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-08 01:00:46.235	tip	Revisa tus suscripciones	La etiqueta 'personal_suscripcion' es la más común en tus gastos. Asegúrate de que no te estés olvidando de cancelar suscripciones que no utilices.	2026-04-08 01:00:46.237
+11ce52e4-f31c-4085-87d6-9876f9e59e11	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-08 01:00:46.898	positive	Ingresos altos	Tienes un ingreso total de $574,597.7 este mes. Esto te da una buena base para ahorrar e invertir en tu futuro.	2026-04-08 01:00:46.899
+e4ae20db-c1e1-4f7b-a34d-fd08390f6f60	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-08 01:00:47.56	challenge	Diversifica tus gastos	La mayoría de tus gastos están concentrados en un solo merchant, Banco Santander. Te desafío a explorar otras opciones y diversificar tus gastos para evitar dependencias financieras.	2026-04-08 01:00:47.561
 \.
 
 
@@ -4386,6 +4406,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict cQ8aaWqf1NuUxlZlmrwRjbpuoVEYHYdkMZitdW17qCnDwc2zCtSww3gCb4KkrnI
+-- \unrestrict tXG3dOOVaOhaWMmBQQchVKWKxvQBV7XrTSZEUTYFb1uyND5F8tCknZrhIlTLU9T
 
 RESET ALL;
