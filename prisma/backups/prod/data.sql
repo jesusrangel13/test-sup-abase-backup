@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict 7XMubZS8hXU5UmJ5zt5UBxeuhHR6WCZ1NMRRyT40vYsHbmaKtxyXBjD8Hv1BHcM
+-- \restrict tYmtzbF5BdTErN8P8aaxNYbBhRmuzaHk3yb8BfD9WKPCmCehrOKM4mrrPsTCPCV
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -1411,6 +1411,26 @@ ce60ccc8-4146-4b77-82ea-6d4e362a7513	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-0
 47caf74f-5117-429b-a2ce-eb553f511a4a	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-09 01:00:44.699	warning	Dependencia de un solo banco	Tu información financiera muestra que el 100% de tus transacciones se realizan a través de Banco Santander. Es importante considerar diversificar tus opciones bancarias para evitar dependencias y posibles riesgos.	2026-04-09 01:00:44.7
 c2886921-c7ff-4e19-ae3e-c0d844205836	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-09 01:00:45.341	positive	Ingresos significativos	Tu ingreso mensual es considerable, con un total de $574,597.7. Esto te brinda una buena base para planificar tus finanzas y alcanzar tus objetivos a largo plazo.	2026-04-09 01:00:45.342
 1ae1573d-4d80-4c4c-a9bf-a162a50559c5	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-09 01:00:45.985	challenge	Desafío de reducción de gastos	Aunque tu tasa de ahorro es alta, es importante evaluar constantemente tus gastos para identificar áreas de mejora. Te desafiamos a reducir tus gastos un 5% durante el próximo mes y reinvertir esa cantidad en tus ahorros o en inversiones.	2026-04-09 01:00:45.986
+5c4e5da5-5528-4b84-ae1a-7cf7b3bcb2a7	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-10 01:00:09.731	warning	Gasto excesivo en deuda	Has gastado un total de $574,597.7 en pago de deuda en el mes actual, lo que puede afectar negativamente tu situación financiera. Es importante revisar y ajustar tus pagos de deuda para evitar problemas financieros futuros.	2026-04-10 01:00:09.732
+51bea5d2-c560-43f6-a77f-6d0a3b101fc9	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-10 01:00:10.392	tip	Revisa tus pagos de deuda	Es posible que puedas negociar un mejor plan de pago con Jesus Leon Rangel. Considera comunicarte con ellos para explorar opciones que te permitan pagar tu deuda de manera más manejable.	2026-04-10 01:00:10.393
+6343219a-5ddc-49dc-9bd6-d439c3653dab	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-10 01:00:11.041	challenge	Reduce tus pagos de deuda	Te desafiamos a reducir tus pagos de deuda en un 10% en el próximo mes. Esto te ayudará a ahorrar $57,459.77 y a mejorar tu situación financiera.	2026-04-10 01:00:11.042
+df7a46c5-d93b-4a83-9d2b-a8e7182cb42e	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-10 01:00:11.688	achievement	Prioriza tus gastos	Aunque has gastado una gran cantidad en pago de deuda, has demostrado responsabilidad al priorizar este gasto. Sigue trabajando en mejorar tus finanzas y celebra tus logros en el camino.	2026-04-10 01:00:11.689
+11ab0f44-f4c8-467c-b25c-57640e417337	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-10 01:00:12.338	positive	Oportunidad de mejora	La falta de ingresos en el mes actual puede ser una oportunidad para revisar tus gastos y priorizar tus necesidades. Considera buscar formas de aumentar tus ingresos y reducir tus gastos para mejorar tu situación financiera.	2026-04-10 01:00:12.339
+f758f29d-0856-4d72-8ad4-72060f5bfa8d	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-10 01:00:20.246	warning	Gastos elevados	Tus gastos totales este mes son de $100,000, lo que sugiere que debes revisar y ajustar tus hábitos de gasto para evitar problemas financieros.	2026-04-10 01:00:20.247
+8e4772d3-d624-45a0-ab73-27a7a839c595	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-10 01:00:20.895	tip	Establece un presupuesto	Debido a que no tienes ingresos registrados, es fundamental que establezcas un presupuesto para gestionar tus gastos y evitar gastar más de lo que ganas.	2026-04-10 01:00:20.896
+6ff6e92f-9217-4f0f-9949-ac7a50df2dd3	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-10 01:00:21.544	challenge	Incrementa tus ingresos	Con una tasa de ahorro del 0%, es crucial que busques formas de aumentar tus ingresos para mejorar tu situación financiera y alcanzar tus objetivos.	2026-04-10 01:00:21.545
+345ed970-1c8e-483c-b786-a309ed79af7b	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-10 01:00:22.194	achievement	No hay deudas registradas	No se han registrado deudas en tu contexto financiero, lo que es un logro positivo. Mantén esta tendencia para evitar problemas financieros en el futuro.	2026-04-10 01:00:22.195
+0274768f-b8f3-472c-ac57-51bb167ff6f7	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-10 01:00:22.841	positive	Oportunidad para crear un fondo de emergencia	Dado que no tienes gastos frecuentes registrados, es una excelente oportunidad para crear un fondo de emergencia y empezar a ahorrar para el futuro.	2026-04-10 01:00:22.842
+64cc9e6f-70e3-47b7-abeb-8ea1b4583ab5	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-10 01:00:30.758	warning	Gasto elevado	Tu gasto total es de $53,000 en el mes actual, lo que sugiere que debes revisar tus hábitos de consumo y buscar áreas para reducir gastos.	2026-04-10 01:00:30.758
+f2fa10af-f956-4fbf-b3fc-f02eabdba314	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-10 01:00:31.407	tip	Establece un presupuesto	Debes establecer un presupuesto para el mes siguiente, considerando tus ingresos y gastos, para evitar un desequilibrio financiero.	2026-04-10 01:00:31.407
+8697ea75-2340-480d-b9e0-781faf227af3	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-10 01:00:32.182	challenge	Aumenta tus ingresos	Considera buscar formas de aumentar tus ingresos, como tomar un trabajo adicional o desarrollar habilidades para mejorar tu salario, ya que actualmente no tienes ingresos registrados.	2026-04-10 01:00:32.184
+74715099-550d-4db0-8cd7-ab933196c62a	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-10 01:00:32.832	achievement	Identifica tus gastos	Debes identificar y categorizar tus gastos para entender mejor dónde se está asignando tu dinero y tomar decisiones informadas sobre cómo asignar tus recursos.	2026-04-10 01:00:32.833
+a25cce2e-25a0-4053-b69a-106171a3965c	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-10 01:00:33.481	positive	Oportunidad para ahorrar	Aunque actualmente no tienes una tasa de ahorro, esto te da la oportunidad de establecer metas de ahorro y trabajar hacia ellas, lo que te permitirá construir una base financiera más sólida en el futuro.	2026-04-10 01:00:33.482
+9a9a31d3-a27f-48e0-aa03-0bd9740e2b0a	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-10 01:00:43.076	achievement	 Alta tasa de ahorro	Felicitaciones, tienes una tasa de ahorro del 96% en este mes, lo que indica un excelente manejo de tus finanzas.	2026-04-10 01:00:43.081
+79141744-ed06-4baf-b4d5-760e508a72c7	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-10 01:00:43.727	tip	Revisa tus categorías	Es posible que debas revisar y categorizar mejor tus gastos, ya que la mayoría de tus gastos están clasificados como 'Uncategorized'.	2026-04-10 01:00:43.728
+ec373615-4234-4025-8c55-ca9401be8e46	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-10 01:00:44.373	warning	Gasto único grande	Ten cuidado, tienes un gasto único de $22,864 con Banco Santander, lo que podría ser un gasto excepcional. Asegúrate de que sea un gasto necesario y planificado.	2026-04-10 01:00:44.374
+e8714739-302a-4bc0-83b3-7646c6345e51	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-10 01:00:45.02	challenge	Diversifica tus gastos	Desafío: intenta diversificar tus gastos para evitar depender de un solo proveedor o categoría. Esto te ayudará a tener una mejor visión de tus finanzas.	2026-04-10 01:00:45.021
+75b56ab1-67ba-4c69-8dd6-0545c09684aa	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-10 01:00:45.668	positive	Ingresos altos	Tienes ingresos altos, con un total de $574,597.70 en este mes. Aprovecha esta oportunidad para ahorrar e invertir para tu futuro.	2026-04-10 01:00:45.669
 \.
 
 
@@ -4426,6 +4446,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict 7XMubZS8hXU5UmJ5zt5UBxeuhHR6WCZ1NMRRyT40vYsHbmaKtxyXBjD8Hv1BHcM
+-- \unrestrict tYmtzbF5BdTErN8P8aaxNYbBhRmuzaHk3yb8BfD9WKPCmCehrOKM4mrrPsTCPCV
 
 RESET ALL;
