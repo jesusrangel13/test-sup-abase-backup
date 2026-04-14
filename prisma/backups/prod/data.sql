@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict Op1cAMqCkV93nP8QqbHnP8G8XnC9VC28IOXfSiQsYVafNgCm2Gcb3r7kPMymPFC
+-- \restrict nsGPampTLwO9z5UTESiX0Ia4dOY9QxOOnmg83Un446OzPExFXhHB8Ih6k5YuYKj
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -1491,6 +1491,26 @@ fc18a8da-abb9-415c-92dd-e157efcdb1ba	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-0
 24e15e59-eeef-423d-ba35-0f06cc3c21c0	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-13 01:00:41.956	warning	Dependencia de un solo banco	Tus transacciones se realizan principalmente a través de Banco Santander. Esto puede ser un riesgo si el banco experimenta problemas o si necesitas acceder a tus fondos de manera urgente. Considera diversificar tus opciones bancarias.	2026-04-13 01:00:41.957
 cad784f3-eeee-4a1d-958a-65068bd88d6f	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-13 01:00:42.554	positive	Gastos bajo control	Tus gastos totales son relativamente bajos en comparación con tus ingresos. Esto es un buen indicador de que estás manejando tus finanzas de manera efectiva y responsable.	2026-04-13 01:00:42.555
 9f77974a-f2ed-4226-89b2-3468de383bdd	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-13 01:00:43.151	challenge	Explora opciones de inversión	Con una tasa de ahorro tan alta, podrías considerar explorar opciones de inversión para hacer crecer tu dinero. Investiga opciones que se ajusten a tu perfil de riesgo y metas financieras a largo plazo.	2026-04-13 01:00:43.152
+9cdc6667-b4b8-41e3-b061-aedc6743c35a	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-14 01:00:09.12	warning	Gasto significativo en deuda	Has gastado una cantidad considerable en pago de deuda este mes, lo que podría estar afectando tu estabilidad financiera. Considera revisar tus deudas y explorar opciones para reducirlas.	2026-04-14 01:00:09.121
+e26242cc-67f9-43ec-84bd-ba658eba236d	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-14 01:00:09.781	tip	Revisa tus acuerdos de pago	El pago de balance compartido a Jesus Leon Rangel es uno de tus gastos más altos. Asegúrate de revisar el acuerdo de pago y considera la posibilidad de negociar un plan de pago más asequible.	2026-04-14 01:00:09.782
+a4c16a34-db99-4d58-9aa1-94d426c39c71	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-14 01:00:10.446	challenge	Desafío de reducción de deuda	Te desafiamos a reducir tu deuda en un 10% en el próximo mes. Establece un plan de acción y ajusta tus gastos para lograr este objetivo y mejorar tu situación financiera.	2026-04-14 01:00:10.447
+8b1fdb7a-2e80-488c-91ea-2743a258ab16	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-14 01:00:11.094	achievement	Priorización de gastos	Has priorizado el pago de deuda como uno de tus gastos principales, lo que demuestra que estás tomando medidas para abordar tus obligaciones financieras. Sigue adelante con esta estrategia y ajusta según sea necesario.	2026-04-14 01:00:11.095
+031a4d58-33e3-4659-a006-7c04642a7623	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-14 01:00:11.742	positive	Oportunidad de mejora	La falta de ingresos registrados te brinda la oportunidad de explorar fuentes de ingresos adicionales y diversificar tus flujos de dinero. Considera desarrollar habilidades nuevas o buscar oportunidades laborales para mejorar tu situación financiera.	2026-04-14 01:00:11.743
+2bc201f7-607a-4859-bacf-c7bfe4c610b4	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-14 01:00:19.616	warning	Gastos elevados	En el mes actual, tus gastos totales ascienden a $100,000, lo que sugiere que debes revisar y ajustar tus hábitos de consumo para evitar un desequilibrio financiero.	2026-04-14 01:00:19.617
+e522f920-4db4-445c-b9d9-d60d3c6628c5	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-14 01:00:20.264	tip	Establece una meta de ahorro	Dado que tu tasa de ahorro actual es del 0%, te recomiendo establecer una meta de ahorro realista para el mes siguiente y crear un plan para alcanzarla.	2026-04-14 01:00:20.265
+8680ef29-da3b-4a13-9bed-71617bf1cd74	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-14 01:00:20.912	challenge	Incrementa tus ingresos	Con ingresos de $0 en el mes actual, es fundamental que explores formas de aumentar tus ingresos, como buscar nuevas oportunidades laborales, invertir o desarrollar habilidades rentables.	2026-04-14 01:00:20.913
+3e976d4c-7c07-46f4-8b59-619b9c43dcbc	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-14 01:00:21.565	achievement	Reconocimiento de conciencia financiera	Has dado el primer paso hacia el control de tus finanzas al reconocer tu situación actual, lo que te permitirá tomar decisiones informadas para mejorar tu bienestar económico.	2026-04-14 01:00:21.565
+5f7397d0-4723-4830-9386-8995197f25d6	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-14 01:00:22.218	positive	Oportunidad para crear un presupuesto	La falta de información sobre tus hábitos de gasto y categorías te brinda la oportunidad de empezar desde cero y crear un presupuesto personalizado que se adapte a tus necesidades y objetivos financieros.	2026-04-14 01:00:22.218
+f6d5fcf0-8785-4488-aa21-424503441e2e	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-14 01:00:30.142	warning	Gasto excesivo	Tenemos un gasto total de $53,000 en el mes actual, lo que sugiere que es necesario revisar y ajustar tus hábitos de consumo para evitar un desequilibrio financiero.	2026-04-14 01:00:30.143
+5ec70747-271b-410e-b644-78874bf33276	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-14 01:00:30.789	tip	Establece un presupuesto	Debido a que no tienes ingresos registrados, es importante establecer un presupuesto que te permita gestionar tus gastos de manera efectiva y alcanzar tus objetivos financieros.	2026-04-14 01:00:30.79
+ea2fca89-308f-4948-b2b2-aa2d3fa771d1	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-14 01:00:31.436	challenge	Aumenta tu tasa de ahorro	Con una tasa de ahorro del 0%, es un desafío aumentarla al menos al 10% para garantizar una reserva financiera para el futuro y aprovechar las oportunidades de inversión.	2026-04-14 01:00:31.437
+e5d42310-4eb4-466a-a27d-611aa0beeff3	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-14 01:00:32.213	achievement	Identifica tus gastos	Aunque no hay merchants ni subcategorías registradas, es un logro que estés dispuesto a analizar tus finanzas y tomar medidas para mejorar tu situación financiera.	2026-04-14 01:00:32.214
+1bed235f-46b8-435f-841d-2b51e67c50e0	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-14 01:00:32.86	positive	Oportunidad de crecimiento	La falta de ingresos y gastos registrados te brinda la oportunidad de empezar a construir un historial financiero sólido y tomar decisiones informadas para mejorar tu bienestar económico.	2026-04-14 01:00:32.861
+1f7b9127-f602-4163-b3ba-760b7619c463	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-14 01:00:42.771	achievement	Alta tasa de ahorro	Felicitaciones, tienes una tasa de ahorro del 96% este mes, lo que indica un excelente control sobre tus finanzas.	2026-04-14 01:00:42.772
+39ff6e83-8453-4ee1-9a81-2dba7e1af829	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-14 01:00:43.419	tip	Revisar categorías	Es recomendable revisar y categorizar tus gastos para tener una mejor visión de dónde se están asignando tus recursos, ya que la mayoría de tus gastos están clasificados como 'Uncategorized'.	2026-04-14 01:00:43.419
+3a0c10c3-484b-4141-b3fa-79e697c17470	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-14 01:00:44.071	warning	Dependencia de una sola entidad financiera	La mayoría de tus transacciones se realizan a través de Banco Santander, lo que podría hacer que seas vulnerable a cambios en sus políticas o problemas técnicos. Considera diversificar tus cuentas y servicios financieros.	2026-04-14 01:00:44.072
+1f90358d-7f6f-4cd7-9bdf-7a6723f939cb	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-14 01:00:44.718	positive	Ingresos significativos	Tienes un ingreso total de 574,597.7 este mes, lo que te brinda una base financiera sólida para planificar y alcanzar tus objetivos financieros a largo plazo.	2026-04-14 01:00:44.719
+63371dc6-acc0-4e0b-8563-edfd4c61373e	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-14 01:00:45.364	challenge	Optimizar gastos fijos	Aunque tienes una alta tasa de ahorro, es importante revisar tus gastos fijos, como la 'personal_suscripcion', para asegurarte de que estén alineados con tus prioridades y objetivos financieros, y considerar posibles ajustes para maximizar tus ahorros.	2026-04-14 01:00:45.365
 \.
 
 
@@ -4506,6 +4526,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict Op1cAMqCkV93nP8QqbHnP8G8XnC9VC28IOXfSiQsYVafNgCm2Gcb3r7kPMymPFC
+-- \unrestrict nsGPampTLwO9z5UTESiX0Ia4dOY9QxOOnmg83Un446OzPExFXhHB8Ih6k5YuYKj
 
 RESET ALL;
