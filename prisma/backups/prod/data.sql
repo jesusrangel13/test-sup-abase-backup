@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict ZyGE6yObszUCMskEC2dg1E3v0cu6M8VX6F5pWjYYAQ1csG6n0TEQnluZGITRZK8
+-- \restrict 4Y9TpaX7ClGwz8RcznmvhUbVdwgvtCH1pOJpjVC8lgtCa0wIRDSlvcpygXrbDEl
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -1611,6 +1611,26 @@ e2acaa11-f650-43bb-9548-926532200673	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-0
 b9f50862-b35e-4199-a030-1c828be5683a	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-19 01:00:46.418	positive	Gestión de Ingresos	Tu ingreso es significativamente mayor que tus gastos, lo que te da una gran flexibilidad para invertir o ahorrar aún más.	2026-04-19 01:00:46.419
 d348a1be-aa45-45a7-93ce-4234499219bd	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-19 01:00:47.08	warning	Dependencia de un Solo Banco	Todos tus gastos y transacciones parecen estar concentrados en un solo banco, el Banco Santander. Sería prudente diversificar tus opciones financieras para evitar dependencia de una sola institución.	2026-04-19 01:00:47.081
 e19ca2bd-5544-4eb8-bfdf-fa3b6541cefd	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-19 01:00:47.742	challenge	Desafío de Reducción de Gastos	Aunque tu tasa de ahorro es alta, te desafiamos a reducir tus gastos en un 10% para aumentar aún más tus ahorros y alcanzar tus metas financieras de manera más rápida.	2026-04-19 01:00:47.743
+2b1cb246-fb77-48c9-a67e-c1674cd91709	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-20 01:00:08.906	warning	Gasto excepcionalmente alto en pagos de deuda	Ten cuidado, has gastado $574,597.7 en pagos de deuda este mes, lo que puede afectar negativamente tu estabilidad financiera a largo plazo.	2026-04-20 01:00:08.907
+07662c74-6eb1-4077-8a2a-2143330cae16	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-20 01:00:09.556	tip	Revisa tus compromisos financieros	Es importante que revises tus compromisos financieros con Jesus Leon Rangel y busques alternativas para reducir el monto de tus pagos de deuda.	2026-04-20 01:00:09.557
+eec45703-bf42-4207-a037-cf751480bfb7	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-20 01:00:10.174	challenge	Desafío de reducción de deuda	Te desafiamos a reducir tus pagos de deuda en un 20% para el próximo mes, busca formas de ahorrar y optimizar tus finanzas para lograrlo.	2026-04-20 01:00:10.175
+5418d7de-ac3c-41b8-8401-a8cfacb25f19	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-20 01:00:10.798	achievement	Prioriza tus gastos	Aunque has tenido un gasto excepcionalmente alto en pagos de deuda, no has registrado otros gastos significativos en otras categorías, lo que indica que estás priorizando tus gastos de manera efectiva.	2026-04-20 01:00:10.799
+691950d0-8360-466c-a9ed-e8764b3198d5	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-20 01:00:11.414	positive	Oportunidad de mejora	La falta de ingresos registrados puede ser una oportunidad para explorar fuentes de ingresos adicionales y mejorar tu situación financiera, considera buscar nuevas oportunidades laborales o emprender un negocio secundario.	2026-04-20 01:00:11.415
+9388bf19-4454-4fb5-b2b9-6bc3d943a796	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-20 01:00:19.112	warning	Gastos excesivos	Tus gastos mensuales son de $100,000, lo que indica un nivel de gasto elevado. Considera revisar tus egresos y ajustarlos para lograr un mejor equilibrio financiero.	2026-04-20 01:00:19.113
+94dcdc05-52f4-447c-97d4-6d4bd762126a	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-20 01:00:19.736	tip	Establece ingresos	No se han registrado ingresos en el período actual. Asegúrate de tener una fuente de ingresos estable para mantener una buena salud financiera.	2026-04-20 01:00:19.737
+a0987b7c-8868-4ce2-a148-94a1eca5cf54	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-20 01:00:20.356	challenge	Incrementa tu tasa de ahorro	Tu tasa de ahorro actual es del 0%. Te desafiamos a aumentarla al 10% en el próximo mes para empezar a construir una reserva financiera.	2026-04-20 01:00:20.356
+cc68ebbc-9129-47b5-bb74-27248fb0cf53	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-20 01:00:20.973	positive	Oportunidad de mejora	No se han identificado hábitos de gasto problemáticos en tus merchantes favoritos. Aprovecha esta oportunidad para revisar tus gastos y encontrar áreas de mejora.	2026-04-20 01:00:20.976
+b42f4d88-f89e-4499-b4a7-2fa8c18ff319	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-20 01:00:21.593	achievement	Sin deudas reportadas	No se han registrado deudas o pagos pendientes en tu contexto financiero. Mantén este buen hábito y sigue trabajando en tu estabilidad financiera.	2026-04-20 01:00:21.594
+9671c906-51e6-46e0-a937-e6a1b633f836	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-20 01:00:29.388	warning	Gastos excesivos	Tus gastos totales de $53,000 en el mes actual son considerablemente altos. Es importante revisar y ajustar tus hábitos de gasto para evitar dificultades financieras.	2026-04-20 01:00:29.388
+5db739d9-8910-42f0-a4d7-59eb292905c9	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-20 01:00:30.023	tip	Establece un presupuesto	Dado que no hay ingresos registrados y los gastos son elevados, te recomiendo establecer un presupuesto detallado para gestionar tus finanzas de manera efectiva y alcanzar una mayor estabilidad financiera.	2026-04-20 01:00:30.024
+4595a77c-7723-4bdd-bbad-d19e82300e53	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-20 01:00:30.64	challenge	Incrementa tus ingresos	Con un ingreso de $0, es crucial buscar formas de generar ingresos para equilibrar tus finanzas. Considera opciones como encontrar un trabajo, invertir o desarrollar habilidades para aumentar tus ganancias.	2026-04-20 01:00:30.641
+aca77553-9a66-4d14-903e-4eaecb6a4f62	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-20 01:00:31.257	achievement	Oportunidad de ahorrar	Aunque actualmente no hay ahorro, identificar áreas de gasto excesivo y reducirlas puede ser un primer paso hacia la creación de un fondo de ahorro, lo cual es esencial para la estabilidad financiera a largo plazo.	2026-04-20 01:00:31.258
+c830983f-527c-415a-8bf1-a7074aaecb36	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-20 01:00:31.873	positive	Identifica tus hábitos de gasto	Aunque no hay información sobre tus hábitos de gasto específicos, tener en cuenta cada transacción y categorizar tus gastos puede ayudarte a entender mejor tus patrones de consumo y a tomar decisiones financieras informadas.	2026-04-20 01:00:31.874
+85a3be96-96e6-4ec1-b327-1a67c523b6ab	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-20 01:00:41.527	achievement	Excelente tasa de ahorro	Felicidades, tienes una tasa de ahorro del 96% este mes, lo que indica un excelente control sobre tus gastos.	2026-04-20 01:00:41.528
+14d188d2-7623-407a-a2d8-f7f14ec67c93	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-20 01:00:42.147	tip	Revisión de categorías	Es posible que debas revisar y categorizar tus gastos, ya que el 100% de tus gastos están clasificados como 'Uncategorized', lo que puede dificultar el seguimiento de tus finanzas.	2026-04-20 01:00:42.148
+d34d6c45-8140-49a7-bdd4-2b4bbd497a69	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-20 01:00:42.766	warning	Gasto único elevado	Ten cuidado, tienes un solo gasto de $22,864 con Banco Santander, lo que representa el 100% de tus gastos este mes. Asegúrate de que este gasto sea necesario y no afecte negativamente tus finanzas.	2026-04-20 01:00:42.767
+3cb979cb-ff21-4e22-b674-b2d767afd922	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-20 01:00:43.384	positive	Ingresos elevados	Tienes un ingreso mensual de $574,597.7, lo que te brinda una base financiera sólida para ahorrar y invertir.	2026-04-20 01:00:43.385
+e5c2d117-6105-401c-9217-5fe24ff9cef2	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-20 01:00:44.006	challenge	Diversificar tus gastos	Desafío: intenta diversificar tus gastos entre diferentes categorías y mercaderes, ya que actualmente solo tienes un gasto registrado con Banco Santander. Esto te ayudará a obtener una visión más completa de tus finanzas.	2026-04-20 01:00:44.006
 \.
 
 
@@ -4626,6 +4646,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict ZyGE6yObszUCMskEC2dg1E3v0cu6M8VX6F5pWjYYAQ1csG6n0TEQnluZGITRZK8
+-- \unrestrict 4Y9TpaX7ClGwz8RcznmvhUbVdwgvtCH1pOJpjVC8lgtCa0wIRDSlvcpygXrbDEl
 
 RESET ALL;
