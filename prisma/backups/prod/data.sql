@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict GijgfvWFygmi49PS3o3rjwpRNTTBGdvNdRMoZUusnFh7Sc5QqFFQxmPGK9m9oI2
+-- \restrict jtH13fra7p6WLMYqQ5eIaMmGm9UXRAJDteb1thKuYBMEVd0tJe5R77VUDCgvuGB
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -230,7 +230,7 @@ f5829fd4-531a-4c99-9852-19047a6d370c	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta
 2e64b401-5a2f-4492-87c9-a618e7ba6f33	346b32d1-b21f-4ce9-ac27-a69e67abb103	Santander AMEX	CREDIT	5756123.00	CLP	f	8000000.00	31	2025-11-18 16:40:45.67	2026-04-26 20:06:40.902	f	f	\N	\N	\N	\N	f	\N
 646caf37-7684-45ac-87f3-cec83efb633d	346b32d1-b21f-4ce9-ac27-a69e67abb103	Santander VISA	CREDIT	7691319.00	CLP	f	8000000.00	31	2025-11-18 16:41:05.327	2026-04-26 20:22:56.595	f	f	000069640842	#7a7a7a	\N	\N	f	\N
 af297afb-aa32-48f5-bee2-844713748199	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta Itau	DEBIT	2265.00	CLP	f	\N	\N	2025-11-25 19:19:59.48	2025-11-25 19:19:59.48	f	t	\N	#FF6200	\N	\N	f	\N
-d99144b6-5974-40e2-9f17-b36942774c9e	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta MercadoPago	DEBIT	5342749.60	CLP	f	\N	\N	2025-11-18 16:40:00.279	2026-04-26 21:11:13.674	f	t	\N	#ffe600	\N	\N	f	\N
+d99144b6-5974-40e2-9f17-b36942774c9e	346b32d1-b21f-4ce9-ac27-a69e67abb103	Cuenta MercadoPago	DEBIT	5307749.60	CLP	f	\N	\N	2025-11-18 16:40:00.279	2026-04-28 17:31:20.845	f	t	\N	#ffe600	\N	\N	f	\N
 \.
 
 
@@ -1802,6 +1802,31 @@ d43f1f70-31d9-46fd-ae5e-8bbc335086d4	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-0
 fa2645fa-4b84-4ca2-b80a-1222415b7aa1	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-04-28 01:00:56.819	challenge	Incrementar la tasa de ahorro	Su tasa de ahorro actual es del 0%, lo que significa que no está ahorrando nada. Desafíese a aumentar su tasa de ahorro a un mínimo del 10% para garantizar una reserva financiera.	2026-04-28 01:00:56.82
 f2c2d413-5694-4a35-b41d-4ae51cf785d3	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-04-28 01:00:57.439	positive	Oportunidad para empezar de cero	El hecho de que no tenga gastos registrados en el mes actual es una oportunidad para empezar de cero y establecer hábitos financieros saludables, como ahorrar y gastar de manera responsable.	2026-04-28 01:00:57.44
 7148e200-9ddf-45cd-88c5-f0bbfb6eef55	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-04-28 01:00:58.057	achievement	No hay deudas registradas	No se han registrado deudas o gastos excesivos en el mes actual, lo que es un logro positivo en términos de gestión financiera, pero es importante seguir monitoreando sus finanzas para mantener este ritmo.	2026-04-28 01:00:58.058
+0df43b63-a177-4203-93fa-f2f80f33e82d	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-29 01:00:10.64	warning	Gasto significativo en deuda	Has tenido un gasto de $574,597.7 en el pago de deuda esta month, lo que puede estar afectando negativamente tu situación financiera.	2026-04-29 01:00:10.642
+d9e79c78-63a6-48f0-b4c6-7fe7125c1032	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-29 01:00:11.28	tip	Revisa tus obligaciones financieras	Es importante que revises tus obligaciones financieras y consideres la posibilidad de renegociar o reestructurar tus deudas para reducir el impacto en tus finanzas personales.	2026-04-29 01:00:11.281
+11cbc90f-b892-4329-871d-3a80a1423a40	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-29 01:00:11.899	challenge	Reducir el gasto en deuda	Te desafiamos a reducir el gasto en deuda en un 20% para el próximo mes, lo que te permitirá ahorrar $114,919.54 y mejorar tu situación financiera.	2026-04-29 01:00:11.9
+9093fdab-91dc-4bdd-a793-4d7f344117fb	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-29 01:00:12.535	achievement	No hay ingresos registrados	No has registrado ingresos este mes, lo que puede ser una oportunidad para revisar tus fuentes de ingreso y considerar formas de aumentar tus ganancias.	2026-04-29 01:00:12.537
+3c8b79bb-b542-403d-919f-4df96450b240	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-04-29 01:00:13.156	positive	Oportunidad de mejorar la gestión de deuda	La falta de diversificación en tus gastos puede ser una oportunidad para mejorar la gestión de tu deuda y reducir el impacto en tus finanzas personales, considera buscar asesoramiento financiero para mejorar tu situación.	2026-04-29 01:00:13.157
+175cc25e-d5ff-4ef4-889b-353c3cb1e1fc	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-29 01:00:20.895	warning	Gasto excesivo	Tienes un gasto total de $100,000 en el mes actual, lo que puede ser un desafío para mantener la estabilidad financiera. Considera revisar tus gastos para identificar áreas de mejora.	2026-04-29 01:00:20.896
+74d91092-69a3-4b79-b669-889066bc86da	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-29 01:00:21.514	tip	Establece un presupuesto	Debido a que no hay ingresos registrados, es fundamental establecer un presupuesto para gestionar tus gastos de manera efectiva y asegurarte de que no te excedas en tus compras.	2026-04-29 01:00:21.515
+358a7bdb-e3dc-4232-9789-68f3b009e124	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-29 01:00:22.134	challenge	Aumenta tu tasa de ahorro	Con una tasa de ahorro del 0%, es importante que te propongas metas de ahorro realistas para mejorar tu situación financiera a largo plazo. Considera establecer objetivos de ahorro mensuales.	2026-04-29 01:00:22.135
+b2ca7d3c-3b68-4801-b767-02dcf34860d0	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-29 01:00:22.755	achievement	No hay deudas reportadas	No se han registrado deudas en tu contexto financiero, lo que es un logro positivo. Mantén esta tendencia y sigue trabajando en mejorar tus finanzas personales.	2026-04-29 01:00:22.756
+f65f6b19-54ff-402b-a595-14afb966b33d	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-04-29 01:00:23.375	positive	Oportunidad para invertir	Aunque no hay ingresos registrados, es una oportunidad para explorar fuentes de ingresos alternativas y considerar invertir en activos que puedan generar ingresos pasivos y mejorar tu situación financiera a largo plazo.	2026-04-29 01:00:23.376
+c5033909-cf5f-4dce-b0f6-f69f3953eced	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-29 01:00:31.128	warning	Gastos elevados	Tus gastos totales de $53,000 en el mes actual son significativamente altos en comparación con tus ingresos, lo que sugiere que debes revisar y ajustar tus hábitos de gasto para evitar problemas financieros.	2026-04-29 01:00:31.129
+dee1a503-5028-4e2d-ba6c-d7fa78c4f2ec	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-29 01:00:31.75	tip	Establece un presupuesto	Debido a que no hay ingresos registrados, es fundamental que establezcas un presupuesto para gestionar tus gastos y asegurarte de que tus finanzas estén bajo control, incluso con ingresos variables o no registrados.	2026-04-29 01:00:31.75
+30324c37-0636-48e2-9a71-a69457630c98	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-29 01:00:32.492	challenge	Incrementa tus ingresos	Dado que tus ingresos son $0, te desafío a explorar oportunidades para incrementar tus ingresos, ya sea a través de un nuevo empleo, freelance o inversiones, para mejorar tu situación financiera.	2026-04-29 01:00:32.492
+e3e967f6-b493-419b-9e48-388d7dbf2015	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-29 01:00:33.11	achievement	Reconocimiento de situación financiera	Has tomado el primer paso hacia el control de tus finanzas al reconocer tu situación actual, lo que te permite iniciar el proceso de mejora y toma de decisiones informadas sobre tus gastos y posibles ingresos.	2026-04-29 01:00:33.111
+b561bbd3-6327-418b-bc09-89557199b5a1	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-04-29 01:00:33.731	positive	Oportunidad para el ahorro	Aunque actualmente no tienes una tasa de ahorro, esto representa una oportunidad para comenzar a planificar y establecer metas de ahorro realistas, lo que te ayudará a construir una base financiera sólida para el futuro.	2026-04-29 01:00:33.733
+2ba38499-478e-46e9-96b2-fde3d54956c0	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-29 01:00:44.417	warning	Gastos en comisiones de casa	Has gastado un total de $3,641,400 en comisiones de casa este mes, lo que representa una gran parte de tus gastos. Considera revisar y negociar las comisiones con tu agente inmobiliario para reducir costos.	2026-04-29 01:00:44.417
+6e7fe99a-c04f-45a3-b9cc-9382f6951c6b	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-29 01:00:45.036	tip	Optimiza tus gastos en viajes y comida	Los gastos en viajes y comida suman $916,369 este mes. Considera planificar con anticipación tus viajes y comida para reducir costos y aprovechar ofertas y descuentos.	2026-04-29 01:00:45.037
+f7a68308-b185-42b1-a28a-404f54258793	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-29 01:00:45.658	achievement	Inversión en acciones	Felicitaciones, has invertido $459,000 en acciones este mes. Esto demuestra tu compromiso con la planificación financiera a largo plazo. Considera seguir diversificando tus inversiones para maximizar tus ganancias.	2026-04-29 01:00:45.659
+b15eaa0f-6cd1-4f35-b095-0d45199dec80	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-29 01:00:46.277	challenge	Reducir gastos en créditos hipotecarios	Los gastos en créditos hipotecarios suman $834,114 este mes. Te desafiamos a reducir estos gastos en un 10% en el próximo mes mediante la negociación de tasas de interés o la reestructuración de tu deuda.	2026-04-29 01:00:46.278
+39604765-d96e-4699-b660-54d716343d00	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-04-29 01:00:46.896	positive	Uso frecuente de Uber	Has utilizado Uber 7 veces este mes, lo que demuestra tu preferencia por servicios de transporte convenientes. Considera explorar opciones de membresía o descuentos para reducir costos y aprovechar beneficios adicionales.	2026-04-29 01:00:46.897
+ab46f8f7-af4c-480f-b56f-03b92649d465	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-04-29 01:00:56.537	tip	Aprovecha tus compras	Considera unirte a programas de fidelidad o descargar aplicaciones que ofrezcan recompensas o descuentos en tus tiendas favoritas, ya que no tienes gastos registrados en este mes.	2026-04-29 01:00:56.538
+1b9cc961-cacb-47ca-bad7-21026b9b0284	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-04-29 01:00:57.156	warning	Revisa tus finanzas	Es importante que verifiques y actualices tus ingresos y gastos para tener una visión clara de tu situación financiera, ya que actualmente no hay registros de ingresos o gastos.	2026-04-29 01:00:57.157
+4a5639c2-2644-428f-a7d9-bd45ac9d7e10	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-04-29 01:00:57.776	achievement	No hay deuda registrada	Felicitaciones, no se han detectado deudas o gastos excesivos en tu historial financiero, lo que te permite comenzar este mes con una hoja en blanco.	2026-04-29 01:00:57.777
+846bdcf5-5803-499d-a14c-84c2fb765338	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-04-29 01:00:58.398	challenge	Establece metas financieras	Te desafío a establecer metas de ahorro y gasto para este mes, ya que no hay registros de objetivos financieros, lo que te ayudará a tomar el control de tus finanzas.	2026-04-29 01:00:58.399
+89141cc7-df32-4b7f-823d-fda1495295b2	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-04-29 01:00:59.019	positive	Oportunidad para ahorrar	Con una tasa de ahorro actual del 0%, tienes la oportunidad de comenzar a ahorrar y establecer un hábito saludable que te beneficie a largo plazo, considera asignar una parte de tus ingresos a ahorro.	2026-04-29 01:00:59.02
 \.
 
 
@@ -2300,6 +2325,8 @@ b28c0019-6eae-4b1b-88e3-13bba87b1675	529a7b84-0680-4735-8fcd-e76fdb185245	346b32
 a0bba63a-044c-414c-9e3f-1dae4b5de868	529a7b84-0680-4735-8fcd-e76fdb185245	346b32d1-b21f-4ce9-ac27-a69e67abb103	304786.00	Comida despedida Miami	5d4c1211-f01a-4f05-b631-27e0b83fc070	2026-04-11 21:09:00	\N	PERCENTAGE	2026-04-26 21:11:03.465	2026-04-26 21:11:03.465
 59bdf9b6-507a-408f-9179-74033d7ca429	529a7b84-0680-4735-8fcd-e76fdb185245	346b32d1-b21f-4ce9-ac27-a69e67abb103	49512.00	Hamburguesas	5d4c1211-f01a-4f05-b631-27e0b83fc070	2026-04-11 21:07:00	\N	PERCENTAGE	2026-04-26 21:08:36.092	2026-04-26 21:08:36.092
 76d72c77-20b1-422c-b6d6-788591b729df	529a7b84-0680-4735-8fcd-e76fdb185245	346b32d1-b21f-4ce9-ac27-a69e67abb103	10901.00	Agua y otros en el aeropuerto	140a6e31-e9c7-45f4-9db3-f8501d5271fe	2026-04-12 21:08:00	\N	PERCENTAGE	2026-04-26 21:09:30.727	2026-04-26 21:09:30.727
+ccfebe67-ca91-4307-9795-2354261cf8ce	529a7b84-0680-4735-8fcd-e76fdb185245	346b32d1-b21f-4ce9-ac27-a69e67abb103	15000.00	Visita para medidas	6870baf3-aa72-4c03-93c7-3e9cfeb89b76	2026-04-27 17:22:00	\N	PERCENTAGE	2026-04-28 17:26:54.863	2026-04-28 17:26:54.863
+5b471a6d-ae07-477a-99f3-490e8eb776e1	529a7b84-0680-4735-8fcd-e76fdb185245	346b32d1-b21f-4ce9-ac27-a69e67abb103	20000.00	Visita para medidas de cocina	6870baf3-aa72-4c03-93c7-3e9cfeb89b76	2026-04-27 17:30:00	\N	PERCENTAGE	2026-04-28 17:31:10.007	2026-04-28 17:31:10.007
 \.
 
 
@@ -3071,6 +3098,10 @@ c1ceabc3-468a-426b-bb63-9b468bec19b6	7612718f-6b22-4e71-8780-9912a096a34f	d8c5e3
 a2314797-0550-40b8-bc10-dbd9131f60fb	76d72c77-20b1-422c-b6d6-788591b729df	d8c5e32f-c64d-4437-b302-3a64d8f3f116	3270.30	\N	\N	f	\N	\N
 611a471f-c8b7-4e2d-8dda-864ce65dac62	a0bba63a-044c-414c-9e3f-1dae4b5de868	346b32d1-b21f-4ce9-ac27-a69e67abb103	213350.20	\N	\N	t	2026-04-26 21:11:03.463	213350.20
 6d634499-fd67-42cb-bbbb-fe4b9c74ab16	a0bba63a-044c-414c-9e3f-1dae4b5de868	d8c5e32f-c64d-4437-b302-3a64d8f3f116	91435.80	\N	\N	f	\N	\N
+aa17a359-7f7c-4e88-a498-d7d98cbec3fa	ccfebe67-ca91-4307-9795-2354261cf8ce	346b32d1-b21f-4ce9-ac27-a69e67abb103	10500.00	\N	\N	t	2026-04-28 17:26:54.862	10500.00
+20698561-48c5-4e41-8b4c-6a89c2cf6b22	ccfebe67-ca91-4307-9795-2354261cf8ce	d8c5e32f-c64d-4437-b302-3a64d8f3f116	4500.00	\N	\N	f	\N	\N
+55f255dd-21b0-48c0-9c67-5e028243f8ca	5b471a6d-ae07-477a-99f3-490e8eb776e1	346b32d1-b21f-4ce9-ac27-a69e67abb103	14000.00	\N	\N	t	2026-04-28 17:31:10.006	14000.00
+6fe42424-03f8-4bcd-9498-38b475778844	5b471a6d-ae07-477a-99f3-490e8eb776e1	d8c5e32f-c64d-4437-b302-3a64d8f3f116	6000.00	\N	\N	f	\N	\N
 \.
 
 
@@ -3804,6 +3835,8 @@ d8e244fb-912a-4e5f-bd61-5a8cf13e5b95	346b32d1-b21f-4ce9-ac27-a69e67abb103	d99144
 15cc0bac-beb7-4081-8406-17e9a8b824bd	346b32d1-b21f-4ce9-ac27-a69e67abb103	d99144b6-5974-40e2-9f17-b36942774c9e	EXPENSE	49512.00	5d4c1211-f01a-4f05-b631-27e0b83fc070	Hamburguesas	2026-04-11 21:07:00	\N	La Birra Bar Miami	Jesus Leon Rangel	\N	59bdf9b6-507a-408f-9179-74033d7ca429	2026-04-26 21:08:44.994	2026-04-26 21:08:44.994	\N
 9e7dfeaa-3b31-480e-b99a-39d15b0bc45c	346b32d1-b21f-4ce9-ac27-a69e67abb103	d99144b6-5974-40e2-9f17-b36942774c9e	EXPENSE	10901.00	140a6e31-e9c7-45f4-9db3-f8501d5271fe	Agua y otros en el aeropuerto	2026-04-12 21:08:00	\N	Viajes Otros	Jesus Leon Rangel	\N	76d72c77-20b1-422c-b6d6-788591b729df	2026-04-26 21:09:39.295	2026-04-26 21:09:39.295	\N
 694635f5-8ed2-41e1-a9df-069701eb6e81	346b32d1-b21f-4ce9-ac27-a69e67abb103	d99144b6-5974-40e2-9f17-b36942774c9e	EXPENSE	304786.00	5d4c1211-f01a-4f05-b631-27e0b83fc070	Comida despedida Miami	2026-04-11 21:09:00	\N	El Toro Loco	Jesus Leon Rangel	\N	a0bba63a-044c-414c-9e3f-1dae4b5de868	2026-04-26 21:11:11.932	2026-04-26 21:11:11.932	\N
+4ba9c409-3f04-490a-b80c-554f650a2257	346b32d1-b21f-4ce9-ac27-a69e67abb103	d99144b6-5974-40e2-9f17-b36942774c9e	EXPENSE	15000.00	6870baf3-aa72-4c03-93c7-3e9cfeb89b76	Visita para medidas	2026-04-27 17:22:00	\N	Muebles Kamanda	Jesus Leon Rangel	\N	ccfebe67-ca91-4307-9795-2354261cf8ce	2026-04-28 17:27:02.978	2026-04-28 17:27:02.978	\N
+6d07ee9a-2da2-4b05-af03-cc2ff5ade682	346b32d1-b21f-4ce9-ac27-a69e67abb103	d99144b6-5974-40e2-9f17-b36942774c9e	EXPENSE	20000.00	6870baf3-aa72-4c03-93c7-3e9cfeb89b76	Visita para medidas de cocina	2026-04-27 17:30:00	\N	Serrini	Jesus Leon Rangel	\N	5b471a6d-ae07-477a-99f3-490e8eb776e1	2026-04-28 17:31:19.059	2026-04-28 17:31:19.059	\N
 \.
 
 
@@ -3945,6 +3978,7 @@ d447268e-e2fe-40ee-8007-040c6fe4817b	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	12	202
 d8b43721-4277-41f4-ac71-ddb039660cf7	346b32d1-b21f-4ce9-ac27-a69e67abb103	11	2025	\N	1389568.00	2439100.60	856577.00	1582523.60	-1049532.60	2026-01-08 15:57:49.616	2026-02-03 12:41:03.09
 28d4dcba-f0dc-47c9-8b34-98f0847a3014	346b32d1-b21f-4ce9-ac27-a69e67abb103	2	2026	\N	3525280.00	2478247.10	1017744.00	1460503.10	1047032.90	2026-02-02 12:28:49.137	2026-03-02 15:35:05.421
 44cd2b58-4cab-4c55-82bb-3b6b27aaa8fb	8e03625c-bd17-4b2f-8e8e-5e412194b738	4	2026	\N	0.00	432632.50	0.00	432632.50	-432632.50	2026-04-26 18:30:48.627	2026-04-26 20:54:04.933
+89e6128e-74ff-4a1d-b733-8ff611bf4e60	346b32d1-b21f-4ce9-ac27-a69e67abb103	4	2026	\N	3547349.00	7520879.85	4805449.00	2715430.85	-3973530.85	2026-04-02 13:16:45.209	2026-04-28 17:31:24.403
 4784737f-11f7-40e4-869e-464d57987a37	346b32d1-b21f-4ce9-ac27-a69e67abb103	3	2026	\N	3516390.00	4897647.30	2824150.00	2073497.30	-1381257.30	2026-03-02 14:31:15.654	2026-04-26 17:16:14.609
 6e94c2cb-cc93-4147-88de-6871080719bd	d8c5e32f-c64d-4437-b302-3a64d8f3f116	1	2026	\N	0.00	1521227.60	738993.30	782234.30	-1521227.60	2026-01-08 15:56:31.6	2026-02-03 12:40:41.367
 13357a65-4831-45e6-8202-d56bfd1986e1	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2	2026	\N	0.00	0.00	0.00	0.00	0.00	2026-02-03 12:40:51.907	2026-02-03 12:40:51.907
@@ -3953,8 +3987,7 @@ a3bcddbe-ebfb-49e6-99f2-87a35544b525	346b32d1-b21f-4ce9-ac27-a69e67abb103	12	202
 08aa9029-eb7d-48eb-b0f0-18af4e1265dd	346b32d1-b21f-4ce9-ac27-a69e67abb103	1	2026	\N	3540585.00	2932383.70	1194663.00	1737720.70	608201.30	2026-01-08 15:57:53.732	2026-02-03 12:41:07.106
 b4af0d30-dc8e-423d-870e-290859ea0dbb	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2	2026	\N	0.00	625929.90	0.00	625929.90	-625929.90	2026-02-02 14:09:45.637	2026-03-02 14:41:04.142
 a5394132-aae6-4b41-bcfd-2f4b2bd63df4	d8c5e32f-c64d-4437-b302-3a64d8f3f116	3	2026	\N	0.00	888641.70	0.00	888641.70	-888641.70	2026-03-02 14:31:15.737	2026-04-01 12:54:41.733
-c034621b-14b7-44c4-a32e-19d7eedbb12a	d8c5e32f-c64d-4437-b302-3a64d8f3f116	4	2026	\N	0.00	1356198.65	0.00	1356198.65	-1356198.65	2026-04-02 15:40:38.333	2026-04-26 21:11:09.655
-89e6128e-74ff-4a1d-b733-8ff611bf4e60	346b32d1-b21f-4ce9-ac27-a69e67abb103	4	2026	\N	3547349.00	7496379.85	4805449.00	2690930.85	-3949030.85	2026-04-02 13:16:45.209	2026-04-26 21:11:17.431
+c034621b-14b7-44c4-a32e-19d7eedbb12a	d8c5e32f-c64d-4437-b302-3a64d8f3f116	4	2026	\N	0.00	1366698.65	0.00	1366698.65	-1366698.65	2026-04-02 15:40:38.333	2026-04-28 17:31:16.344
 \.
 
 
@@ -4405,6 +4438,8 @@ d1e26581-0484-4501-89d4-a41ccb25ba0a	d8c5e32f-c64d-4437-b302-3a64d8f3f116	SHARED
 45ad2466-5dca-4ebc-8392-c3033e4f2ebc	d8c5e32f-c64d-4437-b302-3a64d8f3f116	SHARED_EXPENSE_CREATED	Nuevo gasto compartido	Jesus Leon Rangel agregó un gasto de $25665 en Familia	{"amount": 25665, "groupId": "529a7b84-0680-4735-8fcd-e76fdb185245", "expenseId": "562d7f60-0b11-45cb-88f9-7d5d2e782888", "description": "Empanadas"}	f	2026-04-26 21:06:14.656
 cdf1af4d-b328-49b5-a4d9-a54a2a4fd375	d8c5e32f-c64d-4437-b302-3a64d8f3f116	SHARED_EXPENSE_CREATED	Nuevo gasto compartido	Jesus Leon Rangel agregó un gasto de $49512 en Familia	{"amount": 49512, "groupId": "529a7b84-0680-4735-8fcd-e76fdb185245", "expenseId": "59bdf9b6-507a-408f-9179-74033d7ca429", "description": "Hamburguesas"}	f	2026-04-26 21:08:38.024
 2cc05235-676b-4ceb-bd4d-5e6c8368c030	d8c5e32f-c64d-4437-b302-3a64d8f3f116	SHARED_EXPENSE_CREATED	Nuevo gasto compartido	Jesus Leon Rangel agregó un gasto de $10901 en Familia	{"amount": 10901, "groupId": "529a7b84-0680-4735-8fcd-e76fdb185245", "expenseId": "76d72c77-20b1-422c-b6d6-788591b729df", "description": "Agua y otros en el aeropuerto"}	f	2026-04-26 21:09:32.583
+a1303c39-3b31-442b-b607-388d472a829b	d8c5e32f-c64d-4437-b302-3a64d8f3f116	SHARED_EXPENSE_CREATED	Nuevo gasto compartido	Jesus Leon Rangel agregó un gasto de $15000 en Familia	{"amount": 15000, "groupId": "529a7b84-0680-4735-8fcd-e76fdb185245", "expenseId": "ccfebe67-ca91-4307-9795-2354261cf8ce", "description": "Visita para medidas"}	f	2026-04-28 17:26:56.779
+16948da7-eacd-44b2-a251-76f53179cd2d	d8c5e32f-c64d-4437-b302-3a64d8f3f116	SHARED_EXPENSE_CREATED	Nuevo gasto compartido	Jesus Leon Rangel agregó un gasto de $20000 en Familia	{"amount": 20000, "groupId": "529a7b84-0680-4735-8fcd-e76fdb185245", "expenseId": "5b471a6d-ae07-477a-99f3-490e8eb776e1", "description": "Visita para medidas de cocina"}	f	2026-04-28 17:31:11.884
 \.
 
 
@@ -4519,6 +4554,7 @@ a75a2a74-ab92-4b43-b108-9493cdada084	346b32d1-b21f-4ce9-ac27-a69e67abb103	casa_c
 15f8d8fe-8858-4032-94dc-4b70f794abb1	346b32d1-b21f-4ce9-ac27-a69e67abb103	casa_medicinas	\N	2026-04-26 19:37:05.869
 095bc9ce-27a8-4f61-ab34-50338ccbee94	346b32d1-b21f-4ce9-ac27-a69e67abb103	casa_quesos	\N	2026-04-26 19:49:59.869
 99ae45f1-b9b2-4fd0-9afc-7c65feb08145	346b32d1-b21f-4ce9-ac27-a69e67abb103	viajes_comida	\N	2026-04-26 20:29:19.926
+532c232f-495f-45e7-b6ea-834dd38ca675	346b32d1-b21f-4ce9-ac27-a69e67abb103	casa_visitas_cocina	\N	2026-04-28 17:26:23.261
 \.
 
 
@@ -5121,6 +5157,8 @@ aae42224-dd48-489f-a725-1047b4235247	6950e1b1-ca65-4326-ac5c-c37dd4122698	99ae45
 5951b632-237a-4972-8e31-bcc7351065f6	15cc0bac-beb7-4081-8406-17e9a8b824bd	99ae45f1-b9b2-4fd0-9afc-7c65feb08145
 aebf16d0-e233-4823-9692-ea9901fcadb4	9e7dfeaa-3b31-480e-b99a-39d15b0bc45c	ffd68fd4-5d8c-4cc9-bec1-bb91c30d46e8
 56691f5e-bf98-4f20-83cc-a43aef5ace6a	694635f5-8ed2-41e1-a9df-069701eb6e81	99ae45f1-b9b2-4fd0-9afc-7c65feb08145
+bd164fde-53fd-46f9-b4e2-851eabb1c3ad	4ba9c409-3f04-490a-b80c-554f650a2257	532c232f-495f-45e7-b6ea-834dd38ca675
+8bee92b3-02dd-4cb8-8bba-be5a39750991	6d07ee9a-2da2-4b05-af03-cc2ff5ade682	532c232f-495f-45e7-b6ea-834dd38ca675
 \.
 
 
@@ -5291,6 +5329,8 @@ d0db569e-1682-4ba9-8cba-d9fa22d03aa8	346b32d1-b21f-4ce9-ac27-a69e67abb103	patric
 1ce7d62f-7973-4fe2-ae99-49e50a0b50a5	346b32d1-b21f-4ce9-ac27-a69e67abb103	tinta express	42204bb7-7b76-44ed-a668-5b80c5def775	Tinta Express	1	1	2026-04-26 18:12:03.35	2026-04-26 18:12:03.35
 bb07bba6-b8e5-4a02-b585-c0f38930b6ef	346b32d1-b21f-4ce9-ac27-a69e67abb103	viajes otros	140a6e31-e9c7-45f4-9db3-f8501d5271fe	Viajes Otros	1	2	2026-04-26 20:57:41.684	2026-04-26 21:09:41.474
 88e6a693-5065-4900-8fab-84ccb186ad68	346b32d1-b21f-4ce9-ac27-a69e67abb103	el toro loco	5d4c1211-f01a-4f05-b631-27e0b83fc070	El Toro Loco	1	1	2026-04-26 21:11:14.047	2026-04-26 21:11:14.047
+719a23e5-130e-4bdd-8883-3ced2abae118	346b32d1-b21f-4ce9-ac27-a69e67abb103	muebles kamanda	6870baf3-aa72-4c03-93c7-3e9cfeb89b76	Muebles Kamanda	1	1	2026-04-28 17:27:05.137	2026-04-28 17:27:05.137
+ec0f8061-69f4-4ef7-b753-7337c785e36e	346b32d1-b21f-4ce9-ac27-a69e67abb103	serrini	6870baf3-aa72-4c03-93c7-3e9cfeb89b76	Serrini	1	1	2026-04-28 17:31:21.228	2026-04-28 17:31:21.228
 ee906a5f-971c-480e-ab7d-62466c991fa4	346b32d1-b21f-4ce9-ac27-a69e67abb103	uber	2f9f97c3-12f8-45ba-a820-cba51d33305a	Uber	1	8	2026-04-26 18:29:35.851	2026-04-26 18:42:51.394
 affdc23e-d518-4b66-805d-17063e35d8c7	346b32d1-b21f-4ce9-ac27-a69e67abb103	walmart	140a6e31-e9c7-45f4-9db3-f8501d5271fe	Walmart	1	1	2026-04-26 18:44:28.908	2026-04-26 18:44:28.908
 63a42e0b-c5cc-44cf-b438-de743023d63e	346b32d1-b21f-4ce9-ac27-a69e67abb103	carniceria irarrazaval	9434cf28-3890-49dc-a731-c8fd873f932c	Carniceria Irarrazaval	1	1	2026-04-26 18:47:45.727	2026-04-26 18:47:45.727
@@ -5385,6 +5425,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict GijgfvWFygmi49PS3o3rjwpRNTTBGdvNdRMoZUusnFh7Sc5QqFFQxmPGK9m9oI2
+-- \unrestrict jtH13fra7p6WLMYqQ5eIaMmGm9UXRAJDteb1thKuYBMEVd0tJe5R77VUDCgvuGB
 
 RESET ALL;
