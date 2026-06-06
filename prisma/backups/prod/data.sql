@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict pf2p5o4efGejlyoXakG1eGLbAL4xoOJUU2bdUcW01DqeRl0UGSRFrGod9QovJfa
+-- \restrict TeFMfvkh08ZgUNMRRDe5l8jvHY1s8LS2GOokQCsUrKWMjhtEjte11AG7jTwSL00
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -2752,6 +2752,31 @@ a3254483-ff85-4072-aa39-d70a752af8ca	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-0
 505daa56-352d-4199-ae28-0bd1bcc16e44	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-06-05 01:00:49.728	challenge	Establece un objetivo de ahorro	Dado que tu tasa de ahorro actual es del 0%, te desafiamos a establecer un objetivo de ahorro realista para el mes actual y trabajar para alcanzarlo.	2026-06-05 01:00:49.729
 bcfcfc60-e025-4702-9bae-5e6107a78ec1	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-06-05 01:00:50.341	positive	Oportunidad para empezar	No tener deudas ni gastos registrados te brinda la oportunidad de empezar a construir tus finanzas desde cero, lo que puede ser un punto de partida emocionante para establecer hábitos financieros saludables.	2026-06-05 01:00:50.342
 ec78cf50-9836-48c9-9fed-6f96bb1b2669	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-06-05 01:00:50.954	achievement	Sin deudas registradas	No tienes deudas registradas, lo que es un logro notable y te permite enfocarte en ahorrar y invertir en tu futuro financiero sin la carga de deudas pendientes.	2026-06-05 01:00:50.955
+93d3ed8e-fd8c-4370-b6b6-51a998bebe47	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-06-06 01:00:15.862	warning	Gastos elevados	Tu gasto total es de $574,597.7 en este mes, lo que indica un nivel de gasto considerable. Es importante revisar tus categorías de gasto para identificar áreas de reducción.	2026-06-06 01:00:15.863
+82437acd-d181-4fd8-b191-2d1f22d47da4	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-06-06 01:00:18.03	tip	Establece un presupuesto	Debido a que no tienes ingresos registrados, es fundamental establecer un presupuesto para gestionar tus gastos de manera efectiva y evitar problemas financieros.	2026-06-06 01:00:18.031
+48be1ab8-ef63-4e9b-9d7a-4a5c058d34a6	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-06-06 01:00:19.47	challenge	Incrementa tus ingresos	Con una tasa de ahorro del 0%, es un desafío incrementar tus ingresos para cubrir tus gastos actuales y empezar a ahorrar para el futuro.	2026-06-06 01:00:19.47
+f8f0096d-62d0-4249-963c-b77f1021265a	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-06-06 01:00:20.614	positive	Oportunidad de analizar gastos	Aunque no hay información sobre tus hábitos de gasto específicos, esta es una oportunidad para empezar a analizar tus gastos y categorías para tomar decisiones informadas sobre tus finanzas.	2026-06-06 01:00:20.615
+a434aafe-1887-40a6-9e7e-a3828f2e7745	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-06-06 01:00:21.863	achievement	Reconocimiento de la situación financiera	Has reconocido tu situación financiera actual, lo que es el primer paso hacia el manejo efectivo de tus finanzas. Ahora puedes empezar a trabajar en la mejora de tu situación financiera.	2026-06-06 01:00:21.864
+6966ea2d-9c1f-4c00-91f1-624a8a7412b2	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-06-06 01:00:35.906	warning	Gastos excesivos	Tienes un gasto total de $100,000 en el mes actual, lo que sugiere que debes revisar tus hábitos de gasto y buscar formas de reducirlos.	2026-06-06 01:00:35.907
+6a76c684-1f08-4b39-ab58-cd24008764f1	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-06-06 01:00:38.143	tip	Establece un presupuesto	Debido a que no tienes ingresos registrados, es importante que establezcas un presupuesto para gestionar tus gastos y evitar problemas financieros.	2026-06-06 01:00:38.144
+98c55af3-dda4-464d-bb92-105cbc6a1bc2	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-06-06 01:00:40.195	challenge	Incrementa tus ingresos	Con una tasa de ahorro del 0%, es fundamental que busques formas de incrementar tus ingresos para mejorar tu situación financiera.	2026-06-06 01:00:40.196
+7231b135-f257-4c9d-b48c-6f701107c727	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-06-06 01:00:41.742	positive	Oportunidad para ahorrar	Aunque no tienes ingresos registrados, tienes la oportunidad de comenzar a ahorrar desde cero y establecer hábitos financieros saludables.	2026-06-06 01:00:41.743
+6213d7a1-6d20-4237-b2ba-074835f60033	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-06-06 01:00:43.998	achievement	Reconocimiento de la situación financiera	Has reconocido tu situación financiera actual, lo que es el primer paso para mejorarla. Ahora puedes comenzar a trabajar en establecer un presupuesto y aumentar tus ingresos.	2026-06-06 01:00:43.999
+85db4d88-7a0a-4f36-8bb6-2977418f39be	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-06-06 01:00:58.019	warning	Falta de ingresos registrados	No se han registrado ingresos en el período actual, lo que puede afectar tu capacidad para ahorrar y gastar de manera responsable.	2026-06-06 01:00:58.02
+3e5377ee-2104-4fc8-b339-a646c58dc111	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-06-06 01:00:58.654	tip	Identifica tus gastos habituales	Es importante empezar a rastrear tus gastos para entender mejor tus hábitos de consumo y tomar decisiones financieras informadas.	2026-06-06 01:00:58.655
+1e0e5d7c-5f51-4016-8967-b849a07a929a	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-06-06 01:00:59.618	challenge	Establece un objetivo de ahorro	Te desafiamos a establecer un objetivo de ahorro para el período actual, lo que te ayudará a crear un hábito de ahorro y a mejorar tu estabilidad financiera.	2026-06-06 01:00:59.619
+2e4c8453-52f4-45e6-96c5-6fcc3aec5a55	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-06-06 01:01:01.252	positive	Oportunidad para empezar de cero	No tener registros de gastos o ingresos te da la oportunidad de empezar de cero y crear un historial financiero saludable desde el principio.	2026-06-06 01:01:01.252
+5f443b0a-f325-49e0-b505-a755e72fd83c	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-06-06 01:01:03.533	achievement	Tienes un punto de partida	Ya has dado el primer paso al empezar a rastrear tus finanzas, lo que te permitirá tomar el control de tus decisiones financieras y trabajar hacia una mayor estabilidad económica.	2026-06-06 01:01:03.534
+b1116cae-fbe6-4b9f-b1e1-b5aac8f4b3a4	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-06-06 01:01:21.58	warning	Gastos elevados	Has gastado $1,031,636 en el mes actual, lo que sugiere un nivel de gastos alto. Es importante revisar tus categorías de gastos para identificar áreas de mejora.	2026-06-06 01:01:21.581
+4dc1b9a0-1d91-4cb8-a3a4-f47722524d94	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-06-06 01:01:22.357	tip	Revisa tus categorías	No tienes información sobre tus categorías de gastos, lo que te impide tener una visión clara de dónde se están asignando tus recursos. Te recomendamos revisar tus categorías para tomar decisiones informadas.	2026-06-06 01:01:22.358
+9689611b-0180-44fe-8d60-577ac879f070	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-06-06 01:01:23.331	challenge	Establece una tasa de ahorro	Tu tasa de ahorro es del 0%, lo que significa que no estás ahorrando dinero. Te desafiamos a establecer una meta de ahorro realista y a trabajar para alcanzarla.	2026-06-06 01:01:23.332
+6ea2318a-f350-45d0-b372-fd96dafb9ebf	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-06-06 01:01:24.641	positive	Oportunidad de mejora	El hecho de que no tengas ingresos registrados te brinda la oportunidad de empezar a registrar tus ingresos y a establecer un presupuesto realista. Esto te permitirá tomar el control de tus finanzas y hacer planes para el futuro.	2026-06-06 01:01:24.641
+53bc40c5-202c-4003-aa36-025dadcd3154	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-06-06 01:01:25.612	achievement	Primera revisión de finanzas	Has dado el primer paso hacia el control de tus finanzas al revisar tu situación financiera actual. Esto es un logro importante y te permite empezar a trabajar hacia una situación financiera más estable y segura.	2026-06-06 01:01:25.613
+a06e04fd-9510-4c03-9eb1-a669e9f91bbf	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-06-06 01:01:42.266	warning	Gastos sin registrar	No se han registrado ingresos ni gastos en el mes actual, lo que puede afectar la precisión de tus finanzas.	2026-06-06 01:01:42.266
+879cab60-03e7-4ca3-9a63-b0c3cd2359b1	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-06-06 01:01:42.9	tip	Establece un presupuesto	Es importante crear un plan de gastos para el mes actual, considerando tus ingresos y objetivos financieros.	2026-06-06 01:01:42.901
+ebdaad56-cd0b-4069-a463-308aeed2db05	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-06-06 01:01:44.042	challenge	Incrementa tus ingresos	Considera buscar formas de aumentar tus ingresos, como un trabajo adicional o la venta de artículos no necesarios, para mejorar tu situación financiera.	2026-06-06 01:01:44.043
+e230b62e-fc01-4ccc-babb-7b27bd03acc1	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-06-06 01:01:44.682	achievement	Sin deudas registradas	No se han registrado deudas ni gastos excesivos, lo que es un buen punto de partida para mantener una buena salud financiera.	2026-06-06 01:01:44.683
+f4518fe4-fa93-4fe0-90f0-8c481ae5b161	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-06-06 01:01:47.55	positive	Oportunidad de ahorro	Dado que no se han registrado gastos, tienes la oportunidad de ahorrar dinero y alcanzar tus objetivos financieros de manera más rápida.	2026-06-06 01:01:47.551
 \.
 
 
@@ -6461,6 +6486,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict pf2p5o4efGejlyoXakG1eGLbAL4xoOJUU2bdUcW01DqeRl0UGSRFrGod9QovJfa
+-- \unrestrict TeFMfvkh08ZgUNMRRDe5l8jvHY1s8LS2GOokQCsUrKWMjhtEjte11AG7jTwSL00
 
 RESET ALL;
