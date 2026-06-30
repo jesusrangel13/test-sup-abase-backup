@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict XFA8UAq1npvPWP55lya0wubfstwX31xvV7mkNKP8lf3d0togefBkqBGWqZV8dhr
+-- \restrict 9mYniOFtKIiu7dze20nhdlKlTiBUv8rHrnv1BlpgcbAfEw76iCVNBeeDmEpkjWd
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -33,7 +33,7 @@ COPY "auth"."audit_log_entries" ("instance_id", "id", "payload", "created_at", "
 -- Data for Name: custom_oauth_providers; Type: TABLE DATA; Schema: auth; Owner: supabase_auth_admin
 --
 
-COPY "auth"."custom_oauth_providers" ("id", "provider_type", "identifier", "name", "client_id", "client_secret", "acceptable_client_ids", "scopes", "pkce_enabled", "attribute_mapping", "authorization_params", "enabled", "email_optional", "issuer", "discovery_url", "skip_nonce_check", "cached_discovery", "discovery_cached_at", "authorization_url", "token_url", "userinfo_url", "jwks_uri", "created_at", "updated_at") FROM stdin;
+COPY "auth"."custom_oauth_providers" ("id", "provider_type", "identifier", "name", "client_id", "client_secret", "acceptable_client_ids", "scopes", "pkce_enabled", "attribute_mapping", "authorization_params", "enabled", "email_optional", "issuer", "discovery_url", "skip_nonce_check", "cached_discovery", "discovery_cached_at", "authorization_url", "token_url", "userinfo_url", "jwks_uri", "created_at", "updated_at", "custom_claims_allowlist") FROM stdin;
 \.
 
 
@@ -3352,6 +3352,31 @@ bf0c2ee2-e1f5-4c5f-be05-32c4a096d74d	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-0
 1869a6ce-4601-43d7-b034-4a81cf6ab0cd	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-06-29 01:00:52.043	challenge	Registra tus transacciones	Te desafío a registrar todas tus transacciones durante el próximo mes para tener una visión clara de tus hábitos de gasto y poder identificar áreas de mejora. Esto te permitirá tomar decisiones financieras más informadas.	2026-06-29 01:00:52.044
 fc48f6b5-8087-49f2-936a-8d7bef9a0cf2	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-06-29 01:00:52.691	achievement	Oportunidad de empezar de cero	No tener registros financieros previos puede ser una oportunidad para empezar de cero y establecer buenos hábitos financieros desde el principio. Aprovecha esta oportunidad para crear un plan financiero sólido y alcanzar tus objetivos.	2026-06-29 01:00:52.692
 fac20430-14af-434d-9055-958373fd261f	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-06-29 01:00:53.339	positive	Flexibilidad financiera	No tener deudas ni gastos registrados puede significar que tienes una mayor flexibilidad financiera para tomar decisiones y asignar recursos según tus prioridades. Aprovecha esta flexibilidad para invertir en tus objetivos financieros a largo plazo.	2026-06-29 01:00:53.34
+e5ee5c66-0c4b-458d-b40e-515cc9bcd72e	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-06-30 01:00:08.302	warning	Gastos elevados	Tus gastos totales en el mes actual ascienden a $574,597.7, lo que puede indicar un patrón de consumo excesivo. Considera revisar tus hábitos de gasto para identificar áreas de mejora.	2026-06-30 01:00:08.302
+817d357e-16f1-478c-8d5f-33ce8eb634ed	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-06-30 01:00:08.896	tip	Establece un presupuesto	Dado que no tienes ingresos registrados, es fundamental que establezcas un presupuesto para gestionar tus gastos de manera efectiva y evitar problemas financieros.	2026-06-30 01:00:08.897
+90b83f91-7ef0-48c4-864c-8b4e6ea927da	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-06-30 01:00:09.483	challenge	Reduce gastos innecesarios	Desafíate a reducir tus gastos en un 10% en el próximo mes. Esto te ayudará a desarrollar hábitos de ahorro y a mejorar tu situación financiera.	2026-06-30 01:00:09.484
+750ddc2d-dee1-432b-a1e4-f3c0e538e913	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-06-30 01:00:10.062	achievement	No hay deudas registradas	No se han registrado deudas en tu contexto financiero actual, lo que es un logro positivo. Mantén este buen hábito y sigue trabajando en mejorar tu situación financiera.	2026-06-30 01:00:10.063
+5f3dc826-0e1a-46ee-9522-2499a87cf03a	d8c5e32f-c64d-4437-b302-3a64d8f3f116	2026-06-30 01:00:10.639	positive	Oportunidad de ahorrar	Aunque no tienes ingresos registrados, puedes comenzar a planificar tus finanzas para el futuro. Establece metas de ahorro y busca oportunidades para aumentar tus ingresos y mejorar tu situación financiera.	2026-06-30 01:00:10.64
+b5a7a8dc-3446-4f16-8708-273aa17856a6	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-06-30 01:00:17.987	warning	Gastos no registrados	No se han detectado ingresos ni gastos en el mes actual, lo que puede indicar que no estás registrando tus transacciones financieras. Te recomiendo revisar tus cuentas y registrar tus gastos para tener una visión clara de tus finanzas.	2026-06-30 01:00:17.988
+76a60a96-926a-40c2-81b6-9ba3618411ce	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-06-30 01:00:18.565	tip	Establece un presupuesto	Sin ingresos ni gastos registrados, es importante que establezcas un presupuesto para el mes actual. Esto te ayudará a planificar tus finanzas y a evitar gastos innecesarios.	2026-06-30 01:00:18.566
+7aa93916-de6c-40c6-b1c9-7fd4c69e97c7	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-06-30 01:00:19.144	achievement	Oportunidad para ahorrar	Dado que no se han detectado gastos en el mes actual, tienes la oportunidad de ahorrar una cantidad significativa de dinero. Considera abrir una cuenta de ahorros o invertir en un fondo de inversión.	2026-06-30 01:00:19.145
+714ea710-3f89-4d20-88f0-a12cfb6038b6	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-06-30 01:00:19.72	challenge	Desafío de registro de gastos	Te desafiamos a registrar todos tus gastos durante los próximos 30 días. Esto te ayudará a identificar áreas en las que puedes reducir gastos y a desarrollar buenos hábitos financieros.	2026-06-30 01:00:19.721
+10d06330-fc53-4c96-8f4c-c66ce712c327	f06079b2-c6a7-421a-8c5c-287dbb21e3ca	2026-06-30 01:00:20.296	positive	Nueva oportunidad financiera	El hecho de que no hayas registrado ingresos ni gastos en el mes actual te da la oportunidad de empezar de cero y crear un plan financiero personalizado. ¡Aprovecha esta oportunidad para mejorar tus finanzas y alcanzar tus objetivos!	2026-06-30 01:00:20.297
+b7971cc5-2249-47c4-8365-6719fa429b8f	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-06-30 01:00:27.361	warning	Gastos no registrados	No se han registrado gastos en el mes actual, lo que puede afectar la precisión de tus finanzas y la capacidad de establecer un presupuesto realista.	2026-06-30 01:00:27.362
+e71b6359-4fc9-4bd4-9d79-39f55fce90c2	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-06-30 01:00:28.016	tip	Establece un ingreso	Es importante registrar tus ingresos para tener una visión clara de tus finanzas y poder establecer metas de ahorro y gasto realistas.	2026-06-30 01:00:28.017
+1abd3252-9974-4b17-8f9d-4c050017cb2d	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-06-30 01:00:28.63	challenge	Desafío de ahorro	Te desafiamos a establecer una meta de ahorro para el mes próximo y a trabajar para alcanzarla, lo que te ayudará a mejorar tu tasa de ahorro y a alcanzar tus objetivos financieros.	2026-06-30 01:00:28.63
+22af5c79-e56f-407b-bc5a-8ef7cd62c557	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-06-30 01:00:29.21	positive	Oportunidad de inicio	El hecho de que no hayas registrado gastos ni ingresos te da la oportunidad de empezar de cero y establecer hábitos financieros saludables desde el principio.	2026-06-30 01:00:29.211
+73aa0799-5b7c-4700-bd31-3041f24086ff	b88abd1d-92fe-4818-ba01-95681f09b96d	2026-06-30 01:00:29.789	achievement	Primer paso hacia la organización	Al haber iniciado el proceso de registro de tus finanzas, ya has dado el primer paso hacia la organización y el control de tus gastos e ingresos, lo que te permitirá tomar decisiones informadas sobre tus finanzas.	2026-06-30 01:00:29.79
+da6ad6ef-dc63-45f7-802b-842b2712adf9	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-06-30 01:00:37.456	warning	Gastos elevados	Tus gastos totales este mes ascienden a $1,031,636, lo que sugiere que debes revisar tus hábitos de consumo y buscar áreas para reducir gastos.	2026-06-30 01:00:37.457
+37dfb48f-a29c-4719-9d30-acf1cc86c55f	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-06-30 01:00:38.034	tip	Establece un presupuesto	Dado que no hay ingresos registrados, es fundamental crear un presupuesto que te permita asignar tus recursos de manera efectiva y alcanzar tus objetivos financieros.	2026-06-30 01:00:38.034
+a319b1ee-f786-40cd-aedc-2af6d1fef5ae	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-06-30 01:00:38.612	challenge	Aumenta tu tasa de ahorro	Con una tasa de ahorro actual del 0%, te desafío a establecer metas de ahorro realistas y a trabajar para incrementar esta tasa en el futuro.	2026-06-30 01:00:38.613
+07275328-c88e-44ef-b1f0-09594d72f6d3	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-06-30 01:00:39.19	achievement	Revisa tus categorías de gasto	Aunque no hay información sobre las categorías de gasto, es un logro el hecho de que estés tomando el primer paso hacia el análisis de tus finanzas personales.	2026-06-30 01:00:39.191
+29dded96-dfa0-47b6-b289-6fcc210550ff	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-06-30 01:00:39.77	positive	Oportunidad para la planificación	La falta de información sobre merchants y hábitos de gasto te brinda la oportunidad de empezar a trackear tus gastos y desarrollar un plan financiero personalizado que se adapte a tus necesidades.	2026-06-30 01:00:39.771
+2e225350-7336-414f-927b-7dcb0812f900	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-06-30 01:00:46.813	warning	Gastos no registrados	No se han detectado ingresos ni gastos registrados en el período actual. Es importante comenzar a rastrear tus finanzas para tener un control claro de tus recursos.	2026-06-30 01:00:46.814
+88adab9d-dbac-434a-ab54-ee4253cf253a	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-06-30 01:00:47.504	tip	Establece un presupuesto	Aunque no hay registros de gastos, es fundamental establecer un presupuesto para cuando comiences a recibir ingresos. Esto te ayudará a asignar tus recursos de manera efectiva y a alcanzar tus objetivos financieros.	2026-06-30 01:00:47.505
+0cdbc6ce-6292-4fdb-a75d-18d3591c4de6	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-06-30 01:00:48.082	challenge	Inicia el registro de tus finanzas	Te desafiamos a comenzar a registrar tus ingresos y gastos durante el próximo mes. Esto te permitirá tener una visión clara de tus hábitos financieros y tomar decisiones informadas para mejorar tu situación económica.	2026-06-30 01:00:48.083
+9f164cf3-9301-477c-9152-81ac79d5f9d1	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-06-30 01:00:48.659	achievement	Oportunidad para comenzar de cero	No tener registros de gastos ni ingresos te da la oportunidad de comenzar de cero y establecer buenos hábitos financieros desde el principio. Aprovecha esta chance para crear un futuro financiero sólido.	2026-06-30 01:00:48.66
+3aa1c071-a86d-4de0-be25-68c8195a6e14	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-06-30 01:00:49.236	positive	Flexibilidad financiera	Al no tener gastos registrados, tienes la flexibilidad de asignar tus futuros ingresos según tus prioridades y objetivos personales. Esto te da la libertad de elegir cómo quieres distribuir tus recursos y planificar tu futuro financiero.	2026-06-30 01:00:49.237
 \.
 
 
@@ -7061,6 +7086,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict XFA8UAq1npvPWP55lya0wubfstwX31xvV7mkNKP8lf3d0togefBkqBGWqZV8dhr
+-- \unrestrict 9mYniOFtKIiu7dze20nhdlKlTiBUv8rHrnv1BlpgcbAfEw76iCVNBeeDmEpkjWd
 
 RESET ALL;
