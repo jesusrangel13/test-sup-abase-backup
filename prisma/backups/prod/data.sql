@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict 03XivpCZLMlYH7yYufmLgnv7sA2nQNJFrJo3k50QgYx4wMBF7YTTCveFeF8PG1J
+-- \restrict Zff3bShrBj7JU8zheRj0F7epLb8zktnsUTDTM1ekPCps5gq6ltW8MwUq6oYxKfX
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -4548,6 +4548,10 @@ d9855631-f068-4c9c-86b1-2cdb789dd524	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-0
 12364c3c-edd3-4119-ab17-3cda9d5677d8	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-08-16 01:00:39.299	achievement	Sin deuda registrada	No se han registrado deudas en tu contexto financiero, lo que es un logro positivo. Asegúrate de mantener esta tendencia para evitar problemas financieros en el futuro.	2026-08-16 01:00:39.3
 6b3ecc4e-c3ca-47f8-8eb4-e1a9113dce98	346b32d1-b21f-4ce9-ac27-a69e67abb103	2026-08-16 01:00:39.9	positive	Oportunidad de ahorro	Aunque no tienes ingresos, puedes comenzar a planificar tus finanzas para el futuro. Investiga opciones de ahorro y considera abrir una cuenta de ahorros para empezar a construir una base financiera sólida.	2026-08-16 01:00:39.901
 cbe186ab-92d8-4fba-a0af-9ec6182648e4	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-08-16 01:00:46.77	warning	Gastos sin registrar	No se han registrado ingresos ni gastos en el período actual, lo que puede afectar la precisión de tus finanzas personales.	2026-08-16 01:00:46.771
+a7e00dae-6773-4101-bbfa-83f2db873c78	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-08-16 01:00:47.484	tip	Establece un presupuesto	Debes establecer un presupuesto para el período actual y registrar tus ingresos y gastos para tener una visión clara de tus finanzas.	2026-08-16 01:00:47.485
+f7a198a8-a210-47b1-b1e8-8b24c3795ab5	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-08-16 01:00:48.079	challenge	Incrementa tus ingresos	Debes buscar formas de incrementar tus ingresos, ya que actualmente no se han registrado ingresos en el período actual.	2026-08-16 01:00:48.08
+99e185be-f8d7-4c51-9ff3-7b15e1341c75	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-08-16 01:00:48.673	achievement	Sin deudas registradas	No se han registrado deudas ni gastos significativos en el período actual, lo que es un buen punto de partida para tu gestión financiera.	2026-08-16 01:00:48.674
+334b8a0b-7fdd-4f81-98ba-d3ea79759221	8e03625c-bd17-4b2f-8e8e-5e412194b738	2026-08-16 01:00:49.268	positive	Oportunidad para ahorrar	Dado que no se han registrado gastos en el período actual, tienes una oportunidad para ahorrar y establecer un fondo de emergencia para el futuro.	2026-08-16 01:00:49.268
 \.
 
 
@@ -8257,6 +8261,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict 03XivpCZLMlYH7yYufmLgnv7sA2nQNJFrJo3k50QgYx4wMBF7YTTCveFeF8PG1J
+-- \unrestrict Zff3bShrBj7JU8zheRj0F7epLb8zktnsUTDTM1ekPCps5gq6ltW8MwUq6oYxKfX
 
 RESET ALL;
