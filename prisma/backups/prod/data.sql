@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict 6uFmYtKmdqTd4SM2mEdWYsDqypH6czWJZDfERl0TBYeUcngPAxM9eiTEPTW4Ebb
+-- \restrict 43kCbUy9zlyhlecWwPamVThRPX8fMfTYGtiRYoPxjIdecRQnmXv9inj1TbDBuwA
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.12
@@ -276,6 +276,7 @@ f06079b2-c6a7-421a-8c5c-287dbb21e3ca	pedroperez@gmail.com	$2b$10$KcpPa9V/Gn/6EjB
 b88abd1d-92fe-4818-ba01-95681f09b96d	juanperez@gmail.com	$2b$10$ENEWWpfqdTygexUfCX2FQ.XK5yZrYh1HoA.OZePnLRqGyZlouU8ee	Juan Perez	\N	CLP	Chile	f	2025-11-21 13:28:03.574	2025-12-10 16:13:11.425	530b9e4b-d53a-440b-a713-51021e71436b	es	\N	\N
 346b32d1-b21f-4ce9-ac27-a69e67abb103	jesusrangel.255@gmail.com	$2b$10$5XD4EXU3I6EoKNYnr40uyOIuvgceKIZR2JbxeNsYdW.KyzWv.L4fK	Jesus Leon Rangel	\N	CLP	Chile	f	2025-11-13 15:47:41.58	2026-02-08 12:41:55.106	d99144b6-5974-40e2-9f17-b36942774c9e	es	\N	\N
 8e03625c-bd17-4b2f-8e8e-5e412194b738	josemanyoma@gmail.com	$2b$10$5XD4EXU3I6EoKNYnr40uyOIuvgceKIZR2JbxeNsYdW.KyzWv.L4fK	Jose Manyoma	\N	CLP	\N	t	2026-04-26 14:25:38	2026-04-26 14:25:40	\N	es	\N	\N
+2271f488-648d-4f08-bafe-69ada2e324a1	hexstrike.pentest.1795398855@gmail.com	$2b$10$gGxSF2FQ609NgwIiKn3rzu1nQLsNKCoAEADYyOhWbyIACDCMByDKK	Pentest Hexstrike	\N	CLP	\N	f	2026-11-23 01:54:24.694	2026-11-23 01:54:24.694	\N	es	\N	\N
 \.
 
 
@@ -7296,6 +7297,7 @@ e4664af8-9ccf-4fad-a495-705d3c11e849	d8c5e32f-c64d-4437-b302-3a64d8f3f116	SHARED
 90e5bb22-d1f3-45e0-9bb2-d00d36fef477	d8c5e32f-c64d-4437-b302-3a64d8f3f116	SHARED_EXPENSE_CREATED	Nuevo gasto compartido	Jesus Leon Rangel agregó un gasto de $30120 en Familia	{"amount": 30120, "groupId": "529a7b84-0680-4735-8fcd-e76fdb185245", "expenseId": "35c2de0d-36af-4b7d-9e03-75030df1660c", "description": "Compras pasticho"}	f	2026-05-03 21:21:03.913
 407d08ac-6f71-48de-843d-16551fea1c02	d8c5e32f-c64d-4437-b302-3a64d8f3f116	SHARED_EXPENSE_CREATED	Nuevo gasto compartido	Jesus Leon Rangel agregó un gasto de $19514 en Familia	{"amount": 19514, "groupId": "529a7b84-0680-4735-8fcd-e76fdb185245", "expenseId": "ce01bca1-dce6-4928-ad18-50fded8467b3", "description": "Queso palmita, queso llanero y mortadela"}	f	2026-05-03 21:22:08.055
 25d276a6-8e55-4f8e-8079-92d95f856781	d8c5e32f-c64d-4437-b302-3a64d8f3f116	SHARED_EXPENSE_CREATED	Nuevo gasto compartido	Jesus Leon Rangel agregó un gasto de $841035 en Familia	{"amount": 841035, "groupId": "529a7b84-0680-4735-8fcd-e76fdb185245", "expenseId": "38e1a537-30a2-4b2e-91c4-4242e52e1839", "description": "76/360"}	f	2026-05-03 22:45:49.706
+9e03a7ae-e328-48b6-84af-c46499491c14	d8c5e32f-c64d-4437-b302-3a64d8f3f116	GROUP_MEMBER_ADDED	Agregado a grupo	Pentest Hexstrike te agregó al grupo "Hexstrike Test"	{"addedBy": "2271f488-648d-4f08-bafe-69ada2e324a1", "groupId": "01878b3b-3864-443d-87cc-0f1da8e05898"}	f	2026-11-23 02:03:00.962
 \.
 
 
@@ -8318,6 +8320,6 @@ SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 1, false);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict 6uFmYtKmdqTd4SM2mEdWYsDqypH6czWJZDfERl0TBYeUcngPAxM9eiTEPTW4Ebb
+-- \unrestrict 43kCbUy9zlyhlecWwPamVThRPX8fMfTYGtiRYoPxjIdecRQnmXv9inj1TbDBuwA
 
 RESET ALL;
